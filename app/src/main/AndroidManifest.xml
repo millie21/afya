@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="afyapepe.mobile"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/afyapepe"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.alaglist" />
+        <activity android:name=".activity.histyhisty" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.Registrar" />
+        <activity android:name=".activity.Admin" />
+        <activity android:name=".activity.PharmMan" />
+        <activity android:name=".activity.PharmSto" />
+        <activity android:name=".activity.FacilityAdm" />
+        <activity android:name=".activity.registrarpage" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity.Registafya"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_registafya"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".activity.Registactiv" />
+        <activity android:name=".activity.Doctorn" />
+        <activity android:name=".activity.Nurse" />
+        <activity android:name=".activity.Manufacturer" />
+        <activity android:name=".activity.Patient" />
+        <activity android:name=".activity.Private" />
+        <activity android:name=".activity.PharmacyStoKep" />
+        <activity android:name=".activity.PharmacyMan" />
+        <activity android:name=".activity.RegistScreen" />
+        <activity android:name=".activity.tpatient" />
+        <activity android:name=".activity.apatient" />
+        <activity android:name=".activity.consulfee" />
+        <activity android:name=".activity.indpatients" />
+        <activity android:name=".activity.Item1Activity" />
+        <activity android:name=".activity.Item2Activity" />
+        <activity android:name=".activity.Item3Activity" />
+        <activity android:name=".activity.Item4Activity" />
+        <activity android:name=".activity.Item5Activity" />
+        <activity
+            android:name=".activity.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.Contact_info" />
+        <activity android:name=".activity.AllergyList" />
+        <activity android:name=".activity.VaccinationList" />
+        <activity android:name=".activity.History" />
+        <activity android:name=".activity.Test" />
+        <activity android:name=".activity.Prescriptions" />
+        <activity android:name=".activity.HospitalAdmission" />
+        <activity
+            android:name=".activity.Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.alaglist" />
+        <activity android:name=".activity.histyhisto" />
+        <activity
+            android:name=".activity.Manufacturers"
+            android:label="@string/title_activity_manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuAddEmployee"
+            android:label="Employees"
+            android:parentActivityName=".activity.ManuShowAllEmployees"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuShowAllEmployees"
+            android:label="Employees"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuShowSingleEmployeeActivity"
+            android:label=" "
+            android:parentActivityName=".activity.ManuShowAllEmployees"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activity.ManuSalesView"
+            android:label="Sales"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuByDrug"
+            android:label="Sales"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuByDoctor"
+            android:label="Sales"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuByRegion"
+            android:label="Sales"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuStocksView"
+            android:label="Stock Level"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.WelcomeActivity" />
+        <activity
+            android:name=".activity.ManuSingleStockView"
+            android:label=""
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".activity.SwipeTest" />
+        <activity
+            android:name=".activity.ManuShowSingleSale"
+            android:label=" "
+            android:parentActivityName=".activity.ManuSalesView"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activity.ManuSingleDrugDist"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManuSalesView"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activity.ManudrugSubView"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuEmployeesView"
+            android:label="Manufacturers Employees"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity -->
+        <!-- android:name=".activity.ManuDSubAway" -->
+        <!-- android:label="Drug Substitutions" -->
+        <!-- android:parentActivityName=".activity.Manufacturers" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity.ManuDSubIn" -->
+        <!-- android:label="Drug Substitutions" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <activity
+            android:name=".activity.ManuTrendsView"
+            android:label="Manufacturer Trends"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendToday"
+            android:label="Day Trends"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendMonth"
+            android:label="Month Trends"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendWeek"
+            android:label="Week Trends"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendYear"
+            android:label="Year Trends"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuSectorSumView"
+            android:label="Sector Summary"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity -->
+        <!-- android:name=".activity.ManuDSubTo" -->
+        <!-- android:label="@string/title_activity_manu_dsub_to" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+        <activity
+            android:name=".activity.ManuCompetitionView"
+            android:label="Competition Analysis"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCompeSales"
+            android:label="Competiton Analysis By Sales"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCompeRegion"
+            android:label="Competiton Analysis By Region"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCompeDoctor"
+            android:label="Competiton Analysis By Doctor"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCompeDrugs"
+            android:label="Competiton Analysis By Drugs"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".activity.ManuTrendSubToday"
+            android:label="Trends By Substitutions"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendSubYear"
+            android:label="Trends By Substitutions"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendSubWeek"
+            android:label="Trends By Substitutions"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MAnuTrendSubMonth"
+            android:label="Trends By Substitutions"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuEmail"
+            android:label="@string/title_activity_manu_email"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
+            android:name=".activity.ManuTrendTodayCo"
+            android:label="Trends By Company "
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendMonthCo"
+            android:label="Trends By Company "
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MAnuTrendWeekCo"
+            android:label="Trends By Company "
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendYearCo"
+            android:label="Trends By Company "
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
+            android:name=".activity.ManuTrendTodayD"
+            android:label="Trends By Drugs "
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendWeekD"
+            android:label="Trends By Drugs"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendMonthD"
+            android:label="Trends By Drugs"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendYearD"
+            android:label="Trends By Drugs"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
+            android:name=".activity.ManuTrendTodayR"
+            android:label="Trends By Region"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendWeekR"
+            android:label="Trends By Region"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendMonthR"
+            android:label="Trends By Region"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuTrendYearR"
+            android:label="Trends By Region"
+            android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

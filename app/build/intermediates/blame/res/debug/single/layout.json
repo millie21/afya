@@ -1,0 +1,970 @@
+[
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main2.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_today.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_today.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_sub_week.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_sub_week.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_registrarpage.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_registrarpage.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_dsub_to.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_dsub_to.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manufacturers.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manufacturers.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_activity_manu_add_employee.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_activity_manu_add_employee.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_year_co.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_year_co.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_dsub_to.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_dsub_to.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_trend_sub.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_trend_sub.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_month_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_month_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_by_region.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_by_region.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_vaccination_list.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_vaccination_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_connect.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_connect.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_single_drugd.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_single_drugd.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_registafya.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_registafya.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_view_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_view_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_registactiv.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_registactiv.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_year_co.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_year_co.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_view_header_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_view_header_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_year.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_year.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_info.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_contact_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\histoneye.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\histoneye.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hospital_admission.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_hospital_admission.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_single_stock_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_single_stock_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_compe_sales.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_compe_sales.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_by_doctor.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_by_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_compe_drugs.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_compe_drugs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tpatient.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_tpatient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manusalesview.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manusalesview.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_email.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_4_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\item_4_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_5_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\item_5_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_today_co.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_today_co.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_compe_region.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_compe_region.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_2_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\item_2_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pharm_man.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_pharm_man.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_show_all_employees.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_show_all_employees.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_3_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\item_3_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main3.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_main3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_prescriptions.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_prescriptions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_apatient.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_apatient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_week_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_week_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_1_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\item_1_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_sub_today.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_sub_today.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\histoney.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\histoney.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_sub_month.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_sub_month.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pharmacy_man.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_pharmacy_man.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_today_co.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_today_co.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_allergy_list.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_allergy_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fixtures.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_fixtures.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_sub_today.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_sub_today.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_doctorn.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_doctorn.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gridview_item_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\gridview_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_show_single_employee.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_show_single_employee.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_by_doctor.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_by_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_trend_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_trend_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_histyhisto.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_histyhisto.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_year_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_year_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_today_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_today_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_manufacturers.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\nav_header_manufacturers.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trends_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trends_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manufacturer.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manufacturer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sector_activity_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_sector_activity_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_compe_drugs.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_compe_drugs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\navigation_drawer_base_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\navigation_drawer_base_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\contact_info.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\contact_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_sub_week.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_sub_week.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_employees_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_employees_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_company.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_company.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_week_co.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_week_co.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_year.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_year.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sector_activity.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_sector_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_week.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_week.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_compe_doctor.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_compe_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_stocks_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_stocks_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tutal.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\tutal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\registpage2.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\registpage2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\acivvv.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\acivvv.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_month_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_month_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_trends.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_trends.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\container_allagadap.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\container_allagadap.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\manu_employee_listview.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\manu_employee_listview.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_show_single_sale.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_show_single_sale.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_month.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_month.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_manudrug.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_manudrug.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_history.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_regist_screen.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_regist_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_sub_year.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_sub_year.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_by_region.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_by_region.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_year_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_year_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activregist.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activregist.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_drug.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_drug.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_month_co.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_month_co.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_show_single_employee.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_show_single_employee.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_week_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_week_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\manu_activity_addemployee.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\manu_activity_addemployee.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_employees.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_employees.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_my_compe.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_my_compe.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manudrug_sub_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manudrug_sub_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sector.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_sector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_competition_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_competition_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_competition_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_competition_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\home_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_consulfee.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_consulfee.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_single_drugd.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_single_drugd.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_nurse.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_nurse.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_by_drug.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_by_drug.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_month_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_month_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_facility_adm.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_facility_adm.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_week_co.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_week_co.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_today_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_today_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_compe_region.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_compe_region.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_compe_doctor.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_compe_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\container_fish.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\container_fish.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_comp_today.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_comp_today.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pharm_sto.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_pharm_sto.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_year_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_year_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_dsub_in.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_dsub_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_admin.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_doctor.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_alaglist.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_alaglist.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_dsubaway.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_dsubaway.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\headen.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\headen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_show_single_sale.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_show_single_sale.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_dsub_in.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_dsub_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_manu.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\app_bar_manu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\basic_info.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\basic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_by_drug.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_by_drug.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\next_of_kin_details.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\next_of_kin_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_single_stock_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_single_stock_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\history_item.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\history_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sample.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\sample.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_compe.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_compe.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_sector_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_sector_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_week_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_week_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_sub_month.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_sub_month.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_swipe_test.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_swipe_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_book.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_book.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\navivi.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\navivi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_showemployees.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_showemployees.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\contacts.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\contacts.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_substitutions.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_substitutions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_region.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_region.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_dsubaway.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_dsubaway.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_registrar.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_registrar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_table.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_table.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_manufacturers.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\app_bar_manufacturers.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_month_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_month_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_sector_activity.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_sector_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_indpatients.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_indpatients.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sector_drug.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_sector_drug.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_comp_today.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_comp_today.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_today_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_today_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_test.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custi.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\custi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_list_item.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\drawer_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_sector_activity_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_sector_activity_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_sector.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_sector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_header.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\drawer_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_today_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_today_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manudrug_sub_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manudrug_sub_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trends_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trends_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_patient.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_patient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_month_co.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_month_co.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_stock.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\list_stock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_private.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_private.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pharmacy_sto_kep.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_pharmacy_sto_kep.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\manudruglistview.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\manudruglistview.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_sector_sum_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_sector_sum_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_month.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_month.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\acivnewnew.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\acivnewnew.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_stocks_view.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_stocks_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manu_trend_week.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_manu_trend_week.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_year_r.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_year_r.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_manu.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\nav_header_manu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_week_d.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_week_d.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_today.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_today.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main3.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_main3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_doctor.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\activity_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sector_company.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\fragment_sector_company.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_trend_sub_year.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_trend_sub_year.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_manu_email.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\layout\\content_manu_email.xml"
+    }
+]

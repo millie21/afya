@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_employees"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="Employees" />
+        <item
+            android:id="@+id/nav_sales"
+            android:icon="@drawable/receipt"
+            android:title="Sales" />
+        <item
+            android:id="@+id/nav_stock"
+            android:icon="@drawable/medicalbag"
+            android:title="Stock level" />
+        <item
+            android:id="@+id/nav_drugs"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="Drug Substitutions" />
+        <item
+            android:id="@+id/nav_trends"
+            android:icon="@drawable/ic_trending_up_black_24dp"
+            android:title="Trends" />
+
+        <item
+            android:id="@+id/nav_competition"
+            android:icon="@drawable/ic_compare_arrows_black_24dp"
+            android:title="Competition Analysis" />
+
+        <item
+            android:id="@+id/nav_sectorsum"
+            android:icon="@drawable/webhook"
+            android:title="Sector Summary" />
+        <item
+            android:id="@+id/nav_email"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:title="Email" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="@string/nav_logout" />
+    </group>
+
+</menu>
