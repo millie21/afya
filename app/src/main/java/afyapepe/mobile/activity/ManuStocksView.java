@@ -39,7 +39,7 @@ public class ManuStocksView extends AppCompatActivity {
     AlertDialog.Builder builder;
    // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.193/afyapepe3/public/showmanustock?email=manu1@afyapepe.com&id=9";
+    private static String url = "http://192.168.2.191/afyapepe3/public/showmanustock?email=manu1@afyapepe.com&id=9";
     List<String> IdList = new ArrayList<>();
 
     ArrayList<HashMap<String, String>> allstockslist;
@@ -50,9 +50,9 @@ public class ManuStocksView extends AppCompatActivity {
 
         setContentView(R.layout.activity_manu_stocks_view);
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         TaskListView = (ListView)findViewById(R.id.manustocklistview);
 

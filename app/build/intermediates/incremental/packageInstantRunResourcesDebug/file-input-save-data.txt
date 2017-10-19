@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Oct 16 17:05:47 EAT 2017
+#Tue Oct 17 14:59:48 EAT 2017
 20.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 143.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 493.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -87,7 +87,7 @@
 302.set=ANDROID_RESOURCE
 179.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 73.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\registpage2.xml
-547.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\acivnewnew.xml
+547.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_doctorn.xml
 225.set=ANDROID_RESOURCE
 103.set=ANDROID_RESOURCE
 411.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -124,7 +124,7 @@
 179.set=ANDROID_RESOURCE
 27.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 176.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\content_manudrug_sub_view.xml
-347.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-xlarge-v4\\activity_apatient.xml
+347.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png
 432.set=ANDROID_RESOURCE
 387.set=ANDROID_RESOURCE
 310.set=ANDROID_RESOURCE
@@ -200,7 +200,7 @@
 195.set=ANDROID_RESOURCE
 391.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\imageo.png
 545.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
-254.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png
+254.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png
 425.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_big_media_narrow.xml
 47.set=ANDROID_RESOURCE
 287.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\item_3_layout.xml
@@ -210,7 +210,7 @@
 322.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 184.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 380.set=ANDROID_RESOURCE
-381.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-mdpi-v4\\ic_group_add_black_24dp.png
+381.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png
 552.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_search_url_text.xml
 24.set=ANDROID_RESOURCE
 0.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_action_menu_layout.xml
@@ -240,7 +240,7 @@
 229.set=ANDROID_RESOURCE
 32.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 107.set=ANDROID_RESOURCE
-181.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-v23\\abc_control_background_material.xml
+181.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png
 335.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 352.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\fragment_sector_drug.xml
 506.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -418,7 +418,7 @@
 116.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\content_manu_email.xml
 466.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\design_layout_snackbar_include.xml
 284.set=ANDROID_RESOURCE
-26.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png
+26.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\background.png
 499.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_manu_compe_doctor.xml
 162.set=ANDROID_RESOURCE
 59.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\activity_registrar.xml
@@ -458,7 +458,7 @@
 266.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png
 491.set=ANDROID_RESOURCE
 299.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\content_manu_trend_sub_today.xml
-129.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_pharm_sto.xml
+129.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png
 13.set=ANDROID_RESOURCE
 130.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 480.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -492,7 +492,7 @@
 383.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\content_manu_compe_region.xml
 554.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-v21\\ic_menu_send.xml
 44.set=ANDROID_RESOURCE
-2.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png
+2.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png
 96.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 417.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_item_background_holo_light.xml
 218.set=ANDROID_RESOURCE
@@ -507,7 +507,7 @@
 314.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 21.set=ANDROID_RESOURCE
 176.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
-70.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png
+70.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml
 347.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 544.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_manu_trend_today_r.xml
 227.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\content_manu_trend_year.xml
@@ -613,7 +613,7 @@
 167.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_manu_trend_month_r.xml
 91.set=ANDROID_RESOURCE
 342.set=ANDROID_RESOURCE
-518.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_textfield_search_material.xml
+518.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png
 77.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_btn_default_mtrl_shape.xml
 265.set=ANDROID_RESOURCE
 381.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -643,7 +643,7 @@
 251.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_action_menu_item_layout.xml
 422.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_nurse.xml
 17.set=ANDROID_RESOURCE
-284.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png
+284.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-xlarge-v17\\activity_apatient.xml
 455.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\medicalbag.png
 438.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 296.set=ANDROID_RESOURCE
@@ -765,14 +765,14 @@
 300.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-v21\\ic_menu_gallery.xml
 13.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 414.set=ANDROID_RESOURCE
-162.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\settings.png
+162.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png
 369.set=ANDROID_RESOURCE
 316.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 41.set=ANDROID_RESOURCE
 178.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 72.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\ic_menu_send.xml
 349.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
-546.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png
+546.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\acivnewnew.xml
 215.set=ANDROID_RESOURCE
 545.set=ANDROID_RESOURCE
 410.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -807,7 +807,7 @@
 499.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 175.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-mdpi-v4\\ic_access_time_black_24dp.png
 499.set=ANDROID_RESOURCE
-346.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\abc_slide_out_bottom.xml
+346.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-xlarge-v4\\activity_apatient.xml
 422.set=ANDROID_RESOURCE
 59.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 377.set=ANDROID_RESOURCE
@@ -905,7 +905,7 @@
 544.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 227.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 393.set=ANDROID_RESOURCE
-253.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png
+253.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_action_bar_up_container.xml
 424.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-xlarge-v4\\activity_consulfee.xml
 37.set=ANDROID_RESOURCE
 286.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\ic_notifications_black_24dp.xml
@@ -916,7 +916,7 @@
 492.set=ANDROID_RESOURCE
 183.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 370.set=ANDROID_RESOURCE
-380.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png
+380.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-mdpi-v4\\ic_group_add_black_24dp.png
 551.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-mdpi-v4\\ic_settings_black_24dp.png
 14.set=ANDROID_RESOURCE
 93.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -946,7 +946,7 @@
 471.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 219.set=ANDROID_RESOURCE
 31.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
-180.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png
+180.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-v23\\abc_control_background_material.xml
 549.set=ANDROID_RESOURCE
 334.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 351.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_btn_radio_material.xml
@@ -1048,7 +1048,7 @@
 61.set=ANDROID_RESOURCE
 312.set=ANDROID_RESOURCE
 74.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\item_1_layout.xml
-548.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_doctorn.xml
+548.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png
 235.set=ANDROID_RESOURCE
 113.set=ANDROID_RESOURCE
 412.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1151,7 +1151,7 @@
 419.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 481.set=ANDROID_RESOURCE
 298.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_manu_single_drugd.xml
-128.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png
+128.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_pharm_sto.xml
 300.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 282.set=ANDROID_RESOURCE
 162.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1161,7 +1161,7 @@
 507.set=ANDROID_RESOURCE
 392.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_toolbar.xml
 546.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
-255.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_action_bar_up_container.xml
+255.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png
 426.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-mdpi-v4\\ic_person_outline_black_24dp.png
 57.set=ANDROID_RESOURCE
 308.set=ANDROID_RESOURCE
@@ -1179,7 +1179,7 @@
 382.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_doctor.xml
 553.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png
 34.set=ANDROID_RESOURCE
-1.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png
+1.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png
 95.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 219.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 416.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_manu_trend_today_d.xml
@@ -1317,7 +1317,7 @@
 43.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_apatient.xml
 81.set=ANDROID_RESOURCE
 332.set=ANDROID_RESOURCE
-517.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png
+517.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_textfield_search_material.xml
 76.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-ldpi-v4\\activity_registrarpage.xml
 255.set=ANDROID_RESOURCE
 380.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1387,7 +1387,7 @@
 117.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-land-v21\\activity_tpatient.xml
 467.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_manu_by_drug.xml
 294.set=ANDROID_RESOURCE
-27.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\background.png
+27.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png
 519.set=ANDROID_RESOURCE
 331.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 502.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1461,12 +1461,12 @@ count=555
 452.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 12.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 404.set=ANDROID_RESOURCE
-161.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png
+161.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\settings.png
 359.set=ANDROID_RESOURCE
 315.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 31.set=ANDROID_RESOURCE
 177.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
-71.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml
+71.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png
 348.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 545.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png
 205.set=ANDROID_RESOURCE
@@ -1499,7 +1499,7 @@ count=555
 498.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 174.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png
 489.set=ANDROID_RESOURCE
-345.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png
+345.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\abc_slide_out_bottom.xml
 412.set=ANDROID_RESOURCE
 58.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 367.set=ANDROID_RESOURCE
@@ -1599,7 +1599,7 @@ count=555
 252.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_ic_search_api_mtrl_alpha.png
 423.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\activity_private.xml
 27.set=ANDROID_RESOURCE
-285.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-xlarge-v17\\activity_apatient.xml
+285.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png
 456.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\abc_slide_out_top.xml
 439.base=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_
 16.file=C\:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_manu_trend_week.xml

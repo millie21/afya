@@ -44,7 +44,7 @@ public class ManuDSubIn extends Fragment {
         return rootView;
 
     }
-        private static String url = "http://192.168.2.193/afyapepe3/public/showmanudrugsubstitutionsin?email=manu1@afyapepe.com&id=9";
+        private static String url = "http://192.168.2.191/afyapepe3/public/showmanudrugsubstitutionstoyear?email=manu1@afyapepe.com&id=9";
 
         ArrayList<HashMap<String, String>> alldrugsubinlist;
 

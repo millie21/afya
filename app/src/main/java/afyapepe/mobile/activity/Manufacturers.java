@@ -87,7 +87,7 @@ public class Manufacturers extends AppCompatActivity
 //imageView.setImageBitmap(BitmapFactory.decodeFile("http://localhost/afyapepe3/public/img/merck_logo_detail.png"));
 
         //to display manudetails after login
-//        txtName.setText(name);
+        txtName.setText(name);
   //      txtEmail.setText(email);
 
         // Logout button click event

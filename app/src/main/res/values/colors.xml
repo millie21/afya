@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--primary colors-->
+    <color name="makate">#663399</color>
+    <color name="makat">#54D8A3</color>
+    <color name="maka">#F9E99D</color>
+    <color name="mak">#5AB2EC</color>
+    <color name="ma">#C488FE</color>
+
+
+
     <color name="bg_main2">#54D843</color>
     <color name="bg_register">#2e3237</color>
     <color name="btn_login">#400080</color>
-    <color name="makate">#663399</color>
+
     <!--<color name="makate">#ffffff</color>-->
     <color name="bg_login2">#9932CC</color>
     <color name="white">#ffffff</color>

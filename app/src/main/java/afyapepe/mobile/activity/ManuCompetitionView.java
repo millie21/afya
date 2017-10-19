@@ -22,28 +22,28 @@ public class ManuCompetitionView extends AppCompatActivity {
 
 
     }
-    public void cardview1(View v)
+    public void cardview(View v)
     {
-        Intent intent = new Intent(getApplicationContext(), ManuCompeSales.class);
-        startActivity(intent);
+        Intent intent1 = new Intent(ManuCompetitionView.this, ManuCompeSales.class);
+        startActivity(intent1);
     }
 
     public void cardview2(View v)
     {
-        Intent intent = new Intent(getApplicationContext(), ManuCompeRegion.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(getApplicationContext(), ManuCompeRegion.class);
+        startActivity(intent2);
     }
 
     public void cardview3(View v)
     {
-        Intent intent = new Intent(getApplicationContext(), ManuCompeDoctor.class);
-        startActivity(intent);
+        Intent intent3 = new Intent(getApplicationContext(), ManuCompeDoctor.class);
+        startActivity(intent3);
     }
 
     public void cardview4(View v)
     {
-        Intent intent = new Intent(getApplicationContext(), ManuCompeDrugs.class);
-        startActivity(intent);
+        Intent intent4 = new Intent(getApplicationContext(), ManuCompeDrugs.class);
+        startActivity(intent4);
     }
 
 }

@@ -74,7 +74,7 @@ public class ManuShowAllEmployees extends Fragment {
         return rootView;
     }
 
-    private static String url = "http://192.168.2.193/afyapepe3/public/showmanuemployees?email=manu1@afyapepe.com";
+    private static String url = "http://192.168.2.191/afyapepe3/public/showmanuemployees?email=manu1@afyapepe.com";
 
     ArrayList<HashMap<String, String>> allemployeeslist;
 

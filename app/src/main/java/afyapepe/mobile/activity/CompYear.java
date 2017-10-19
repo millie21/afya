@@ -41,7 +41,7 @@ public class CompYear extends Fragment {
 
     }
 
-    private static String url = "http://192.168.2.199/afyapepe3/public/showmanusectorsummary?email=manu1@afyapepe.com";
+    private static String url = "http://192.168.2.191/afyapepe3/public/showmanusectorsummary?email=manu1@afyapepe.com";
 
     ArrayList<HashMap<String, String>> allcompelist;
 

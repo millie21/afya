@@ -39,7 +39,7 @@ public class CompToday extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_manu_show_all_employees, container, false);
+        View rootView = inflater.inflate(R.layout.activity_sector_activity_d, container, false);
 
 
 
@@ -57,7 +57,7 @@ public class CompToday extends Fragment {
         return rootView;
     }
 
-    private static String url = "http://192.168.2.193/afyapepe3/public/showmanuemployees?email=manu1@afyapepe.com";
+    private static String url = "http://192.168.2.191/afyapepe3/public/showmanuemployees?email=manu1@afyapepe.com";
 
     ArrayList<HashMap<String, String>> allemployeeslist;
 
@@ -140,7 +140,6 @@ public class CompToday extends Fragment {
                             "Json parsing error: " + e.getMessage(),
                             Toast.LENGTH_LONG)
                             .show();
-
 
                 }
             } else {

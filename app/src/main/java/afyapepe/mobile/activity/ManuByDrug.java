@@ -46,7 +46,7 @@ public class ManuByDrug extends Fragment {
 
     }
 
-    private static String url = "http://192.168.2.193/afyapepe3/public/showmanusales?email=manu1@afyapepe.com&id=9";
+    private static String url = "http://192.168.2.191/afyapepe3/public/showmanusales?email=manu1@afyapepe.com&id=9";
 
     ArrayList<HashMap<String, String>> allsaleslist;
 

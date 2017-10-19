@@ -101,6 +101,10 @@
     <color name="input_register_bg">#3b4148</color>
     <color name="input_register_hint">#5e6266</color>
     <color name="lbl_name">#333333</color>
+    <color name="ma">#C488FE</color>
+    <color name="mak">#5AB2EC</color>
+    <color name="maka">#F9E99D</color>
+    <color name="makat">#54D8A3</color>
     <color name="makate">#663399</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>

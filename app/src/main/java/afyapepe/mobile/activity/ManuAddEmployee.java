@@ -63,7 +63,44 @@ public class ManuAddEmployee extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.manu_activity_addemployee, container, false);
+        View rootView = inflater.inflate(R.layout.content_activity_manu_add_employee, container, false);
+        RegisterEmployee = (Button) rootView.findViewById(R.id.buttonSubmit);
+
+        RegisterEmployee.setOnClickListener(new View.OnClickListener()
+        {
+            @Override public void onClick(View v)
+        {
+                String function, role, name, email, password, job, region;
+
+
+                role = etrole.getText().toString();
+                name = etname.getText().toString();
+                email = etemail.getText().toString();
+                password = etpassword.getText().toString();
+                job = etjob.getSelectedItem().toString();
+                region = etregion.getSelectedItem().toString();
+
+//removed role.equals("") ||
+                if (name.equals("") || email.equals("") || password.equals("") || job.equals("") || region.equals("")) {
+                    builder.setTitle("Error");
+                    builder.setMessage("Please enter all fields");
+                    builder.setCancelable(false)
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+
+                                }
+                            });
+                    builder.create();
+                    builder.show();
+                } else {
+                    function = "addemployee";
+                    MAnuEAddBackground jaa = new MAnuEAddBackground(getActivity());
+                    jaa.execute(function, name, role, email, password, job, region);
+
+                    //finish();
+                }
+            }
+        });
         return rootView;
 
     }
@@ -83,7 +120,7 @@ public class ManuAddEmployee extends Fragment {
         etpassword = (EditText) getView().findViewById(R.id.eid);
         etregion = (Spinner) getView().findViewById(R.id.eregion);
         etrole = (EditText) getView().findViewById(R.id.erole);
-        RegisterEmployee = (Button) getView().findViewById(R.id.buttonSubmit);
+       // RegisterEmployee = (Button) getView().findViewById(R.id.buttonSubmit);
         //  ShowEmployee = (Button) getView().findViewById(R.id.buttonShow);
 
         //region names spinner
@@ -134,6 +171,7 @@ public class ManuAddEmployee extends Fragment {
         groupAdapter.setDropDownViewResource
                 (android.R.layout.simple_spinner_dropdown_item);
 
+
         etjob.setAdapter(groupAdapter);
     }
             //dont delete
@@ -148,39 +186,5 @@ public class ManuAddEmployee extends Fragment {
 //            }
 //        });
             //  new GetAllJobs().execute();
-
-
-            public void employeeCreate(View view) {
-                String function, role, name, email, password, job, region;
-
-
-                role = etrole.getText().toString();
-                name = etname.getText().toString();
-                email = etemail.getText().toString();
-                password = etpassword.getText().toString();
-                job = etjob.getSelectedItem().toString();
-                region = etregion.getSelectedItem().toString();
-
-
-                if (name.equals("") || role.equals("") || email.equals("") || password.equals("") || job.equals("") || region.equals("")) {
-                    builder.setTitle("Error");
-                    builder.setMessage("Please enter all fields");
-                    builder.setCancelable(false)
-                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-
-                                }
-                            });
-                    builder.create();
-                    builder.show();
-                } else {
-                    function = "addemployee";
-                    MAnuEAddBackground jaa = new MAnuEAddBackground(getActivity());
-                    jaa.execute(function, name, role, email, password, job, region);
-
-                    //finish();
-                }
-            }
-
 
         }

@@ -48,7 +48,7 @@ public class ManuByDoctor extends Fragment {
         return rootView;
 
     }
-    private static String url = "http://192.168.2.193/afyapepe3/public/showmanusales?email=manu1@afyapepe.com&id=9";
+    private static String url = "http://192.168.2.191/afyapepe3/public/showmanusales?email=manu1@afyapepe.com&id=9";
 
     ArrayList<HashMap<String, String>> allsaleslist;
 
@@ -154,7 +154,7 @@ public class ManuByDoctor extends Fragment {
 
                      allsaleslist,
 
-                    R.layout.list_book, new String[]{"id","name","drugname","FacilityName","pharmacy","county"},
+                    R.layout.list_book, new String[]{"id","drugname","name","FacilityName","pharmacy","county"},
                     new int[]{R.id.tvposition, R.id.tvid, R.id.tvname2, R.id.tvpos,R.id.tvname, R.id.tvname3});
 
 

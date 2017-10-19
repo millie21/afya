@@ -32,8 +32,8 @@ public class ManuSingleStockView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_manu_single_stock_view);
 
-       Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+      // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
 //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         DisplayMetrics dm = new DisplayMetrics();

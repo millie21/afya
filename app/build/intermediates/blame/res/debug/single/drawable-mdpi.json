@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\drawable-mdpi\\avatar1.png"
     },
     {
-        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_person_outline_black_24dp.png",
-        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\drawable-mdpi\\ic_person_outline_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_home_black_24dp.png",
         "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\drawable-mdpi\\ic_home_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_person_outline_black_24dp.png",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\drawable-mdpi\\ic_person_outline_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_account_circle_black_24dp.png",

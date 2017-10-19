@@ -31,7 +31,7 @@ public class ManuTrendSubWeek  extends AppCompatActivity {
     private ListView lv;
     FloatingActionButton FAB;
 
-    private static String url = "http://192.168.2.193/afyapepe3/public/showmanutrendssubstitutionweek?email=manu1@afyapepe.com";
+    private static String url = "http://192.168.2.191/afyapepe3/public/showmanutrendssubstitutionweek?email=manu1@afyapepe.com";
 
     ArrayList<HashMap<String, String>> allemployeeslist;
 

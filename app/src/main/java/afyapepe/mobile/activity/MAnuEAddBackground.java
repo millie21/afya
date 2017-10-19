@@ -23,6 +23,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+import static android.R.attr.type;
+
 /**
  * Created by Millie Agallo on 9/26/2017.
  */
@@ -37,7 +39,7 @@ public class MAnuEAddBackground extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String jobadd_url = "http://192.168.2.193/afyapepe3/public/insertmanuemployees?email=manu1@afyapepe.com";
+        String jobadd_url = "http://192.168.2.191/afyapepe3/public/insertmanuemployees?email=manu1@afyapepe.com";
 
         String function = params[0];
 
@@ -111,6 +113,8 @@ public class MAnuEAddBackground extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
+
+
         System.out.println(result);
         try {
             //("{your string}")

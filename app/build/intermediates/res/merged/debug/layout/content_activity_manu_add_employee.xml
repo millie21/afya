@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/makat"
+    android:layout_height="match_parent"
+    tools:context="afyapepe.mobile.activity.ManuAddEmployee">
 <ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -9,9 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="25dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="afyapepe.mobile.activity.ManuAddEmployee"
-        tools:showIn="@layout/manu_activity_addemployee">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <!--tools:context="afyapepe.mobile.activity.ManuAddEmployee"-->
+        <!--tools:showIn="@layout/manu_activity_addemployee">-->
 
 
         <ImageView
@@ -144,7 +150,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:onClick="employeeCreate"
             android:layout_below="@+id/eregion"
             android:background="@drawable/rounder"
             android:id="@+id/buttonSubmit" />
@@ -166,3 +171,4 @@
 
     </RelativeLayout>
 </ScrollView>
+</FrameLayout>
