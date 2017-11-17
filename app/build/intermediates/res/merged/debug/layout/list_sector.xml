@@ -10,7 +10,7 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="95dp"
-    android:layout_marginTop="5dp"
+    android:layout_margin="15dp"
     card_view:cardCornerRadius="20dp"
     card_view:cardBackgroundColor="#ffffff">
     <RelativeLayout
@@ -42,7 +42,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
-                android:textColor="#000"
+                android:textColor="@color/mat"
                 android:id="@+id/tvposition1"
                 />
             <TextView
@@ -75,7 +75,7 @@
                 android:paddingTop="5dp"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
-                android:textColor="#000"
+                android:textColor="@color/mat"
                 android:layout_marginRight="5dp"/>
             <TextView
                 android:layout_width="fill_parent"
@@ -86,7 +86,7 @@
                 android:textColor="@color/makate"
                 android:textStyle="bold"
 
-                android:layout_marginRight="155dp"/>
+                android:layout_marginRight="5dp"/>
 
         </TableRow>
 
@@ -137,7 +137,7 @@
                 android:paddingTop="0dp"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
-                android:textColor="#000"
+                android:textColor="@color/mat"
                 android:layout_marginRight="5dp"/>
             <TextView
                 android:layout_width="fill_parent"
@@ -148,7 +148,7 @@
                 android:textColor="@color/makate"
                 android:textStyle="bold"
 
-                android:layout_marginRight="155dp"/>
+                android:layout_marginRight="5dp"/>
 
         </TableRow>
 

@@ -4,15 +4,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:layout_marginTop="5dp"
+    android:layout_height="130dp"
+    android:layout_margin="15dp"
     card_view:cardCornerRadius="20dp"
     card_view:cardBackgroundColor="#ffffff">
 
     <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:layout_margin="10dp"
         android:layout_gravity="center">
 <TableRow
@@ -61,7 +61,7 @@
             android:paddingTop="10dp"
             android:layout_marginLeft="5dp"
             android:textStyle="bold"
-            android:textColor="#000"
+            android:textColor="@color/mat"
             android:id="@+id/tvid1"
             />
         <TextView
@@ -71,7 +71,7 @@
             android:text="norway"
             android:layout_marginLeft="5dp"
             android:textColor="@color/makate"
-            android:id="@+id/tvname2"
+            android:id="@+id/tvid"
             />
 </TableRow>
 
@@ -80,6 +80,7 @@
             android:layout_height="30dp"
             android:layout_margin="0dp"
             android:layout_below="@+id/tb1"
+            android:id="@+id/tb2"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -89,7 +90,7 @@
                 android:id="@+id/tvposition2"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:textColor="#000"
+                android:textColor="@color/mat"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="5dp"/>
         <TextView
@@ -97,24 +98,12 @@
             android:layout_height="wrap_content"
             android:textAppearance="@android:style/TextAppearance.Small"
             android:text="amstadam"
-            android:id="@+id/tvid"
+            android:id="@+id/tvid8"
             android:textColor="@color/makate"
             android:paddingTop="10dp"
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="55dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Total : "
-                android:visibility="gone"
-                android:layout_marginRight="5dp"
-                android:textStyle="bold"
-                android:layout_gravity="bottom|end"
-                android:textColor="#000"
-                android:id="@+id/tvid9"/>
 
 
         <TextView
@@ -123,11 +112,76 @@
             android:textAppearance="@android:style/TextAppearance.Small"
             android:text="small_text"
             android:visibility="gone"
-            android:id="@+id/tvpos2"
+            android:id="@+id/tvpos288"
             android:textColor="#16ae90"
             android:textStyle="bold"
             android:layout_gravity="bottom|end"
             android:layout_marginLeft="5dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="0dp"
+            android:layout_below="@+id/tb2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Pharmacy:"
+                android:id="@+id/tvposition28"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/mat"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="amstadam"
+                android:id="@+id/tvpos5"
+                android:textColor="@color/makate"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="55dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Quantity: "
+
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom|end"
+                android:textColor="@color/mat"
+                android:id="@+id/tvid9"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Total : "
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom|end"
+                android:textColor="#000"
+                android:id="@+id/tvid5"/>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="small_text"
+                android:visibility="gone"
+                android:id="@+id/tvpos2"
+                android:textColor="#16ae90"
+                android:textStyle="bold"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="5dp"/>
         </TableRow>
         <TextView
             android:layout_width="fill_parent"

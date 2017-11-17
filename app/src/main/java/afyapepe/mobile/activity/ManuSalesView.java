@@ -9,6 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TabHost;
 
 import afyapepe.mobile.R;
@@ -48,7 +50,13 @@ public class ManuSalesView extends AppCompatActivity {
 
 
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_search,menu);
+        MenuItem item = menu.findItem(R.id.action_search);
+        // searchView.setMenuItem(item);
+        return true;
+    }
 
 }
 

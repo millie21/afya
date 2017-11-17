@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/stylebut"
+    android:background="@color/ma"
     tools:context="afyapepe.mobile.activity.ManuShowSingleEmployeeActivity">
 
     <!--<android.support.design.widget.AppBarLayout-->
@@ -21,7 +21,9 @@
 
     <!--</android.support.design.widget.AppBarLayout>-->
 
-    <include layout="@layout/content_manu_show_single_employee" />
+    <include layout="@layout/content_manu_show_single_employee"
+
+        />
 
 
 

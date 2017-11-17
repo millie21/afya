@@ -10,23 +10,50 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="afyapepe.mobile.activity.ManuByRegion"
+    tools:context="afyapepe.mobile.fragment.ManuByRegion"
     tools:showIn="@layout/activity_manu_by_region">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:id="@+id/ct"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounderb"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_gravity="top|end"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/testing1222"
+            android:textSize="20dp"
+            android:text="Total items:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_toRightOf="@+id/testing1222"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:id="@+id/testing12"
+            android:textSize="20dp"
+            android:text="0"/>
+    </RelativeLayout>
+
     <ListView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/ct"
         android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
         android:divider="@null"
         android:dividerHeight="10.0sp"
-        android:id="@+id/manuregionlistview"/>
+        android:id="@+id/listview11"
+        />
 
-    <!--<ProgressBar-->
-        <!--android:id="@+id/progressBar"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerInParent="true"-->
-        <!--android:visibility="visible"-->
-        <!--/>-->
 </RelativeLayout>

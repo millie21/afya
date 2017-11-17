@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,15 +8,48 @@
     tools:context="afyapepe.mobile.activity.ManuTrendTodayR"
     tools:showIn="@layout/activity_manu_trend_today_r">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:id="@+id/ct"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounderb"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_gravity="top|end"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/testing1222"
+            android:textSize="20dp"
+            android:text="Total items:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_gravity="bottom|end"
+            android:layout_toRightOf="@+id/testing1222"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/testing12"
+            android:textSize="20dp"
+            android:text="0"/>
+    </RelativeLayout>
+
     <ListView
-        android:layout_width="match_parent"
-        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/ct"
         android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
         android:divider="@null"
         android:dividerHeight="10.0sp"
-        android:id="@+id/listview11"/>
+        android:id="@+id/listview11"
+        />
 
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

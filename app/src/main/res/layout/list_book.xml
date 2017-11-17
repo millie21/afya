@@ -5,39 +5,58 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="75dp"
-    android:layout_marginTop="5dp"
+    android:layout_margin="15dp"
     card_view:cardCornerRadius="20dp"
     card_view:cardBackgroundColor="#ffffff">
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/earth"/>
+
+    </LinearLayout>
     <RelativeLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_margin="0dp"
         android:layout_gravity="center">
+
+
         <TableRow
             android:layout_height="28dp"
             android:layout_margin="0dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:id="@+id/tb1"
 
             >
             <ImageView
-                android:layout_height="match_parent"
-                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_margin="5dp"
                 android:layout_gravity="top|left"
-                android:src="@drawable/ic_bookmark_black_24dp"
+                android:src="@drawable/ic_label_black_24dp"
+
                 />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@android:style/TextAppearance.Small"
                 android:text="id :"
                 android:layout_gravity="top"
-                android:id="@+id/tvposition1"
+                android:id="@+id/tvname2"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:visibility="gone"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="35dp"
                 android:textColor="#000"
                 android:layout_marginRight="5dp"/>
             <TextView
@@ -45,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="@android:style/TextAppearance.Small"
                 android:text="amstadam"
-                android:id="@+id/tvposition"
+                android:id="@+id/tvposition0"
                 android:paddingTop="10dp"
                 android:visibility="gone"
                 android:textColor="@color/makate"
@@ -57,11 +76,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Doctor Name :"
+                android:text="Pharmacy :"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
-                android:textColor="#000"
+                android:textColor="@color/mat"
                 android:id="@+id/tvid1"
                 />
             <TextView
@@ -72,7 +91,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/makate"
-                android:id="@+id/tvname2"
+                android:id="@+id/tvid5"
                 />
 
         </TableRow>
@@ -91,19 +110,42 @@
                 android:id="@+id/tvname21"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                android:textColor="#000"
+                android:layout_marginLeft="35dp"
+                android:textColor="@color/mat"
                 android:layout_marginRight="5dp"/>
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@android:style/TextAppearance.Small"
                 android:text="Pharmacy3 :"
                 android:id="@+id/tvid"
                 android:textColor="@color/makate"
                 android:textStyle="bold"
+                android:layout_marginRight="5dp"/>
 
-                android:layout_marginRight="155dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Total(Ksh) :"
+                android:id="@+id/tvname218"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:gravity="end"
+                android:textColor="@color/mat"
+
+                android:layout_marginRight="0dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Pharmacy3 :"
+                android:id="@+id/tvposition"
+                android:textColor="@color/makate"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:layout_marginRight="5dp"/>
 
         </TableRow>
 

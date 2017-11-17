@@ -7,13 +7,14 @@
     >
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/ct"
         android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
         android:divider="@null"
         android:dividerHeight="10.0sp"
-        android:id="@+id/listview11"/>
+        android:id="@+id/listview11"
+        />
 
 </RelativeLayout>

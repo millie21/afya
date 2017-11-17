@@ -117,19 +117,19 @@
             android:parentActivityName=".activity.Manufacturers"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.ManuByDrug"
+            android:name=".fragment.ManuByDrug"
             android:label="Sales"
-            android:parentActivityName=".activity.Manufacturers"
+            android:parentActivityName=".activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.ManuByDoctor"
+            android:name=".fragment.ManuByDoctor"
             android:label="Sales"
-            android:parentActivityName=".activity.Manufacturers"
+            android:parentActivityName=".activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.ManuByRegion"
+            android:name=".fragment.ManuByRegion"
             android:label="Sales"
-            android:parentActivityName=".activity.Manufacturers"
+            android:parentActivityName=".activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuStocksView"
@@ -142,6 +142,21 @@
             android:label=""
             android:parentActivityName=".activity.Manufacturers"
             android:theme="@style/AppTheme.CustomTheme" />
+
+        <!-- <activity -->
+        <!-- android:name=".activity.ManuStocksView" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:configChanges="orientation" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <!-- android:windowSoftInputMode="stateHidden" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- &gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.searchable" -->
+        <!-- android:resource="@xml/searchable"> -->
+        <!-- </meta-data> -->
+        <!-- </activity> -->
+
         <activity android:name=".activity.SwipeTest" />
         <activity
             android:name=".activity.ManuShowSingleSale"
@@ -212,7 +227,7 @@
             android:parentActivityName=".activity.Manufacturers"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.ManuCompeSales"
+            android:name=".activity.ManuCompeSalesToday"
             android:label="Competiton Analysis By Sales"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -231,8 +246,11 @@
             android:label="Competiton Analysis By Drugs"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
+        <activity
+            android:name=".activity.ManuUpdateEmployeeActivity"
+            android:label="Employee edit"
+            android:parentActivityName=".activity.ManuEmployeesView"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuTrendSubToday"
             android:label="Trends By Substitutions"
@@ -258,9 +276,6 @@
             android:label="@string/title_activity_manu_email"
             android:parentActivityName=".activity.Manufacturers"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
-
         <activity
             android:name=".activity.ManuTrendTodayCo"
             android:label="Trends By Company "
@@ -281,9 +296,6 @@
             android:label="Trends By Company "
             android:parentActivityName=".activity.ManuTrendsView"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
-
         <activity
             android:name=".activity.ManuTrendTodayD"
             android:label="Trends By Drugs "
@@ -304,9 +316,6 @@
             android:label="Trends By Drugs"
             android:parentActivityName=".activity.ManuTrendsView"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
-
         <activity
             android:name=".activity.ManuTrendTodayR"
             android:label="Trends By Region"
@@ -326,6 +335,119 @@
             android:name=".activity.ManuTrendYearR"
             android:label="Trends By Region"
             android:parentActivityName=".activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCompeAnSales"
+            android:label="Competing Sales"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubTodayAway"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubWeekAway"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubMonthAway"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubYearAway"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubTodayTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubWeekTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubMonthTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubYearTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubTodayFT"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubMonthFT"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubWeekFT"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubYearFT"
+            android:label="Competiton Analysis"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubMaxFT"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SubMaxTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName=".activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCompeSalesWeekly"
+            android:label="Competiton Analysis"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCompeSalesMonthly"
+            android:label="Competiton Analysis"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCompeSalesYearly"
+            android:label="Competiton Analysis"
+            android:parentActivityName=".activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ToolbarSearchActivity"
+            android:label="@string/title_activity_toolbar_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SearchableActivity"
+            android:label="@string/title_activity_searchable"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ViewManuSales"
+            android:label="Sales"
+            android:parentActivityName=".activity.ManuSalesView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragment.ManuByPharmacy"
+            android:label="Sales"
+            android:parentActivityName=".activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuCountyInfo"
+            android:label="@string/title_activity_manu_county_info"
+            android:parentActivityName=".activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 

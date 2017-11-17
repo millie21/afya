@@ -7,9 +7,12 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.adapter.ManuCompeSalesAdapter;
 
 public class ManuCompeDrugs extends AppCompatActivity {
 
@@ -19,6 +22,7 @@ public class ManuCompeDrugs extends AppCompatActivity {
         setContentView(R.layout.activity_manu_compe_drugs);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -35,5 +39,11 @@ public class ManuCompeDrugs extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_search,menu);
+        MenuItem item = menu.findItem(R.id.action_search);
+        // searchView.setMenuItem(item);
+        return true;
+    }
 }

@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@color/white2"
     tools:context="afyapepe.mobile.activity.Secto">
 
-    <include layout="@layout/content_sector_activity"
+    <include layout="@layout/content_manu_dsub_to"
         android:layout_height="wrap_content"
         android:layout_width="match_parent" />
 

@@ -2,11 +2,12 @@ package afyapepe.mobile.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import afyapepe.mobile.R;
 
@@ -24,7 +25,7 @@ public class ManuCompetitionView extends AppCompatActivity {
     }
     public void cardview(View v)
     {
-        Intent intent1 = new Intent(ManuCompetitionView.this, ManuCompeSales.class);
+        Intent intent1 = new Intent(ManuCompetitionView.this, ManuCompeAnSales.class);
         startActivity(intent1);
     }
 
@@ -42,8 +43,10 @@ public class ManuCompetitionView extends AppCompatActivity {
 
     public void cardview4(View v)
     {
-        Intent intent4 = new Intent(getApplicationContext(), ManuCompeDrugs.class);
-        startActivity(intent4);
+//        Intent intent4 = new Intent(getApplicationContext(), ManuCompeDrugs.class);
+//        startActivity(intent4);
+        Toast.makeText(this,"Almost Done",Toast.LENGTH_SHORT).show();
     }
+
 
 }

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:2:1-332:12
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:2:1-454:12
 	package
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml
@@ -17,17 +17,25 @@ ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidMa
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:23.4.0] C:\Users\Millie Agallo\.android\build-cache\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Millie Agallo\.android\build-cache\2190d05fa651a175a6921f8c430226be521cc3f0\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Millie Agallo\.android\build-cache\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Millie Agallo\.android\build-cache\ebc34eb1c5d9f8888dcca4408728804d78d2c650\output\AndroidManifest.xml:5:5-44
-MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\Millie Agallo\.android\build-cache\a465fee7c6a9ede80a971699c8fe5aac1ffa0262\output\AndroidManifest.xml:3:5-72
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\Millie Agallo\.android\build-cache\103796410d91e0c6a445d8efcff3fbc7a5e652f9\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\Millie Agallo\.android\build-cache\c9f184a1a5638471097e73f0f6bc693af6e03a9d\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Millie Agallo\.android\build-cache\cd4d1a8a266d78e8947fcb7a6e8c3c2bb9096b61\output\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Millie Agallo\.android\build-cache\f16cba0015684637d6230b84f087117b2fe4bd3c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Millie Agallo\.android\build-cache\dfeeae7380485aeb7164c3bfaeca72ed5c825dea\output\AndroidManifest.xml:7:5-43
+MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] C:\Users\Millie Agallo\.android\build-cache\566dd28b216de9afcb1e197d1c40ce0d559cc60e\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] C:\Users\Millie Agallo\.android\build-cache\f5f7d818ade79e30a84cae933b5ac92f057f4a54\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.0.0] C:\Users\Millie Agallo\.android\build-cache\53fec5e9e7c97d6092bbbc76f4340e93f014ec35\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Millie Agallo\.android\build-cache\cd14a59c280e67dd02a5e205595f7b53d8e48c89\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Millie Agallo\.android\build-cache\3ea1756521b45c76656f81c26b2017f23a141382\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Millie Agallo\.android\build-cache\b6249b989097d216a96befdea2e0d225cc6e4b94\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.0.0] C:\Users\Millie Agallo\.android\build-cache\1cae4c91275aabc6e303b8e83e9cf55502450ff6\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.0.0] C:\Users\Millie Agallo\.android\build-cache\3f1b330fb1a9cf7b7cc20783a269042d8602581d\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Millie Agallo\.android\build-cache\5087a92234fbd8fdddbf11d81adc251b063abfde\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Millie Agallo\.android\build-cache\ba320e0c310135eeb2798bcf8eb168760e045167\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Millie Agallo\.android\build-cache\a634591191a1370f0482f3f3d0abf10acc453ea6\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Millie Agallo\.android\build-cache\b6acf97f312feced79d8306432ac4475fc0100b5\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Millie Agallo\.android\build-cache\402a23341bc598e25c79d14492eafc91b981ec57\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Millie Agallo\.android\build-cache\9e71eca53052f0d88a098c3313b456f383c3af5d\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Millie Agallo\.android\build-cache\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:design:25.0.0] C:\Users\Millie Agallo\.android\build-cache\53fec5e9e7c97d6092bbbc76f4340e93f014ec35\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml
@@ -53,17 +61,27 @@ ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:14:22-77
 application
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:16:5-330:19
-MERGED from [com.android.support:design:23.4.0] C:\Users\Millie Agallo\.android\build-cache\982fcdac9d8caf41ebd5f3caab0bf563e60a7381\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Millie Agallo\.android\build-cache\a20f47ecffa8cc7e3b4ba2fad5d634e112d06ae2\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Millie Agallo\.android\build-cache\ebc34eb1c5d9f8888dcca4408728804d78d2c650\output\AndroidManifest.xml:7:5-20
-MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\Millie Agallo\.android\build-cache\a465fee7c6a9ede80a971699c8fe5aac1ffa0262\output\AndroidManifest.xml:5:5-19
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:16:5-452:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\Millie Agallo\.android\build-cache\103796410d91e0c6a445d8efcff3fbc7a5e652f9\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\Millie Agallo\.android\build-cache\c9f184a1a5638471097e73f0f6bc693af6e03a9d\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Millie Agallo\.android\build-cache\cd4d1a8a266d78e8947fcb7a6e8c3c2bb9096b61\output\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Millie Agallo\.android\build-cache\f16cba0015684637d6230b84f087117b2fe4bd3c\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Millie Agallo\.android\build-cache\dfeeae7380485aeb7164c3bfaeca72ed5c825dea\output\AndroidManifest.xml:9:5-20
+MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] C:\Users\Millie Agallo\.android\build-cache\566dd28b216de9afcb1e197d1c40ce0d559cc60e\output\AndroidManifest.xml:11:5-15:19
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] C:\Users\Millie Agallo\.android\build-cache\f5f7d818ade79e30a84cae933b5ac92f057f4a54\output\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:25.0.0] C:\Users\Millie Agallo\.android\build-cache\53fec5e9e7c97d6092bbbc76f4340e93f014ec35\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Millie Agallo\.android\build-cache\cd14a59c280e67dd02a5e205595f7b53d8e48c89\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Millie Agallo\.android\build-cache\3ea1756521b45c76656f81c26b2017f23a141382\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Millie Agallo\.android\build-cache\b6249b989097d216a96befdea2e0d225cc6e4b94\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.0.0] C:\Users\Millie Agallo\.android\build-cache\3f1b330fb1a9cf7b7cc20783a269042d8602581d\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Millie Agallo\.android\build-cache\5087a92234fbd8fdddbf11d81adc251b063abfde\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Millie Agallo\.android\build-cache\ba320e0c310135eeb2798bcf8eb168760e045167\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Millie Agallo\.android\build-cache\a634591191a1370f0482f3f3d0abf10acc453ea6\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Millie Agallo\.android\build-cache\b6acf97f312feced79d8306432ac4475fc0100b5\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Millie Agallo\.android\build-cache\402a23341bc598e25c79d14492eafc91b981ec57\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Millie Agallo\.android\build-cache\9e71eca53052f0d88a098c3313b456f383c3af5d\output\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:20:9-41
+	android:supportsRtl
+		ADDED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] C:\Users\Millie Agallo\.android\build-cache\566dd28b216de9afcb1e197d1c40ce0d559cc60e\output\AndroidManifest.xml:14:9-35
 	android:allowBackup
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:18:9-35
 	android:icon
@@ -330,7 +348,7 @@ ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidMa
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:118:13-56
 	android:name
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:115:13-51
-activity#afyapepe.mobile.activity.ManuByDrug
+activity#afyapepe.mobile.fragment.ManuByDrug
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:119:9-123:59
 	android:label
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:121:13-34
@@ -340,7 +358,7 @@ ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidMa
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:123:13-56
 	android:name
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:120:13-48
-activity#afyapepe.mobile.activity.ManuByDoctor
+activity#afyapepe.mobile.fragment.ManuByDoctor
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:124:9-128:59
 	android:label
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:126:13-34
@@ -350,7 +368,7 @@ ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidMa
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:128:13-56
 	android:name
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:125:13-50
-activity#afyapepe.mobile.activity.ManuByRegion
+activity#afyapepe.mobile.fragment.ManuByRegion
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:129:9-133:59
 	android:label
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:131:13-34
@@ -385,150 +403,120 @@ ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:141:13-57
 activity#afyapepe.mobile.activity.SwipeTest
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:145:9-56
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:160:9-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:145:19-53
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:160:19-53
 activity#afyapepe.mobile.activity.ManuShowSingleSale
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:146:9-150:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:148:13-30
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:149:13-65
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:150:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:147:13-56
-activity#afyapepe.mobile.activity.ManuSingleDrugDist
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:151:9-155:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:153:13-47
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:154:13-65
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:155:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:152:13-56
-activity#afyapepe.mobile.activity.ManudrugSubView
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:156:9-160:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:158:13-47
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:159:13-65
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:160:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:157:13-53
-activity#afyapepe.mobile.activity.ManuEmployeesView
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:161:9-165:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:163:13-52
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:163:13-30
 	android:parentActivityName
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:164:13-65
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:165:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:162:13-55
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:162:13-56
+activity#afyapepe.mobile.activity.ManuSingleDrugDist
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:166:9-170:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:168:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:169:13-65
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:170:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:167:13-56
+activity#afyapepe.mobile.activity.ManudrugSubView
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:171:9-175:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:173:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:174:13-65
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:175:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:172:13-53
+activity#afyapepe.mobile.activity.ManuEmployeesView
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:176:9-180:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:178:13-52
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:179:13-65
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:180:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:177:13-55
 activity#afyapepe.mobile.activity.ManuTrendsView
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:175:9-179:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:177:13-48
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:178:13-66
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:179:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:176:13-52
-activity#afyapepe.mobile.activity.ManuTrendToday
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:180:9-184:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:182:13-39
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:183:13-66
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:184:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:181:13-52
-activity#afyapepe.mobile.activity.ManuTrendMonth
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:185:9-189:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:187:13-41
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:188:13-66
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:189:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:186:13-52
-activity#afyapepe.mobile.activity.ManuTrendWeek
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:190:9-194:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:192:13-40
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:192:13-48
 	android:parentActivityName
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:193:13-66
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:194:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:191:13-51
-activity#afyapepe.mobile.activity.ManuTrendYear
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:191:13-52
+activity#afyapepe.mobile.activity.ManuTrendToday
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:195:9-199:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:197:13-40
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:197:13-39
 	android:parentActivityName
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:198:13-66
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:199:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:196:13-51
-activity#afyapepe.mobile.activity.ManuSectorSumView
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:196:13-52
+activity#afyapepe.mobile.activity.ManuTrendMonth
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:200:9-204:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:202:13-43
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:202:13-41
 	android:parentActivityName
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:203:13-66
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:204:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:201:13-55
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:201:13-52
+activity#afyapepe.mobile.activity.ManuTrendWeek
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:205:9-209:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:207:13-40
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:208:13-66
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:209:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:206:13-51
+activity#afyapepe.mobile.activity.ManuTrendYear
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:210:9-214:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:212:13-40
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:213:13-66
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:214:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:211:13-51
+activity#afyapepe.mobile.activity.ManuSectorSumView
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:215:9-219:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:217:13-43
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:218:13-66
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:219:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:216:13-55
 activity#afyapepe.mobile.activity.ManuCompetitionView
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:209:9-213:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:211:13-49
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:212:13-65
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:213:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:210:13-57
-activity#afyapepe.mobile.activity.ManuCompeSales
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:214:9-218:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:216:13-57
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:217:13-71
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:218:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:215:13-52
-activity#afyapepe.mobile.activity.ManuCompeRegion
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:219:9-223:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:221:13-58
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:222:13-71
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:223:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:220:13-53
-activity#afyapepe.mobile.activity.ManuCompeDoctor
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:224:9-228:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:226:13-58
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:226:13-49
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:227:13-71
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:227:13-65
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:228:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:225:13-53
-activity#afyapepe.mobile.activity.ManuCompeDrugs
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:225:13-57
+activity#afyapepe.mobile.activity.ManuCompeSalesToday
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:229:9-233:59
 	android:label
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:231:13-57
@@ -537,88 +525,98 @@ ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidMa
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:233:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:230:13-52
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:230:13-57
+activity#afyapepe.mobile.activity.ManuCompeRegion
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:234:9-238:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:236:13-58
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:237:13-71
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:238:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:235:13-53
+activity#afyapepe.mobile.activity.ManuCompeDoctor
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:239:9-243:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:241:13-58
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:242:13-71
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:243:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:240:13-53
+activity#afyapepe.mobile.activity.ManuCompeDrugs
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:244:9-248:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:246:13-57
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:247:13-71
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:248:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:245:13-52
+activity#afyapepe.mobile.activity.ManuUpdateEmployeeActivity
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:249:9-253:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:251:13-42
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:252:13-69
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:253:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:250:13-64
 activity#afyapepe.mobile.activity.ManuTrendSubToday
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:236:9-240:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:254:9-258:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:238:13-52
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:256:13-52
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:239:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:257:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:240:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:258:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:237:13-55
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:255:13-55
 activity#afyapepe.mobile.activity.ManuTrendSubYear
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:241:9-245:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:259:9-263:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:243:13-52
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:261:13-52
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:244:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:262:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:245:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:263:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:242:13-54
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:260:13-54
 activity#afyapepe.mobile.activity.ManuTrendSubWeek
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:246:9-250:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:248:13-52
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:249:13-66
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:250:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:247:13-54
-activity#afyapepe.mobile.activity.MAnuTrendSubMonth
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:251:9-255:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:253:13-52
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:254:13-66
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:255:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:252:13-55
-activity#afyapepe.mobile.activity.ManuEmail
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:256:9-260:59
-	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:258:13-62
-	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:259:13-65
-	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:260:13-56
-	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:257:13-47
-activity#afyapepe.mobile.activity.ManuTrendTodayCo
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:264:9-268:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:266:13-47
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:266:13-52
 	android:parentActivityName
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:267:13-66
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:268:13-56
 	android:name
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:265:13-54
-activity#afyapepe.mobile.activity.ManuTrendMonthCo
+activity#afyapepe.mobile.activity.MAnuTrendSubMonth
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:269:9-273:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:271:13-47
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:271:13-52
 	android:parentActivityName
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:272:13-66
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:273:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:270:13-54
-activity#afyapepe.mobile.activity.MAnuTrendWeekCo
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:270:13-55
+activity#afyapepe.mobile.activity.ManuEmail
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:274:9-278:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:276:13-47
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:276:13-62
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:277:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:277:13-65
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:278:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:275:13-53
-activity#afyapepe.mobile.activity.ManuTrendYearCo
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:275:13-47
+activity#afyapepe.mobile.activity.ManuTrendTodayCo
 ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:279:9-283:59
 	android:label
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:281:13-47
@@ -627,84 +625,340 @@ ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidMa
 	android:theme
 		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:283:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:280:13-53
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:280:13-54
+activity#afyapepe.mobile.activity.ManuTrendMonthCo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:284:9-288:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:286:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:287:13-66
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:288:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:285:13-54
+activity#afyapepe.mobile.activity.MAnuTrendWeekCo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:289:9-293:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:291:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:292:13-66
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:293:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:290:13-53
+activity#afyapepe.mobile.activity.ManuTrendYearCo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:294:9-298:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:296:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:297:13-66
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:298:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:295:13-53
 activity#afyapepe.mobile.activity.ManuTrendTodayD
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:287:9-291:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:299:9-303:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:289:13-45
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:301:13-45
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:290:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:302:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:291:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:303:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:288:13-53
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:300:13-53
 activity#afyapepe.mobile.activity.ManuTrendWeekD
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:292:9-296:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:304:9-308:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:294:13-44
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:306:13-44
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:295:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:307:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:296:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:308:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:293:13-52
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:305:13-52
 activity#afyapepe.mobile.activity.ManuTrendMonthD
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:297:9-301:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:309:9-313:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:299:13-44
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:311:13-44
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:300:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:312:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:301:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:313:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:298:13-53
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:310:13-53
 activity#afyapepe.mobile.activity.ManuTrendYearD
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:302:9-306:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:314:9-318:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:304:13-44
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:316:13-44
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:305:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:317:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:306:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:318:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:303:13-52
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:315:13-52
 activity#afyapepe.mobile.activity.ManuTrendTodayR
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:310:9-314:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:319:9-323:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:312:13-45
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:321:13-45
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:313:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:322:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:314:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:323:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:311:13-53
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:320:13-53
 activity#afyapepe.mobile.activity.ManuTrendWeekR
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:315:9-319:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:324:9-328:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:317:13-45
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:326:13-45
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:318:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:327:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:319:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:328:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:316:13-52
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:325:13-52
 activity#afyapepe.mobile.activity.ManuTrendMonthR
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:320:9-324:59
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:329:9-333:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:322:13-45
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:331:13-45
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:323:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:332:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:324:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:333:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:321:13-53
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:330:13-53
 activity#afyapepe.mobile.activity.ManuTrendYearR
-ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:325:9-329:58
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:334:9-338:59
 	android:label
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:327:13-45
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:336:13-45
 	android:parentActivityName
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:328:13-66
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:337:13-66
 	android:theme
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:329:13-56
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:338:13-56
 	android:name
-		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:326:13-52
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:335:13-52
+activity#afyapepe.mobile.activity.ManuCompeAnSales
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:339:9-343:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:341:13-44
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:342:13-71
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:343:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:340:13-54
+activity#afyapepe.mobile.activity.SubTodayAway
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:344:9-348:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:346:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:347:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:348:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:345:13-50
+activity#afyapepe.mobile.activity.SubWeekAway
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:349:9-353:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:351:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:352:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:353:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:350:13-49
+activity#afyapepe.mobile.activity.SubMonthAway
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:354:9-358:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:356:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:357:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:358:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:355:13-50
+activity#afyapepe.mobile.activity.SubYearAway
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:359:9-363:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:361:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:362:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:363:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:360:13-49
+activity#afyapepe.mobile.activity.SubTodayTo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:364:9-368:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:366:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:367:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:368:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:365:13-48
+activity#afyapepe.mobile.activity.SubWeekTo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:369:9-373:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:371:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:372:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:373:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:370:13-47
+activity#afyapepe.mobile.activity.SubMonthTo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:374:9-378:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:376:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:377:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:378:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:375:13-48
+activity#afyapepe.mobile.activity.SubYearTo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:379:9-383:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:381:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:382:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:383:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:380:13-47
+activity#afyapepe.mobile.activity.SubTodayFT
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:384:9-388:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:386:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:387:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:388:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:385:13-48
+activity#afyapepe.mobile.activity.SubMonthFT
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:389:9-393:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:391:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:392:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:393:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:390:13-48
+activity#afyapepe.mobile.activity.SubWeekFT
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:394:9-398:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:396:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:397:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:398:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:395:13-47
+activity#afyapepe.mobile.activity.SubYearFT
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:399:9-403:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:401:13-48
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:402:13-71
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:403:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:400:13-47
+activity#afyapepe.mobile.activity.SubMaxFT
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:404:9-408:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:406:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:407:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:408:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:405:13-46
+activity#afyapepe.mobile.activity.SubMaxTo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:409:9-413:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:411:13-47
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:412:13-67
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:413:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:410:13-46
+activity#afyapepe.mobile.activity.ManuCompeSalesWeekly
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:414:9-418:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:416:13-48
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:417:13-71
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:418:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:415:13-58
+activity#afyapepe.mobile.activity.ManuCompeSalesMonthly
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:419:9-423:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:421:13-48
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:422:13-71
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:423:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:420:13-59
+activity#afyapepe.mobile.activity.ManuCompeSalesYearly
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:424:9-428:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:426:13-48
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:427:13-71
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:428:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:425:13-58
+activity#afyapepe.mobile.activity.ToolbarSearchActivity
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:429:9-432:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:431:13-66
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:432:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:430:13-59
+activity#afyapepe.mobile.activity.SearchableActivity
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:433:9-436:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:435:13-62
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:436:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:434:13-56
+activity#afyapepe.mobile.activity.ViewManuSales
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:437:9-441:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:439:13-34
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:440:13-65
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:441:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:438:13-51
+activity#afyapepe.mobile.fragment.ManuByPharmacy
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:442:9-446:59
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:444:13-34
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:445:13-65
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:446:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:443:13-52
+activity#afyapepe.mobile.activity.ManuCountyInfo
+ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:447:9-451:58
+	android:label
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:449:13-68
+	android:parentActivityName
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:450:13-65
+	android:theme
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:451:13-56
+	android:name
+		ADDED from C:\Users\Millie Agallo\Desktop\workthings\afya\app\src\main\AndroidManifest.xml:448:13-52

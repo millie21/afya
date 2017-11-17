@@ -2,49 +2,112 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.0_e48f0402e26e1f35d1e6c9a8d9984cc898bd765a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_03f028fe22ab35e8f056ae91da4e31cf7d400128\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b23e0e72c97e2503b7c3e2abc80c26f1b4f6ac9c">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5a45d8e0b637a157016996a4d3f266b2471c54f7\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\c9f184a1a5638471097e73f0f6bc693af6e03a9d\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\.android\build-cache\f5f7d818ade79e30a84cae933b5ac92f057f4a54\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_ae8d46550157d34eb17459f46b1050c0442c0c65.jar" />
+        sha1="918e3e9514d90e54421b674cf0c95044f4e155ad">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_753d6c121416f065bd1579243778e0dac65eed89.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
+        jar="C:\Users\Millie Agallo\.android\build-cache\566dd28b216de9afcb1e197d1c40ce0d559cc60e\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\picasso-2.5.0_e48f0402e26e1f35d1e6c9a8d9984cc898bd765a.jar" />
+        sha1="773c02062d28c3212ad99e7e7ce46b40401bcf98">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_3126103af596245011c13105cdbe35a48bb460ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\b6acf97f312feced79d8306432ac4475fc0100b5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_ccbabfcf671951af72b1afdca4497c155897cc51.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\a634591191a1370f0482f3f3d0abf10acc453ea6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_a25555a6486468509c3c97e8488e54717f4a77bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\9e71eca53052f0d88a098c3313b456f383c3af5d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_3eb3e65ef7de68ca169c2eae9ac4c11da8e1d35a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\dfeeae7380485aeb7164c3bfaeca72ed5c825dea\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_1d3d1d96e3aadc3b7d21b25ca99629e31db05687.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\5087a92234fbd8fdddbf11d81adc251b063abfde\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_4001ef3715ea0798ae58a8ae701d0b9e2313db37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\402a23341bc598e25c79d14492eafc91b981ec57\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_cac040078445eab3b2fd9cc29943161e51308972.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\ba320e0c310135eeb2798bcf8eb168760e045167\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_41dcd1bc1537109f95a1d512cf6b8133ee6b4884.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\3ea1756521b45c76656f81c26b2017f23a141382\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_78b9c44245af300cfae76d541c3ecef40c3aef54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\b6249b989097d216a96befdea2e0d225cc6e4b94\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_9624b2b901801f25ceb91bb0e645e34545d726ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.android\build-cache\cd14a59c280e67dd02a5e205595f7b53d8e48c89\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_58a5a17b3b69d3719f863f9c1fbf3cbd28f1c69d.jar" />
     </item>
 
 </items>

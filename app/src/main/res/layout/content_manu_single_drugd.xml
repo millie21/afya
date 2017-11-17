@@ -80,7 +80,7 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view2"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardBackgroundColor="#ffffff">
@@ -113,7 +113,7 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view3"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardBackgroundColor="#ffffff">
@@ -146,7 +146,7 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view4"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardBackgroundColor="#ffffff">
@@ -184,7 +184,7 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view7"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardBackgroundColor="#ffffff">
@@ -221,7 +221,7 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view8"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardBackgroundColor="#ffffff">
@@ -298,7 +298,7 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view5"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardBackgroundColor="#ffffff">
@@ -332,7 +332,7 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view6"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardBackgroundColor="#ffffff">

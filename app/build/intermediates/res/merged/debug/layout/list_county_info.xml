@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_margin="15dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardBackgroundColor="#ffffff">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="0dp"
+        android:layout_gravity="center_horizontal">
+        <TableRow
+            android:layout_height="28dp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:id="@+id/tb1"
+
+            >
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="20dp"
+                android:layout_gravity="top|left"
+                android:src="@drawable/ic_bookmark_black_24dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="County :"
+                android:id="@+id/tvname21"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/mat"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Pharmacy3 :"
+                android:id="@+id/tvid"
+                android:textColor="@color/makate"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Total(Ksh) :"
+                android:id="@+id/tvname218"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:gravity="end"
+                android:textColor="@color/mat"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="Pharmacy3 :"
+                android:id="@+id/tvposition"
+                android:textColor="@color/makate"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:layout_marginRight="5dp"/>
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:text="amstada2"
+            android:id="@+id/tvname3"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="55dp"/>
+
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="@android:style/TextAppearance.Small"-->
+        <!--android:text="amstadam"-->
+        <!--android:id="@+id/tvposition"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="55dp"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:text="small_text"
+            android:id="@+id/tvname"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="norway"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:textColor="#16ae90"-->
+        <!--android:id="@+id/tvid"-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:text="small_text"
+            android:id="@+id/tvpos"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp"/>
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

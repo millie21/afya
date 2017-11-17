@@ -9,9 +9,18 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.adapter.ManuSimpleAdapter;
+
+import static afyapepe.mobile.R.drawable.earth;
+import static afyapepe.mobile.R.drawable.ic_arrow_forward_white_24dp;
+import static afyapepe.mobile.R.drawable.ic_compare_arrows_black_24dp;
+import static afyapepe.mobile.R.drawable.ic_local_hospital_white_24dp;
+import static afyapepe.mobile.R.drawable.ic_place_white_18dp;
 
 public class ManuTrendsView extends AppCompatActivity {
 
@@ -43,8 +52,13 @@ public class ManuTrendsView extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
+        tabLayout.getTabAt(0).setIcon(earth);
+        tabLayout.getTabAt(1).setIcon(ic_local_hospital_white_24dp);
+        tabLayout.getTabAt(2).setIcon(ic_place_white_18dp);
+        tabLayout.getTabAt(3).setIcon(ic_compare_arrows_black_24dp);
+
+
 
     }
-
 
 }

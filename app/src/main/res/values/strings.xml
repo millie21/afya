@@ -122,6 +122,17 @@
     <string name="fragment_manu_competiton_analysis_sales_week"> Week</string>
     <string name="fragment_manu_competiton_analysis_sales_month"> Month</string>
     <string name="fragment_manu_competiton_analysis_sales_year"> Year</string>
+
+    <!--testmanucompeby sales in company-->
+    <string name="fragment_manu_competiton_analysis_sales_1"> 1st</string>
+    <string name="fragment_manu_competiton_analysis_sales_2"> 2nd</string>
+    <string name="fragment_manu_competiton_analysis_sales_3"> 3rd</string>
+    <string name="fragment_manu_competiton_analysis_sales_4"> 4th</string>
+    <string name="fragment_manu_competiton_analysis_sales_5"> 5th</string>
+    <string name="fragment_manu_competiton_analysis_sales_6"> 6th</string>
+
+
+    <!--manu trends-->
     <string name="title_activity_manu_trend_sub_today">ManuTrendSubToday</string>
     <string name="title_activity_manu_trend_sub_year">ManuTrendSubYear</string>
     <string name="title_activity_manu_trend_sub_week">ManuTrendSubWeek</string>
@@ -140,4 +151,12 @@
     <string name="title_activity_manu_trend_week_r">ManuTrendWeekR</string>
     <string name="title_activity_manu_trend_month_r">ManuTrendMonthR</string>
     <string name="title_activity_manu_trend_year_r">ManuTrendYearR</string>
+    <string name="title_activity_sub_today_away">SubTodayAway</string>
+    <string name="title_activity_sub_week_away">SubWeekAway</string>
+    <string name="title_activity_sub_month_away">SubMonthAway</string>
+    <string name="title_activity_sub_year_away">SubYearAway</string>
+    <string name="title_activity_toolbar_search">ToolbarSearchActivity</string>
+    <string name="title_activity_searchable">SearchableActivity</string>
+    <string name="title_activity_view_manu_sales">ViewManuSales</string>
+    <string name="title_activity_manu_county_info">ManuCountyInfo</string>
 </resources>

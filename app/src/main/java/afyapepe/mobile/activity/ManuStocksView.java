@@ -1,21 +1,44 @@
 package afyapepe.mobile.activity;
 
 import android.app.ProgressDialog;
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -24,9 +47,21 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import afyapepe.mobile.R;
 
+import static afyapepe.mobile.R.id.fab;
+//import static afyapepe.mobile.R.id.testing12;
+import static afyapepe.mobile.app.AppController.TAG;
+
+import afyapepe.mobile.adapter.SimpleStockAdapter;
+import  afyapepe.mobile.app.AppController;
+import afyapepe.mobile.helper.SQLiteHandler;
+import afyapepe.mobile.helper.SessionManager;
+
+
+//import static afyapepe.mobile.he;
 /**
  * Created by Agallo on 18-Sep-17.
  */
@@ -34,15 +69,25 @@ import afyapepe.mobile.R;
 public class ManuStocksView extends AppCompatActivity {
 
     ListView TaskListView;
+    FloatingActionButton fab;
     ProgressBar progressBar;
-    private ProgressDialog pDialog;
+   // private ProgressDialog pDialog;
     AlertDialog.Builder builder;
-   // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
+    private SQLiteHandler db;
+    private SessionManager session;
+    List<Stock> stocklist = new ArrayList<>();
+    SimpleStockAdapter adapter;
+    TextView displayTextViewTitle;
+    //TextView testing12;
+    RetryPolicy setRetryPolicy;
 
-    private static String url = "http://192.168.2.191/afyapepe3/public/showmanustock?email=manu1@afyapepe.com&id=9";
-    List<String> IdList = new ArrayList<>();
+   // MaterialSearchView searchView;
+    SearchView searchView;
 
-    ArrayList<HashMap<String, String>> allstockslist;
+    MenuItem searchMenuItem;
+
+    private static String url = "http://192.168.2.196/afyapepe3/public/showmanustock?email=manu1@afyapepe.com&id=9";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -53,175 +98,156 @@ public class ManuStocksView extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        // getSupportActionBar().setIcon(R.drawable.ic_search_white_24dp);
 
-        TaskListView = (ListView)findViewById(R.id.manustocklistview);
+        db = new SQLiteHandler(ManuStocksView.this);
 
-        builder = new AlertDialog.Builder(ManuStocksView.this);
-        allstockslist = new ArrayList<>();
-       // lv = (ListView)findViewById(R.id.listview11);
+        session = new SessionManager(ManuStocksView.this);
 
-        new GetHttpResponse().execute();
+        HashMap<String, String> user = db.getUserDetails();
 
-        //Adding ListView Item click Listener.
-        TaskListView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        String email = user.get("email");
+
+        TaskListView = (ListView) findViewById(R.id.listview11);
+
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        adapter = new SimpleStockAdapter(ManuStocksView.this, stocklist);
+
+        TaskListView.setAdapter(adapter);
+        // Showing progress dialog
+        progressBar = new ProgressBar(ManuStocksView.this);
+
+
+        final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, response.toString());
+                        //progressBar.dismiss();
+                        try {
+                            JSONArray request = new JSONArray(response);
+                            for (int i = 0; i < request.length(); i++) {
+                                Stock stock = new Stock();
+                                JSONObject jsonObject = null;
+                                jsonObject = request.getJSONObject(i);
+                                stock.setDrugname(jsonObject.getString("drugname"));
+                                stock.setName(jsonObject.getString("name"));
+                                stock.setQuantity(jsonObject.getString("quantity"));
+
+                              //  stock.setRetryPolicy(new DefaultRetryPolicy(6000, 1, 1));
+//                                jsonObject.setRetryPolicy(new DefaultRetryPolicy(60000,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+//                                queue.add(jsonObjReq);
+
+
+                                stocklist.add(stock);
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(ManuStocksView.this, e.toString(), Toast.LENGTH_LONG).show();
+                        }
+
+                        adapter.notifyDataSetChanged();
+                      // Toast.makeText(getApplicationContext(), "Total number of Items are:" + TaskListView.getAdapter().getCount() , Toast.LENGTH_LONG).show();
+
+                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
+                        getTotalCount.setText(""+TaskListView.getCount());
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                if (progressBar != null) {
+                  //  progressBar.dismiss();
+                    progressBar = null;
+                }
+                Toast.makeText(ManuStocksView.this, error.toString(), Toast.LENGTH_LONG).show();
+                error.printStackTrace();
+            }
+        })
+
         {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            protected Map<String, String> getParams() throws AuthFailureError {
+                db = new SQLiteHandler(ManuStocksView.this);
 
-                // TODO Auto-generated method stub
+                // Fetching user details from SQLite
+                HashMap<String, String> user = db.getUserDetails();
 
-                Intent intent = new Intent(ManuStocksView.this,ManuSingleStockView.class);
+                String email = user.get("email");
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("email", email);
 
-                // Sending ListView clicked value using intent.
-                intent.putExtra("ListViewValue", IdList.get(position).toString());
+                return params;
+            }
+        };
+//        int socketTimeout = 30000;//30 seconds - change to what you want
+//        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+//        response.setRetryPolicy(policy);
+//        stringRequest.add(request);
+        int socketTimeout = 30000; // 30 seconds. You can change it
+        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
 
-                startActivity(intent);
+        stringRequest.setRetryPolicy(policy);
+        AppController.getInstance().addToRequestQueue(stringRequest);
+    }
 
-                //Finishing current activity after open next activity.
-                finish();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_search,menu);
+        MenuItem search = menu.findItem(R.id.action_search);
+        SearchView searchView =(SearchView) MenuItemCompat.getActionView(search);
+        search(searchView);
 
+
+        return true;
+    }
+
+    private void search(SearchView searchView){
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                filteredDrugs(query);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+//                if(newText.isEmpty()){
+//
+//                }
+                return false;
             }
         });
     }
+    public List<Stock> filteredDrugs(CharSequence charSequence){
+        List<Stock> filteredstocklist;
+        String charString = charSequence.toString();
 
-    // JSON parse class started from here.
-    private class GetHttpResponse extends AsyncTask<Void, Void, Void> {
-
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            // Showing progress dialog
-            pDialog = new ProgressDialog(ManuStocksView.this);
-            pDialog.setMessage("Please wait...");
-            pDialog.setCancelable(true);
-            pDialog.show();
+        if (charString.isEmpty()){
+            filteredstocklist = stocklist;
         }
+        else {
+            ArrayList<Stock> filteredList = new ArrayList<>();
 
-        @Override
-        protected Void doInBackground(Void... arg0) {
-            HttpHandler sh = new HttpHandler();
+            for (Stock stock : stocklist){
 
-            // Making a request to url and getting response
-            String jsonStr = sh.makeServiceCall(url);
-
-            //Log.e(TAG, "Response from url: " + jsonStr);
-
-            if (jsonStr != null) {
-                try {
-                    JSONArray joblists = new JSONArray(jsonStr);
-
-
-                    // Getting JSON Array node
-                    //JSONArray joblists = jsonObj.getJSONArray("alljobsdetails");
-
-                    // looping through All Contacts
-                    for (int i = 0; i < joblists.length(); i++) {
-                        JSONObject obj = joblists.getJSONObject(i);
-
-                        String id = obj.getString("id");
-                        String pharm = obj.getString("pharm");
-                        String name = obj.getString("name");
-                        String county = obj.getString("county");
-                        String quantity = obj.getString("quantity");
-                        String strength = obj.getString("strength");
-                       // String strength_unit = obj.getString("strength_unit");
-                        String drugname = obj.getString("drugname");
-
-
-                        HashMap<String, String> live = new HashMap<>();
-
-
-                        // live.put("dgno", String.valueOf(dgno));
-                        // live.put("collection_id", String.valueOf(collection_id));
-                        live.put("id", String.valueOf(id));
-                        live.put("pharm", pharm);
-                        live.put("name", name);
-                        live.put("county", county);
-                        live.put("quantity", quantity);
-                        live.put("strength", strength);
-                       // live.put("strength_unit",strength_unit);
-                        live.put("drugname",drugname);
-
-                        // adding contact to adverts list
-                        allstockslist.add(live);
-                    }
-                } catch (final JSONException e) {
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Toast.makeText(getApplicationContext(),
-                                    "Json parsing error: " + e.getMessage(),
-                                    Toast.LENGTH_LONG)
-                                    .show();
-                        }
-                    });
-
+                if(stock.getDrugname().toLowerCase().contains(charString.toLowerCase())){
+                    filteredList.add(stock);
                 }
-            } else {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getApplicationContext(),
-                                "Couldn't get json from server. Check Internet connection!",
-                                Toast.LENGTH_LONG)
-                                .show();
-                    }
-                });
-
             }
-
-            return null;
+            filteredstocklist = filteredList;
         }
 
-        @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
+        stocklist.clear();
 
-            if (pDialog.isShowing())
-                pDialog.dismiss();
-            //0739077968
+        stocklist.addAll(filteredstocklist);
 
-            ListAdapter adapter = new SimpleAdapter(
+        adapter.notifyDataSetChanged();
 
-                    ManuStocksView.this, allstockslist,
-
-                    R.layout.list_stock, new String[]{"id","drugname","pharm", "name", "county", "quantity", "strength"},
-                    new int[]{R.id.tvposition, R.id.tvid, R.id.tvname, R.id.tvname2, R.id.tvname3, R.id.tvpos, R.id.tvpos2});
-
-
-            TaskListView.setAdapter(adapter);
-            TaskListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id1) {
-                    Intent breed = new Intent(ManuStocksView.this, ManuSingleStockView.class);
-//TaskListView new String[]{"id","drugname","pharm", "name", "county", "quantity", "strength"},
-                    String id = ((TextView) view.findViewById(R.id.tvposition)).getText().toString();
-                    String drugname = ((TextView) view.findViewById(R.id.tvid)).getText().toString();
-                    String pharm = ((TextView) view.findViewById(R.id.tvname)).getText().toString();
-                    String name = ((TextView) view.findViewById(R.id.tvname2)).getText().toString();
-                    String county = ((TextView) view.findViewById(R.id.tvname3)).getText().toString();
-                    String quantity = ((TextView) view.findViewById(R.id.tvpos)).getText().toString();
-//                    String strength = ((TextView) view.findViewById(R.id.tvpos2)).getText().toString();
-                    //    String btname = ((TextView) view.findViewById(R.id.tvname2)).getText().toString();
-//                    String livename = lvltypeguess.getText().toString();
-
-                    breed.putExtra("id",id);
-                    breed.putExtra("name", name);
-                    breed.putExtra("county", county);
-                    breed.putExtra("pharm", pharm);
-                  //  breed.putExtra("strength", strength);
-                    breed.putExtra("drugname", drugname);
-                    breed.putExtra("quantity", quantity);
-
-                    // breed.putExtra("email", email);
-
-                    breed.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(breed);
-
-
-                }
-            });
-        }
+        return filteredstocklist;
     }
 }

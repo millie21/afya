@@ -59,14 +59,8 @@ public class Manufacturer extends AppCompatActivity implements NavigationView.On
         txtName.setText(name);
         txtEmail.setText(email);
 
-        // Logout button click event
-        btnLogout.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                logoutUser();
-            }
-        });
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

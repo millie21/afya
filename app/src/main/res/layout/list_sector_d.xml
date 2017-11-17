@@ -10,7 +10,7 @@
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="85dp"
-        android:layout_marginTop="5dp"
+        android:layout_margin="15dp"
         card_view:cardCornerRadius="20dp"
         card_view:cardBackgroundColor="#ffffff">
         <RelativeLayout
@@ -42,14 +42,14 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:textStyle="bold"
-                    android:textColor="#000"
+                    android:textColor="@color/mat"
                     android:id="@+id/tvposition1"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="norway"
+                    android:text="norway Pharmacy3"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/makate"
@@ -70,23 +70,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="@android:style/TextAppearance.Small"
-                    android:text="Name:"
+                    android:text="Company:"
                     android:id="@+id/tvname21"
                     android:paddingTop="5dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="20dp"
-                    android:textColor="#000"
+                    android:textColor="@color/mat"
                     android:layout_marginRight="5dp"/>
                 <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@android:style/TextAppearance.Small"
-                    android:text="Pharmacy3 :"
-                    android:id="@+id/tvid"
-                    android:textColor="@color/makate"
-                    android:textStyle="bold"
 
-                    android:layout_marginRight="155dp"/>
+                    android:id="@+id/tvid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="norway Pharmacy3"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/makate"/>
 
             </TableRow>
 
@@ -113,12 +113,12 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@android:style/TextAppearance.Small"
-                    android:text="Pharmacy3 :"
+                    android:text="Pharmacy3 :Pharmacy3"
                     android:id="@+id/tvpos"
                     android:textColor="#16ae90"
                     android:textStyle="bold"
 
-                    android:layout_marginRight="155dp"/>
+                    />
 
             </TableRow>
             <TableRow
@@ -137,18 +137,18 @@
                     android:paddingTop="0dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="20dp"
-                    android:textColor="#000"
+                    android:textColor="@color/mat"
                     android:layout_marginRight="5dp"/>
                 <TextView
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@android:style/TextAppearance.Small"
                     android:text="Pharmacy3 :"
-                    android:id="@+id/tvid2"
+                    android:id="@+id/tvid5"
                     android:textColor="@color/makate"
                     android:textStyle="bold"
 
-                    android:layout_marginRight="155dp"/>
+                   />
 
             </TableRow>
 

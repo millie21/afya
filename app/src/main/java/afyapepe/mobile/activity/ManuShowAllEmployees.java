@@ -58,8 +58,6 @@ public class ManuShowAllEmployees extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_manu_show_all_employees, container, false);
 
-
-
 //        FloatingActionButton b = (FloatingActionButton) rootView.findViewById(R.id.fab);
 //        b.setOnClickListener(new View.OnClickListener()
 //        {
@@ -74,11 +72,9 @@ public class ManuShowAllEmployees extends Fragment {
         return rootView;
     }
 
-    private static String url = "http://192.168.2.191/afyapepe3/public/showmanuemployees?email=manu1@afyapepe.com";
+    private static String url = "http://192.168.2.199/afyapepe3/public/showmanuemployees?email=manu1@afyapepe.com";
 
     ArrayList<HashMap<String, String>> allemployeeslist;
-
-
     @Override
     public void onStart() {
         super.onStart();
@@ -89,10 +85,8 @@ public class ManuShowAllEmployees extends Fragment {
         allemployeeslist = new ArrayList<>();
         lv = (ListView) getView().findViewById(R.id.listview11);
 
-
         new GetAllJobs().execute();
     }
-
 
     private class GetAllJobs extends AsyncTask<Void, Void, Void> {
 

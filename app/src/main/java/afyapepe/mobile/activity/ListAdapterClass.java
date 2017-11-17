@@ -19,9 +19,9 @@ import afyapepe.mobile.R;
 public class ListAdapterClass extends BaseAdapter {
 
     Context context;
-    List<Employee> valueList;
+    List<Stock> valueList;
 
-    public ListAdapterClass(List<Employee> listValue, Context context)
+    public ListAdapterClass(List<Stock> listValue, Context context)
     {
         this.context = context;
         this.valueList = listValue;
@@ -73,7 +73,7 @@ public class ListAdapterClass extends BaseAdapter {
             viewItem = (ViewItem) convertView.getTag();
         }
 
-        viewItem.TextViewTaskName.setText(valueList.get(position).EmployeeName);
+        viewItem.TextViewTaskName.setText(valueList.get(position).Drugname);
 
         return convertView;
     }

@@ -42,7 +42,7 @@ public class ManuSingleStockView extends AppCompatActivity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(width*.8),(int)(height*.6));
+        getWindow().setLayout((int)(width*.7),(int)(height*.4));
 
 
         tvchoicename = (TextView) findViewById(R.id.tvposition);

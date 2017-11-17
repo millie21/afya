@@ -39,7 +39,7 @@ public class MAnuEAddBackground extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String jobadd_url = "http://192.168.2.191/afyapepe3/public/insertmanuemployees?email=manu1@afyapepe.com";
+        String jobadd_url = "http://192.168.2.185/afyapepe3/public/insertmanuemployees?email=manu1@afyapepe.com";
 
         String function = params[0];
 
@@ -115,10 +115,11 @@ public class MAnuEAddBackground extends AsyncTask<String,Void,String> {
         super.onPostExecute(result);
 
 
-        System.out.println(result);
+     //   System.out.println(result);
+        //bado inasumbua
         try {
-            //("{your string}")
-            JSONObject resultJSON = new JSONObject(result);
+            //("{your string}")new JSONObject("{result}")
+            JSONObject resultJSON = new JSONObject("result");
             boolean type = resultJSON.getBoolean("type");
 
             if (type == false)

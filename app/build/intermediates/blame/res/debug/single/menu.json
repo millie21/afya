@@ -16,6 +16,14 @@
         "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\menu\\manufacturers.xml"
     },
     {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\menu\\bottom_nav_items.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\menu\\bottom_nav_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_search.xml",
+        "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\menu\\menu_search.xml"
+    },
+    {
         "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\menu\\main.xml"
     },

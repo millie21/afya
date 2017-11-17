@@ -2,5 +2,37 @@
     {
         "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
         "source": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_navigation_arrow_back_inverted.png",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\f5f7d818ade79e30a84cae933b5ac92f057f4a54\\output\\res\\drawable-hdpi\\ic_action_navigation_arrow_back_inverted.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_suggestion.png",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\f5f7d818ade79e30a84cae933b5ac92f057f4a54\\output\\res\\drawable-hdpi\\ic_suggestion.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_navigation_arrow_back.png",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\f5f7d818ade79e30a84cae933b5ac92f057f4a54\\output\\res\\drawable-hdpi\\ic_action_navigation_arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_navigation_close_inverted.png",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\f5f7d818ade79e30a84cae933b5ac92f057f4a54\\output\\res\\drawable-hdpi\\ic_action_navigation_close_inverted.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_voice_search.png",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\f5f7d818ade79e30a84cae933b5ac92f057f4a54\\output\\res\\drawable-hdpi\\ic_action_voice_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_action_search.png",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\f5f7d818ade79e30a84cae933b5ac92f057f4a54\\output\\res\\drawable-hdpi\\ic_action_action_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_voice_search_inverted.png",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\f5f7d818ade79e30a84cae933b5ac92f057f4a54\\output\\res\\drawable-hdpi\\ic_action_voice_search_inverted.png"
+    },
+    {
+        "merged": "C:\\Users\\Millie Agallo\\Desktop\\workthings\\afya\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_navigation_close.png",
+        "source": "C:\\Users\\Millie Agallo\\.android\\build-cache\\f5f7d818ade79e30a84cae933b5ac92f057f4a54\\output\\res\\drawable-hdpi\\ic_action_navigation_close.png"
     }
 ]

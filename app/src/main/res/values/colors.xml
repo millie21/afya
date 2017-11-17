@@ -3,11 +3,15 @@
 
     <!--primary colors-->
     <color name="makate">#663399</color>
+    <color name="makate5">#4b0b8b</color>
     <color name="makat">#54D8A3</color>
-    <color name="maka">#F9E99D</color>
+    <color name="back">#00f4ecc5</color>
     <color name="mak">#5AB2EC</color>
     <color name="ma">#C488FE</color>
 
+    <color name="mat">#aca6b1</color>
+    <color name="mywhite">#fafaf1</color>
+    <color name="maka">#F9E99D</color>
 
 
     <color name="bg_main2">#54D843</color>
@@ -17,7 +21,7 @@
     <!--<color name="makate">#ffffff</color>-->
     <color name="bg_login2">#9932CC</color>
     <color name="white">#ffffff</color>
-    <color name="white2">#cfeeee</color>
+    <color name="white2">#fafaf1</color>
     <color name="input_login">#222222</color>
     <color name="input_login_hint">#999999</color>
     <color name="input_register">#888888</color>

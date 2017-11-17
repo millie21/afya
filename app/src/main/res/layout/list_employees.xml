@@ -61,7 +61,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
-                android:textColor="#000"
+                android:textColor="@color/mat"
                 android:id="@+id/tvid1"
                 />
             <TextView
@@ -92,7 +92,7 @@
                 android:paddingTop="10dp"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
-                android:textColor="#000"
+                android:textColor="@color/mat"
                 android:layout_marginRight="5dp"/>
             <TextView
                 android:layout_width="fill_parent"
@@ -103,7 +103,7 @@
                 android:textColor="@color/makate"
                 android:textStyle="bold"
 
-                android:layout_marginRight="155dp"/>
+                android:layout_marginRight="5dp"/>
 
         </TableRow>
 

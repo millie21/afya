@@ -1,18 +1,34 @@
 package afyapepe.mobile.activity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,138 +36,193 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.adapter.SimpleSubTrendsAdapter;
+import afyapepe.mobile.app.AppController;
+import afyapepe.mobile.helper.SQLiteHandler;
+import afyapepe.mobile.helper.SessionManager;
+
+import static afyapepe.mobile.app.AppController.TAG;
 
 public class MAnuTrendSubMonth extends AppCompatActivity {
 
-
-    AlertDialog.Builder builder;
+    ListView TaskListView;
+    FloatingActionButton fab;
+    ProgressBar progressBar;
     private ProgressDialog pDialog;
-    private ListView lv;
-    FloatingActionButton FAB;
+    AlertDialog.Builder builder;
+    private SQLiteHandler db;
+    private SessionManager session;
+    private List<Stock> trendsListr = new ArrayList<>();
+    SimpleSubTrendsAdapter adapter;
+    TextView displayTextViewTitle;
+    // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.191/afyapepe3/public/showmanutrendssubstitutionmonth?email=manu1@afyapepe.com";
-
-    ArrayList<HashMap<String, String>> allemployeeslist;
+    private static String url = "http://192.168.2.196/afyapepe3/public/showmanutrendssubstitutionmonth?email=manu1@afyapepe.com&id=9";
+    List<String> IdList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_manu_trend_sub_today);
+
+        setContentView(R.layout.activity_manu_stocks_view);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        // getSupportActionBar().setIcon(R.drawable.ic_search_white_24dp);
 
-        builder = new AlertDialog.Builder(MAnuTrendSubMonth.this);
-        allemployeeslist = new ArrayList<>();
-        lv = (ListView)findViewById(R.id.listview11);
+        db = new SQLiteHandler(MAnuTrendSubMonth.this);
+
+        session = new SessionManager(MAnuTrendSubMonth.this);
+
+        HashMap<String, String> user = db.getUserDetails();
+
+        String email = user.get("email");
+
+        TaskListView = (ListView) findViewById(R.id.listview11);
+
+//         count = ""+TaskListView.getAdapter().getCount();
+//
+//       TextView count = (TextView) findViewById(R.id.testing12);
 
 
-        new GetAllJobs().execute();
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        adapter = new SimpleSubTrendsAdapter(MAnuTrendSubMonth.this, trendsListr);
+
+
+        TaskListView.setAdapter(adapter);
+        // Showing progress dialog
+        pDialog = new ProgressDialog(MAnuTrendSubMonth.this);
+        pDialog.setMessage("Please wait...");
+        pDialog.setCancelable(false);
+        pDialog.show();
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, response.toString());
+                        pDialog.dismiss();
+                        try {
+                            JSONArray request = new JSONArray(response);
+                            for (int i = 0; i < request.length(); i++) {
+                                Stock stock = new Stock();
+                                JSONObject jsonObject = null;
+                                jsonObject = request.getJSONObject(i);
+                                stock.setDrugname(jsonObject.getString("drugname"));
+                                stock.setTotalq(jsonObject.getString("totalq"));
+
+                                trendsListr.add(stock);
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(MAnuTrendSubMonth.this, e.toString(), Toast.LENGTH_LONG).show();
+                        }
+
+                        adapter.notifyDataSetChanged();
+                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
+                        getTotalCount.setText(""+TaskListView.getCount());
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                if (pDialog != null) {
+                    pDialog.dismiss();
+                    pDialog = null;
+                }
+                Toast.makeText(MAnuTrendSubMonth.this, error.toString(), Toast.LENGTH_LONG).show();
+                error.printStackTrace();
+            }
+        })
+
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                db = new SQLiteHandler(MAnuTrendSubMonth.this);
+
+                // Fetching user details from SQLite
+                HashMap<String, String> user = db.getUserDetails();
+
+                String email = user.get("email");
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("email", email);
+
+                return params;
+            }
+        };
+
+        int socketTimeout = 30000; // 30 seconds. You can change it
+        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+
+        stringRequest.setRetryPolicy(policy);
+
+        AppController.getInstance().addToRequestQueue(stringRequest);
+
     }
 
-    private class GetAllJobs extends AsyncTask<Void, Void, Void> {
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            // Showing progress dialog
-            pDialog = new ProgressDialog(MAnuTrendSubMonth.this);
-            pDialog.setMessage("Please wait...");
-            pDialog.setCancelable(true);
-            pDialog.show();
-
-        }
-
-        @Override
-        protected Void doInBackground(Void... arg0) {
-            HttpHandler sh = new HttpHandler();
-
-            // Making a request to url and getting response
-            String jsonStr = sh.makeServiceCall(url);
-
-            //Log.e(TAG, "Response from url: " + jsonStr);
-
-            if (jsonStr != null) {
-                try {
-                    JSONArray joblists = new JSONArray(jsonStr);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_search,menu);
+        MenuItem search = menu.findItem(R.id.action_search);
+        SearchView searchView =(SearchView) MenuItemCompat.getActionView(search);
+        search(searchView);
 
 
-                    // Getting JSON Array node
-                    //JSONArray joblists = jsonObj.getJSONArray("alljobsdetails");
+        return true;
+    }
 
-                    // looping through All Contacts
-                    for (int i = 0; i < joblists.length(); i++) {
-                        JSONObject obj = joblists.getJSONObject(i);
-
-//                        "drug_id": "751",
-//                                "drugname": "KLACID P250",
-//                                "created_at": "2017-05-23 10:34:29",
-//                                "totalq": "90"
-                        String drugname = obj.getString("drugname");
-                        String totalq = obj.getString("totalq");
-
-                        HashMap<String, String> live = new HashMap<>();
-
-
-                        // live.put("dgno", String.valueOf(dgno));
-                        // live.put("collection_id", String.valueOf(collection_id));
-                        live.put("drugname", String.valueOf(drugname));
-                        live.put("totalq", totalq);
-
-
-                        // adding contact to adverts list
-                        allemployeeslist.add(live);
-                    }
-                } catch (final JSONException e) {
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Toast.makeText(getApplicationContext(),
-                                    "Json parsing error: " + e.getMessage(),
-                                    Toast.LENGTH_LONG)
-                                    .show();
-                        }
-                    });
-
-                }
-            } else {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getApplicationContext(),
-                                "No Data is available for viewing",
-                                //"Couldn't get json from server. Check Internet connection!",
-                                Toast.LENGTH_LONG)
-                                .show();
-                    }
-                });
-
+    private void search(SearchView searchView){
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                filteredDrugs(query);
+                return true;
             }
 
-            return null;
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+//                if(newText.isEmpty()){
+//
+//                }
+                return false;
+            }
+        });
+    }
+    public List<Stock> filteredDrugs(CharSequence charSequence){
+        List<Stock> filteredstocklist;
+        String charString = charSequence.toString();
+
+        if (charString.isEmpty()){
+            filteredstocklist = trendsListr;
+        }
+        else {
+            ArrayList<Stock> filteredList = new ArrayList<>();
+
+            for (Stock stock : trendsListr){
+
+                if(stock.getDrugname().toLowerCase().contains(charString.toLowerCase())){
+                    filteredList.add(stock);
+                }
+            }
+            filteredstocklist = filteredList;
         }
 
-        @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
+        trendsListr.clear();
 
-            if (pDialog.isShowing())
-                pDialog.dismiss();
-            //0739077968
+        trendsListr.addAll(filteredstocklist);
 
-            ListAdapter adapter = new SimpleAdapter(
+        adapter.notifyDataSetChanged();
 
-                    MAnuTrendSubMonth.this, allemployeeslist,
-
-                    R.layout.list_trend_sub, new String[]{"drugname","totalq"},
-                    new int[]{R.id.tvposition, R.id.tvid});
-
-
-            lv.setAdapter(adapter);
-        }
+        return filteredstocklist;
     }
 }
-

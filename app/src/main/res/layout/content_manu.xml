@@ -1,24 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="afyapepe.mobile.activity.Manufacturers"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="30dp"
-    tools:context="afyapepe.mobile.activity.Manufacturers"
-    android:scrollbarAlwaysDrawHorizontalTrack="true">
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+   >
     <!--tools:showIn="@layout/activity_manufacturers" >-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Welcome:"
+        android:layout_toRightOf="@+id/centerShim"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/welcome5"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
 
+        />
     <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view0"
-        android:layout_width="170dp"
-        android:layout_height="175dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="10dp"
         android:visibility="visible"
+        android:layout_marginBottom="15dp"
         card_view:cardCornerRadius="14dp"
         android:layout_centerHorizontal="true"
-        card_view:cardBackgroundColor="@color/mak"
+        card_view:cardBackgroundColor="@color/makate"
         android:layout_below="@+id/textView2"
         android:gravity="center"
         >
@@ -26,14 +50,14 @@
         <ImageView
             android:id="@+id/iv1"
             android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_alignParentLeft="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
             android:layout_toLeftOf="@+id/centerShimmie"
             android:elevation="1dp"
-            android:src="@drawable/ic_account_circle_black_36dp" />
+            android:src="@drawable/ic_account_circle_white_36dp" />
 
         <!--android:layout_alignParentLeft="true"-->
         <!--android:layout_toLeftOf="@+id/centerShim"-->
@@ -43,7 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="55dp"
             android:text="Welcome:"
             android:layout_toRightOf="@+id/centerShim"
             android:layout_gravity="center_horizontal"
@@ -52,6 +76,7 @@
             android:id="@+id/welcome"
             android:layout_centerVertical="true"
             android:layout_marginBottom="20dp"
+            android:textColor="#fff"
             android:layout_alignParentRight="true"
             android:layout_centerHorizontal="true"
 
@@ -61,11 +86,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="80dp"
             android:layout_gravity="center_horizontal"
             android:layout_below="@+id/welcome"
             android:textSize="20sp"
             android:id="@+id/name"
+            android:textColor="#fff"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
@@ -74,257 +100,267 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/name"
             android:textSize="20dp"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="110dp"
             android:layout_centerVertical="true"
-            android:visibility="invisible"
-            android:layout_marginBottom="20dp"
+            android:visibility="visible"
+            android:layout_marginBottom="0dp"
             android:layout_centerHorizontal="true"
+            android:textColor="#fff"
             android:id="@+id/email"
             android:layout_gravity="center_horizontal"
             />
 
     </android.support.v7.widget.CardView>
 
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/GridLayout1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/card_view0"
-    android:columnCount="3"
-    android:rowCount="4"
-    android:visibility="visible"
-    android:layout_marginTop="20dp"
-    android:orientation="horizontal"
-    android:layout_centerHorizontal="true"
-    android:layout_centerInParent="true"
-    android:gravity="center"
-    tools:context="afyapepe.mobile.activity.Manufacturers">
-    <!--tools:showIn="@layout/activity_manufacturers" >-->
+        <View
+            android:id="@+id/centerShim"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"/>
 
-
-    <Space />
-
-
-
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/card_view"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_margin="5dp"
-        android:layout_gravity="left|top"
-        card_view:cardCornerRadius="2dp"
-        android:onClick="cardview2"
-        card_view:cardBackgroundColor="@color/makat">
-        <ImageButton
-            android:id="@+id/btLeft"
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/makat"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            card_view:cardCornerRadius="14dp"
+            android:layout_margin="5dp"
+            android:onClick="cardview"
+            android:layout_below="@+id/card_view0"
+            card_view:cardBackgroundColor="@color/white">
+
+            <ImageButton
+                android:id="@+id/btLeft"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/centerShim"
+                android:src="@drawable/ic_shopping_cart_white_24dp"
+                android:background="@drawable/rounder"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:onClick="cardview"
+                android:text="Left Button" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center|bottom"
+                android:textColor="@color/ma"
+                android:onClick="cardview"
+                android:text="Sales" />
+
+        </android.support.v7.widget.CardView>
+        <!--Same deal, but on the right -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/centerShim"
+            android:layout_below="@+id/card_view0"
+            card_view:cardCornerRadius="14dp"
+            android:layout_margin="5dp"
             android:onClick="cardview2"
-            android:src="@drawable/receipt"
-            android:textAlignment="center"/>
-        <TextView
-            android:layout_height="20dp"
-            android:layout_width="match_parent"
-            android:onClick="cardview2"
-            android:text="Sales"
-            android:gravity="center|bottom"
-            android:background="@color/makat"
-            android:layout_marginTop="45dp"
-            />
-    </android.support.v7.widget.CardView>
-    <!--<Button-->
-    <!--android:id="@+id/button1"-->
-    <!--android:layout_gravity="left|top"-->
-    <!--android:text="name" />-->
+            card_view:cardBackgroundColor="@color/white">
+            <ImageButton
+                android:id="@+id/btRight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/centerShim"
+                android:src="@drawable/ic_store_white_24dp"
+                android:background="@drawable/rounder"
+                android:layout_margin="5dp"
+                android:onClick="cardview2"
+                android:layout_gravity="center"
 
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center|bottom"
+                android:textColor="@color/ma"
+                android:onClick="cardview2"
+                android:text="Stocks"
+
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view3"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            card_view:cardCornerRadius="15dp"
+            android:layout_below="@+id/card_view"
+            android:layout_margin="5dp"
+            android:onClick="cardview3"
+            card_view:cardBackgroundColor="@color/white">
+
+            <ImageButton
+                android:id="@+id/btLeft2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/centerShim"
+                android:src="@drawable/ic_assessment_white_24dp"
+                android:background="@drawable/rounder"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:onClick="cardview3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textColor="@color/ma"
+                android:layout_gravity="center|bottom"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:text="Competition"
+                android:onClick="cardview3"
+                />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view4"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/centerShim"
+            android:layout_below="@+id/card_view2"
+            card_view:cardCornerRadius="15dp"
+            android:layout_margin="5dp"
+            android:onClick="cardview4"
+            card_view:cardBackgroundColor="@color/white">
+            <ImageButton
+                android:id="@+id/btRight2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/centerShim"
+                android:src="@drawable/ic_timeline_white_24dp"
+                android:background="@drawable/rounder"
+                android:layout_margin="5dp"
+                android:onClick="cardview4"
+                android:layout_gravity="center"
+                android:text="Left Button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textColor="@color/ma"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center|bottom"
+                android:onClick="cardview4"
+                android:text="Trends"
+
+                />
+        </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/card_view1"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
+        android:id="@+id/card_view5"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/centerShim"
+        card_view:cardCornerRadius="15dp"
+        android:layout_below="@+id/card_view3"
         android:layout_margin="5dp"
-        android:layout_gravity="left|top"
-        card_view:cardCornerRadius="2dp"
-        android:onClick="cardview3"
-        card_view:cardBackgroundColor="@color/makat">
-        <ImageButton
-            android:id="@+id/btLeft5"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/makat"
-            android:onClick="cardview3"
-            android:src="@drawable/medicalbag"
-            android:textAlignment="center"/>
-        <TextView
-            android:layout_height="20dp"
-            android:layout_width="match_parent"
-            android:onClick="cardview3"
-            android:text="Stocks"
-            android:gravity="center|bottom"
-            android:layout_marginTop="45dp"
-            android:background="@color/makat"
-            />
-    </android.support.v7.widget.CardView>
-    <!--<Button-->
-    <!--android:id="@+id/button3"-->
-    <!--android:layout_gravity="left|top"-->
-    <!--android:text="name" />-->
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/card_view9"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_margin="5dp"
-        android:visibility="visible"
-        card_view:cardCornerRadius="2dp"
         android:onClick="cardview5"
-        android:layout_gravity="left|top"
-        android:layout_column="1"
-        android:layout_row="2"
-        card_view:cardBackgroundColor="@color/makat">
+        card_view:cardBackgroundColor="@color/white">
+
         <ImageButton
-            android:id="@+id/btLeft66"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/makat"
+            android:id="@+id/btLeft22"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            android:src="@drawable/ic_donut_small_white_24dp"
+            android:background="@drawable/rounder"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
             android:onClick="cardview5"
-            android:src="@drawable/ic_trending_up_black_24dp"
-            android:textAlignment="center"/>
+            />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="@color/makat"
-            android:gravity="center|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/ma"
+            android:layout_gravity="center|bottom"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:text="Sector "
             android:onClick="cardview5"
-            android:layout_marginTop="45dp"
-            android:text="Trends"
-            android:visibility="visible" />
-    </android.support.v7.widget.CardView>
-    <!--<Button-->
-    <!--android:id="@+id/button11"-->
-    <!--android:layout_gravity="left|top"-->
-    <!--android:layout_column="1"-->
-    <!--android:layout_row="2"-->
-    <!--android:text="name" />-->
-
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/card_view7"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_margin="5dp"
-        android:layout_column="0"
-        android:layout_gravity="fill"
-        android:layout_row="0"
-        android:visibility="visible"
-        card_view:cardCornerRadius="2dp"
-        android:onClick="cardview1"
-        card_view:cardBackgroundColor="@color/makat">
-        <ImageButton
-            android:id="@+id/btLeft67"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/makat"
-            android:onClick="cardview1"
-            android:src="@drawable/ic_people_outline_black_24dp"
-            android:textAlignment="center"/>
-        <TextView
-            android:layout_height="20dp"
-            android:layout_width="match_parent"
-            android:onClick="cardview1"
-            android:text="Employees"
-            android:gravity="center|bottom"
-            android:layout_marginTop="45dp"
-            android:background="@color/makat"
             />
-    </android.support.v7.widget.CardView>
-    <!--<Button-->
-    <!--android:id="@+id/button2"-->
-    <!--android:layout_column="0"-->
-    <!--android:layout_gravity="left|top"-->
-    <!--android:layout_row="0"-->
-    <!--android:text="name" />-->
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/card_view8"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:layout_margin="5dp"
-        android:visibility="visible"
-        card_view:cardCornerRadius="2dp"
-        android:onClick="cardview4"
 
-        android:layout_column="0"
-        android:layout_gravity="left|top"
-        android:layout_row="2"
-        card_view:cardBackgroundColor="@color/makat">
-        <ImageButton
-            android:id="@+id/btLeft6"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/makat"
-            android:onClick="cardview4"
-            android:src="@drawable/ic_list_black_24dp"
-            android:textAlignment="center"/>
-        <TextView
-            android:layout_height="20dp"
-            android:layout_width="match_parent"
-            android:onClick="cardview4"
-            android:text="Substutions"
-            android:layout_marginTop="45dp"
-            android:gravity="center|bottom"
-            android:background="@color/makat"
-            />
     </android.support.v7.widget.CardView>
 
-    <!--<Button-->
-    <!--android:id="@+id/button4"-->
-    <!--android:layout_column="0"-->
-    <!--android:layout_gravity="left|top"-->
-    <!--android:layout_row="2"-->
-    <!--android:text="name" />-->
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/card_view79"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
+        android:id="@+id/card_view6"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/centerShim"
+        android:layout_below="@+id/card_view4"
+        card_view:cardCornerRadius="15dp"
         android:layout_margin="5dp"
-        card_view:cardCornerRadius="2dp"
         android:onClick="cardview6"
-        android:layout_column="2"
-        android:layout_row="2"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill"
-        card_view:cardBackgroundColor="@color/makat">
+        card_view:cardBackgroundColor="@color/white">
         <ImageButton
-            android:id="@+id/btLeft678"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/makat"
+            android:id="@+id/btRight26"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            android:src="@drawable/ic_compare_arrows_black_24dp"
+            android:background="@drawable/rounder"
+            android:layout_margin="5dp"
             android:onClick="cardview6"
-            android:src="@drawable/webhook"
-            android:textAlignment="center"/>
+            android:layout_gravity="center"
+            android:text="Left Button" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_marginTop="45dp"
-            android:background="@color/makat"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textColor="@color/ma"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|bottom"
             android:onClick="cardview6"
-            android:text="Sector"
-            android:visibility="visible" />
+            android:text="Substitutions"
+
+            />
     </android.support.v7.widget.CardView>
-    <!--<Button-->
-    <!--android:id="@+id/button5"-->
-    <!--android:layout_column="2"-->
-    <!--android:layout_row="2"-->
-    <!--android:layout_columnSpan="1"-->
-    <!--android:layout_gravity="fill"-->
-    <!--android:text="name" />-->
-</GridLayout>
-    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_logout"
+        android:layout_below="@id/card_view6"
+       android:layout_marginTop="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/btnLogout"
+        android:textColor="#fff"
+        android:background="@drawable/rounder"/>
+        </RelativeLayout>
+</ScrollView>

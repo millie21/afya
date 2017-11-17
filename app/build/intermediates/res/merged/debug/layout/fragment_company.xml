@@ -21,33 +21,33 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="180dp"
                 android:layout_alignParentLeft="true"
                 android:layout_toLeftOf="@+id/centerShim"
-                card_view:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="14dp"
                 android:layout_margin="5dp"
-                card_view:cardBackgroundColor="@color/ma">
+                >
 
                 <ImageButton
                     android:id="@+id/btLeft"
-                    android:layout_width="40dp"
+                    android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_wb_sunny_white_24dp"
-                    android:background="@color/ma"
-                    android:layout_gravity="top"
+                    android:background="@drawable/rounder"
+                    android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:text="Left Button" />
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="33dp"
                     android:textSize="25dp"
                     android:layout_margin="5dp"
-                    android:layout_gravity="bottom"
-                    android:textColor="#ffff"
+                    android:layout_gravity="center|bottom"
+                    android:textColor="@color/ma"
                     android:textStyle="bold"
                     android:text="Today" />
 
@@ -57,32 +57,32 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view2"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="180dp"
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@+id/centerShim"
                 android:layout_below="@+id/card_view0"
-                card_view:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="14dp"
                 android:layout_margin="5dp"
-                card_view:cardBackgroundColor="@color/makat">
+                >
                 <ImageButton
                     android:id="@+id/btRight"
-                    android:layout_width="40dp"
+                    android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_web_white_24dp"
-                    android:background="@color/makat"
+                    android:background="@drawable/rounderg"
                     android:layout_margin="5dp"
-                    android:layout_gravity="top"
+                    android:layout_gravity="center"
                     />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:textSize="25dp"
                     android:layout_margin="5dp"
-                    android:layout_gravity="bottom"
-                    android:textColor="#ffff"
+                    android:layout_gravity="center|bottom"
+                    android:textColor="@color/makat"
                     android:textStyle="bold"
                     android:text="This Week"
 
@@ -94,31 +94,31 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view3"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="180dp"
                 android:layout_alignParentLeft="true"
                 android:layout_toLeftOf="@+id/centerShim"
-                card_view:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="14dp"
                 android:layout_below="@+id/card_view"
                 android:layout_margin="5dp"
-                card_view:cardBackgroundColor="@color/maka">
+                >
 
                 <ImageButton
                     android:id="@+id/btLeft2"
-                    android:layout_width="40dp"
+                    android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_insert_invitation_white_24dp"
-                    android:background="@color/maka"
+                    android:background="@drawable/roundery"
                     android:layout_margin="5dp"
-                    android:layout_gravity="top"
+                    android:layout_gravity="center"
                     />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:textColor="#fff"
-                    android:layout_gravity="bottom"
+                    android:textColor="@color/maka"
+                    android:layout_gravity="center|bottom"
                     android:textStyle="bold"
                     android:textSize="25dp"
                     android:layout_margin="5dp"
@@ -131,32 +131,32 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/card_view4"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="180dp"
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@+id/centerShim"
                 android:layout_below="@+id/card_view2"
-                card_view:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="14dp"
                 android:layout_margin="5dp"
-
-                card_view:cardBackgroundColor="@color/mak">
+                    >
                 <ImageButton
                     android:id="@+id/btRight2"
-                    android:layout_width="40dp"
+                    android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_next_week_white_24dp"
-                    android:background="#5AB2EC"
+                    android:background="@drawable/rounderb"
                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
                     android:text="Left Button" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="27dp"
-                    android:textColor="#fff"
+                    android:textColor="#5AB2EC"
                     android:textSize="25dp"
                     android:layout_margin="5dp"
-                    android:layout_gravity="bottom"
+                    android:layout_gravity="center|bottom"
                     android:textStyle="bold"
                     android:text="This Year"
 

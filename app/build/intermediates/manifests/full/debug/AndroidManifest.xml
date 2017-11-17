@@ -18,6 +18,7 @@
         android:allowBackup="true"
         android:icon="@drawable/afyapepe"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name="afyapepe.mobile.activity.alaglist" />
         <activity android:name="afyapepe.mobile.activity.histyhisty" />
@@ -117,19 +118,19 @@
             android:parentActivityName="afyapepe.mobile.activity.Manufacturers"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="afyapepe.mobile.activity.ManuByDrug"
+            android:name="afyapepe.mobile.fragment.ManuByDrug"
             android:label="Sales"
-            android:parentActivityName="afyapepe.mobile.activity.Manufacturers"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="afyapepe.mobile.activity.ManuByDoctor"
+            android:name="afyapepe.mobile.fragment.ManuByDoctor"
             android:label="Sales"
-            android:parentActivityName="afyapepe.mobile.activity.Manufacturers"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="afyapepe.mobile.activity.ManuByRegion"
+            android:name="afyapepe.mobile.fragment.ManuByRegion"
             android:label="Sales"
-            android:parentActivityName="afyapepe.mobile.activity.Manufacturers"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuStocksView"
@@ -142,6 +143,21 @@
             android:label=""
             android:parentActivityName="afyapepe.mobile.activity.Manufacturers"
             android:theme="@style/AppTheme.CustomTheme" />
+
+        <!-- <activity -->
+        <!-- android:name=".activity.ManuStocksView" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:configChanges="orientation" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <!-- android:windowSoftInputMode="stateHidden" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- &gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.searchable" -->
+        <!-- android:resource="@xml/searchable"> -->
+        <!-- </meta-data> -->
+        <!-- </activity> -->
+
         <activity android:name="afyapepe.mobile.activity.SwipeTest" />
         <activity
             android:name="afyapepe.mobile.activity.ManuShowSingleSale"
@@ -212,7 +228,7 @@
             android:parentActivityName="afyapepe.mobile.activity.Manufacturers"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="afyapepe.mobile.activity.ManuCompeSales"
+            android:name="afyapepe.mobile.activity.ManuCompeSalesToday"
             android:label="Competiton Analysis By Sales"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -230,6 +246,11 @@
             android:name="afyapepe.mobile.activity.ManuCompeDrugs"
             android:label="Competiton Analysis By Drugs"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ManuUpdateEmployeeActivity"
+            android:label="Employee edit"
+            android:parentActivityName="afyapepe.mobile.activity.ManuEmployeesView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuTrendSubToday"
@@ -315,6 +336,119 @@
             android:name="afyapepe.mobile.activity.ManuTrendYearR"
             android:label="Trends By Region"
             android:parentActivityName="afyapepe.mobile.activity.ManuTrendsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ManuCompeAnSales"
+            android:label="Competing Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubTodayAway"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubWeekAway"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubMonthAway"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubYearAway"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubTodayTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubWeekTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubMonthTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubYearTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubTodayFT"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubMonthFT"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubWeekFT"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubYearFT"
+            android:label="Competiton Analysis"
+            android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubMaxFT"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SubMaxTo"
+            android:label="Drug Substitutions"
+            android:parentActivityName="afyapepe.mobile.activity.ManudrugSubView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ManuCompeSalesWeekly"
+            android:label="Competiton Analysis"
+            android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ManuCompeSalesMonthly"
+            android:label="Competiton Analysis"
+            android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ManuCompeSalesYearly"
+            android:label="Competiton Analysis"
+            android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ToolbarSearchActivity"
+            android:label="@string/title_activity_toolbar_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SearchableActivity"
+            android:label="@string/title_activity_searchable"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ViewManuSales"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ManuSalesView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.fragment.ManuByPharmacy"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ManuCountyInfo"
+            android:label="@string/title_activity_manu_county_info"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

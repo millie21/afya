@@ -6,8 +6,11 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -41,7 +44,7 @@ public class ManuShowSingleEmployeeActivity extends AppCompatActivity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(width*.7),(int)(height*.5));
+        getWindow().setLayout((int)(width*.7),(int)(height*.4));
 
         tvchoicename = (TextView) findViewById(R.id.tvposition);
         tvlivebreed = (TextView) findViewById(R.id.tvid);
@@ -72,4 +75,48 @@ public class ManuShowSingleEmployeeActivity extends AppCompatActivity {
         tvprice.setText( pricing);
 
     }
+
+    public void edit(View v){
+        Intent intentupdateemployee = new Intent(this,ManuUpdateEmployeeActivity.class);
+       startActivity(intentupdateemployee);
+    }
+//    public void showPopup(View v) {
+//        PopupMenu popup = new PopupMenu(this, v);
+//        MenuInflater inflater = popup.getMenuInflater();
+//        inflater.inflate(R.menu.employee_menu, popup.getMenu());
+//        popup.show();
+//    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle item selection
+//        switch (item.getItemId()) {
+//            case R.id.new_game:
+//                newGame();
+//                return true;
+//            case R.id.help:
+//                showHelp();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
+//
+//    private void newGame() {
+//        Intent intentlunch = new Intent(this,LoginActivity.class);
+//        startActivity(intentlunch);
+//    }
+//
+//    private void showHelp() {
+//        Intent intentrave = new Intent(this,ManuSalesView.class);
+//        startActivity(intentrave);
+//    }
+
+//    public void newGame(MenuItem item){
+//        Intent intentlunch = new Intent(this,LoginActivity.class);
+//        startActivity(intentlunch);
+//    }
+//    public  void showHelp(MenuItem item){
+//        Intent intentrave = new Intent(this,ManuSalesView.class);
+//        startActivity(intentrave);
+//    }
 }

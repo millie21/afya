@@ -404,7 +404,7 @@ public class LoginActivity extends Activity {
 
                         {
 
-                            Intent regist4=new Intent(LoginActivity.this,Manufacturer.class);
+                            Intent regist4=new Intent(LoginActivity.this,Manufacturers.class);
                             startActivity(regist4);
 
                         }

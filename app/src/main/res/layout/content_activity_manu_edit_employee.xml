@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="afyapepe.mobile.activity.ManuUpdateEmployeeActivity">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/content_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="55dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/icaccount"
+                android:src="@drawable/ic_more_horiz_black_24dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:text="Create Employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="40dp"
+                android:id="@+id/textView" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:textColor="#000"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:hint="Employee Name"
+                android:background="@drawable/rounder"
+                android:ems="10"
+                android:layout_below="@+id/icaccount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/ename" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:textColor="#000"
+                android:background="@drawable/rounder"
+                android:inputType="text"
+                android:gravity="center"
+                android:hint="Role"
+                android:ems="10"
+                android:layout_below="@+id/ename"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/erole" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:textColor="#000"
+                android:inputType="text"
+                android:background="@drawable/rounder"
+                android:gravity="center"
+                android:hint="Email "
+                android:layout_below="@+id/erole"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/eemail" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:gravity="center_horizontal"
+                android:text="Job"
+                android:id="@+id/espin2"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/eemail"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:hint="Employee Type"
+                android:layout_below="@+id/eemail"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounder"
+                android:id="@+id/egroup"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:textColor="#000"
+                android:inputType="textPassword"
+                android:gravity="center"
+                android:hint="Password"
+                android:background="@drawable/rounder"
+                android:ems="10"
+                android:layout_below="@+id/egroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/eid" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:gravity="center"
+                android:text="Region"
+                android:visibility="gone"
+                android:id="@+id/eregionbase"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/eid"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:hint="Region"
+                android:id="@+id/eregion"
+                android:layout_below="@id/eid"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounder"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </ScrollView>

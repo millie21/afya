@@ -6,6 +6,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.fragment.Company;
+import afyapepe.mobile.fragment.Company1;
+import afyapepe.mobile.fragment.Company1M;
+import afyapepe.mobile.fragment.ManuByDoctor;
+import afyapepe.mobile.fragment.ManuByDrug;
+import afyapepe.mobile.fragment.ManuByRegion;
 
 /**
  * Created by Millie Agallo on 10/6/2017.
@@ -24,12 +30,12 @@ public class ManuSalesAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new ManuByDrug();
+            return new Company();
         } else if (position == 1){
-            return new ManuByDoctor();
+            return new Company1();
 
         }else{
-            return new ManuByRegion();
+            return new Company1M();
         }
 
     }
