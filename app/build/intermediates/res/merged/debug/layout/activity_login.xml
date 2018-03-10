@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/stylebut"
+    android:padding="10dp">
+<LinearLayout
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
     >
 
     <TextView
@@ -34,7 +40,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/rounder"
+            android:background="@drawable/rounderl"
 
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
@@ -48,7 +54,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/rounder"
+            android:background="@drawable/rounderl"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
             android:padding="12dp"
@@ -65,10 +71,10 @@
             android:layout_gravity="center_vertical"
 
             android:layout_marginTop="20dip"
-            android:background="@drawable/rounder"
+            android:background="@drawable/rounderl"
             android:gravity="center_horizontal"
-            android:paddingBottom="9dp"
             android:padding="12dp"
+            android:paddingBottom="9dp"
             android:text="@string/btn_login"
             android:textColor="@color/btn_login" />
 
@@ -89,3 +95,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>

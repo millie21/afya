@@ -11,6 +11,25 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ctt"
+        android:background="@drawable/rounder"
+
+        >
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="top|end"
+            android:textColor="#fff"
+            android:text="Substitutions Away From Merck  " />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_margin="5dp"
         android:layout_alignParentEnd="true"
@@ -23,22 +42,20 @@
             android:layout_height="wrap_content"
             android:textColor="#fff"
             android:layout_gravity="top|end"
-            android:layout_margin="10dp"
+            android:layout_margin="4dp"
             android:gravity="center_vertical"
             android:id="@+id/testing1222"
-            android:textSize="20dp"
-            android:text="Total items:"/>
+            android:text="Total sales:"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_toRightOf="@+id/testing1222"
-            android:layout_margin="10dp"
+            android:layout_margin="4dp"
             android:gravity="center_vertical"
             android:id="@+id/testing12"
             android:textColor="#fff"
-            android:textSize="20dp"
             android:text="0"/>
     </RelativeLayout>
 
@@ -49,7 +66,19 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="0dp"
         android:divider="@null"
+        android:layout_margin="10dp"
         android:dividerHeight="10.0sp"
         android:id="@+id/listview11"
+        />
+    <TextView
+        android:id="@+id/list_empty"
+        android:text="No Items available"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/rounder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         />
 </RelativeLayout>

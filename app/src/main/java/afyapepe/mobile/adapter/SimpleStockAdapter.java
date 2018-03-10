@@ -60,8 +60,6 @@ public class SimpleStockAdapter  extends BaseAdapter{
         TextView Name = (TextView)view.findViewById(R.id.tvid);
         TextView Drugname = (TextView)view.findViewById(R.id.tvname2);
         TextView Quantity = (TextView)view.findViewById(R.id.tvid5);
-      //  TextView Count = (TextView)view.findViewById(R.id.tv);
-
 
         Stock stock = stockList.get(position);
 
@@ -74,13 +72,4 @@ public class SimpleStockAdapter  extends BaseAdapter{
         //or
         //String.valueOf(lstView.getAdapter().getCount());
     }
-    public void setFilter(ArrayList<Stock>newList){
-
-        stockList = new ArrayList<>();
-        stockList.addAll(newList);
-
-        notifyDataSetChanged();
-    }
-
-
 }

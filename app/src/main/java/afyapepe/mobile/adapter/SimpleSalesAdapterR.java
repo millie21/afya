@@ -59,8 +59,7 @@ public class SimpleSalesAdapterR  extends BaseAdapter {
         TextView FacilityName = (TextView)view.findViewById(R.id.tvpos);
         TextView Pharmacy = (TextView)view.findViewById(R.id.tvname3);
         TextView County = (TextView)view.findViewById(R.id.tvid);
-
-
+     //  TextView TotalIncome = (TextView)view.findViewById(R.id.totalcash);
 
         Stock stock = salesListr.get(position);
 
@@ -70,6 +69,7 @@ public class SimpleSalesAdapterR  extends BaseAdapter {
        // Name.setText(stock.getName());
         FacilityName.setText(stock.getFacilityName());
         County.setText(stock.getCounty());
+       // TotalIncome.setText(stock.getTotalIncome());
         return view;
 
     }

@@ -12,6 +12,14 @@
     <color name="mat">#aca6b1</color>
     <color name="mywhite">#fafaf1</color>
     <color name="maka">#F9E99D</color>
+    <color name="vandu">#FF8C00</color>
+    <color name="enviro">#b1b7b1</color>
+
+    <!--test colors-->
+    <color name="manugreen">#54D843</color>
+    <color name="manublue">#5AB2EC</color>
+    <color name="manupink">#FF4271</color>
+    <color name="manupurplelight">#C488FE</color>
 
 
     <color name="bg_main2">#54D843</color>
@@ -27,16 +35,16 @@
     <color name="input_register">#888888</color>
     <color name="input_register_bg">#3b4148</color>
     <color name="input_register_hint">#5e6266</color>
-    <color name="bg_main">#16ae90</color>
+    <color name="bg_main">#4b0b8b</color>
     <color name="btn_login_bg">#eceef1</color>
-    <color name="lbl_name">#333333</color>
+    <color name="lbl_name">#4b0b8b</color>
     <color name="btn_logut_bg">#ff6861</color>
 
     <color name="black_overlay">#66000000</color>
     <color name="color_navigation_list_background">#2f4050</color>
     <color name="color_selector_navigation_item">#ffffff</color>
 
-    <!--<color name="colorPrimary">#d32f2f</color>-->
+    <color name="colorPrimary">#4b0b8b</color>
     <!--<color name="colorPrimaryDark">#c72c2c</color>-->
     <!--<color name="colorAccent">#FFFFFF</color>-->
 

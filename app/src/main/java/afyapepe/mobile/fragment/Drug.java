@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import afyapepe.mobile.activity.ManuTrendMonthD;
 import afyapepe.mobile.activity.ManuTrendTodayD;
 import afyapepe.mobile.activity.ManuTrendWeekD;
 import afyapepe.mobile.activity.ManuTrendYearD;
+import afyapepe.mobile.activity.Manufacturers;
 
 public class Drug extends Fragment {
     public Drug() {
@@ -75,6 +77,16 @@ public class Drug extends Fragment {
 
             }
 
+        });
+
+        FloatingActionButton fab = (FloatingActionButton)rootView.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), Manufacturers.class);
+                startActivity(intent);
+            }
         });
 
         return rootView;

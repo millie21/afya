@@ -26,6 +26,7 @@ public class ManuCompeAnSales extends AppCompatActivity {
         setSupportActionBar(toolbar);
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
     public void cardview(View v)
     {
         Intent intent1 = new Intent(this, ManuCompeSalesToday.class);
@@ -49,17 +50,22 @@ public class ManuCompeAnSales extends AppCompatActivity {
         Intent intent4 = new Intent(getApplicationContext(), ManuCompeSalesYearly.class);
         startActivity(intent4);
     }
-    public void cardview5(View v)
-    {
-        Intent intent5 = new Intent(getApplicationContext(), ManuCompeSalesYearly.class);
-        startActivity(intent5);
-    }
+//    public void cardview5(View v)
+//    {
+//        Intent intent5 = new Intent(getApplicationContext(), ManuCompeSalesYearly.class);
+//        startActivity(intent5);
+//    }
+//
+//    public void cardview6(View v)
+//    {
+////        Intent intent4 = new Intent(getApplicationContext(), ManuCompeDrugs.class);
+////        startActivity(intent4);
+//        Toast.makeText(ManuCompeAnSales.this,"Almost done...",Toast.LENGTH_LONG).show();
+//    }
 
-    public void cardview6(View v)
-    {
-//        Intent intent4 = new Intent(getApplicationContext(), ManuCompeDrugs.class);
-//        startActivity(intent4);
-        Toast.makeText(ManuCompeAnSales.this,"Almost done...",Toast.LENGTH_LONG).show();
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 
 }

@@ -20,8 +20,6 @@ public class ManuCompetitionView extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
     }
     public void cardview(View v)
     {
@@ -48,5 +46,8 @@ public class ManuCompetitionView extends AppCompatActivity {
         Toast.makeText(this,"Almost Done",Toast.LENGTH_SHORT).show();
     }
 
-
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
+    }
 }

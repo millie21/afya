@@ -67,185 +67,176 @@ public class LoginActivity extends Activity {
         session = new SessionManager(getApplicationContext());
 
         // Check if user is already logged in or not
-       if (session.isLoggedIn()) {
+        if (session.isLoggedIn()) {
 
+            // Fetching user details from SQLite
+            HashMap<String, String> user = db.getUserDetails();
 
+            String foopy = user.get("uid");
+            String email = user.get("email");
 
-           // Fetching user details from SQLite
-           HashMap<String, String> user = db.getUserDetails();
+            String jippyo=foopy.toString();
 
-           String foopy = user.get("uid");
-           String email = user.get("email");
+            if(jippyo.equals("Registrar"))
 
-           String jippyo=foopy.toString();
+            {
 
+                Intent regist=new Intent(LoginActivity.this,registrarpage.class);
+                startActivity(regist);
 
 
-           if(jippyo.equals("Registrar"))
+            }
 
-           {
 
-               Intent regist=new Intent(LoginActivity.this,registrarpage.class);
-               startActivity(regist);
 
+            else
+            if(jippyo.equals("Admin"))
 
-           }
+            {
 
+                Intent regist1=new Intent(LoginActivity.this,Admin.class);
+                startActivity(regist1);
 
 
-           else
-           if(jippyo.equals("Admin"))
+            }
 
-           {
 
-               Intent regist1=new Intent(LoginActivity.this,Admin.class);
-               startActivity(regist1);
+            else
+            if(jippyo.equals("Nurse"))
 
+            {
 
-           }
+                Intent regist2=new Intent(LoginActivity.this,Nurse.class);
+                startActivity(regist2);
 
 
-           else
-           if(jippyo.equals("Nurse"))
+            }
 
-           {
 
-               Intent regist2=new Intent(LoginActivity.this,Nurse.class);
-               startActivity(regist2);
 
+            else
+            if(jippyo.equals("Doctor"))
 
-           }
+            {
 
+                Intent regist3=new Intent(LoginActivity.this,Doctorn.class);
+                startActivity(regist3);
 
 
-           else
-           if(jippyo.equals("Doctor"))
+            }
 
-           {
 
-               Intent regist3=new Intent(LoginActivity.this,Doctorn.class);
-               startActivity(regist3);
+            else
+            if(jippyo.equals("Manufacturer"))
 
+            {
 
-           }
+                Intent regist4=new Intent(LoginActivity.this,Manufacturers.class);
+                startActivity(regist4);
 
 
-           else
-           if(jippyo.equals("Manufacturer"))
+            }
 
-           {
+            else
+            if(jippyo.equals("Admin"))
 
-               Intent regist4=new Intent(LoginActivity.this,Manufacturers.class);
-               startActivity(regist4);
+            {
 
+                Intent regist6=new Intent(LoginActivity.this,Admin.class);
+                startActivity(regist6);
 
-           }
 
+            }
 
 
 
+            else
+            if(jippyo.equals("Private"))
 
+            {
 
+                Intent regist7=new Intent(LoginActivity.this,Private.class);
+                startActivity(regist7);
 
-           else
-           if(jippyo.equals("Admin"))
 
-           {
+            }
 
-               Intent regist6=new Intent(LoginActivity.this,Admin.class);
-               startActivity(regist6);
 
 
-           }
 
 
+            else
+            if(jippyo.equals("FacilityAdmin"))
 
-           else
-           if(jippyo.equals("Private"))
+            {
 
-           {
 
-               Intent regist7=new Intent(LoginActivity.this,Private.class);
-               startActivity(regist7);
+                Intent regist8=new Intent(LoginActivity.this,FacilityAdm.class);
+                startActivity(regist8);
 
 
-           }
+            }
 
 
+            else
+            if(jippyo.equals("Pharmacy_store_keeper"))
 
+            {
 
+                Intent regist9=new Intent(LoginActivity.this,PharmSto.class);
+                startActivity(regist9);
 
-           else
-           if(jippyo.equals("FacilityAdmin"))
 
-           {
+            }
 
 
-               Intent regist8=new Intent(LoginActivity.this,FacilityAdm.class);
-               startActivity(regist8);
+            else
+            if(jippyo.equals("Pharmacy_manager"))
 
+            {
 
-           }
+                Intent regist10=new Intent(LoginActivity.this,PharmMan.class);
+                startActivity(regist10);
 
 
-           else
-           if(jippyo.equals("Pharmacy_store_keeper"))
+            }
 
-           {
 
-               Intent regist9=new Intent(LoginActivity.this,PharmSto.class);
-               startActivity(regist9);
 
+            else
+            if(jippyo.equals("Patient"))
 
-           }
+            {
 
 
-           else
-           if(jippyo.equals("Pharmacy_manager"))
+                Intent regist11=new Intent(LoginActivity.this,Main2Activity.class);
+                startActivity(regist11);
 
-           {
 
-               Intent regist10=new Intent(LoginActivity.this,PharmMan.class);
-               startActivity(regist10);
+            }
 
 
-           }
 
 
+            else
+            {
+                //testingby millie
 
-           else
-           if(jippyo.equals("Patient"))
+                startActivity(new Intent(getApplicationContext(), Manufacturers.class));
 
-           {
+            }
 
+            // Displaying the user details on the screen
 
-               Intent regist11=new Intent(LoginActivity.this,Main2Activity.class);
-               startActivity(regist11);
 
 
-           }
 
 
-
-
-           else
-           {
-
-               startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-
-           }
-
-           // Displaying the user details on the screen
-
-
-
-
-
-           // User is already logged in. Take him to main activity
-           /// Intent intent = new Intent(LoginActivity.this, registrarpage.class);
+            // User is already logged in. Take him to main activity
+            /// Intent intent = new Intent(LoginActivity.this, registrarpage.class);
             //startActivity(intent);
             //finish();
-       }
+        }
 
 
 
@@ -271,17 +262,6 @@ public class LoginActivity extends Activity {
                 }
             }
 
-        });
-
-        // Link to Register Screen
-        btnLinkToRegister.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),
-                        Registactiv.class);
-                startActivity(i);
-                finish();
-            }
         });
 
         // Link to Register Screen

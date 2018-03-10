@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.SubMaxFT;
 import afyapepe.mobile.activity.SubMonthFT;
 import afyapepe.mobile.activity.SubTodayFT;
@@ -119,10 +120,22 @@ public class ManuDSubIn extends Fragment {
         {
             public void onClick(View v)
             {
-                Toast.makeText(getActivity(),"Almost done...",Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(),"Almost done...",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getActivity(), SubMaxFT.class);
+                startActivity(intent);
 
             }
 
+        });
+
+        FloatingActionButton fab = (FloatingActionButton)rootView.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), Manufacturers.class);
+                startActivity(intent);
+            }
         });
 
         return rootView;

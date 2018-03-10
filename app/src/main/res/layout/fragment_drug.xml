@@ -1,168 +1,22 @@
-<ScrollView android:layout_width="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+    android:background="@color/white2"
+    tools:context="afyapepe.mobile.activity.Secto">
+
+    <include layout="@layout/content_frament_drug"
         android:layout_height="match_parent"
-        tools:context="afyapepe.mobile.activity.Drug">
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+        android:layout_width="match_parent" />
 
-            <View
-                android:id="@+id/centerShim"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:visibility="invisible"
-                android:layout_centerHorizontal="true"/>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/card_view"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_alignParentLeft="true"
-                android:layout_toLeftOf="@+id/centerShim"
-                card_view:cardCornerRadius="14dp"
-                android:layout_margin="5dp"
-                >
-
-                <ImageButton
-                    android:id="@+id/btLeft"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/centerShim"
-                    android:src="@drawable/ic_wb_sunny_white_24dp"
-                    android:background="@drawable/rounder"
-                    android:layout_gravity="center"
-                    android:layout_margin="5dp"
-                    android:text="Left Button" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="33dp"
-                    android:textSize="25dp"
-                    android:layout_margin="5dp"
-                    android:layout_gravity="center|bottom"
-                    android:textColor="@color/ma"
-                    android:textStyle="bold"
-                    android:text="Today" />
-
-            </android.support.v7.widget.CardView>
-            <!--Same deal, but on the right -->
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/card_view2"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_alignParentRight="true"
-                android:layout_toRightOf="@+id/centerShim"
-                android:layout_below="@+id/card_view0"
-                card_view:cardCornerRadius="14dp"
-                android:layout_margin="5dp"
-                >
-                <ImageButton
-                    android:id="@+id/btRight"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/centerShim"
-                    android:src="@drawable/ic_web_white_24dp"
-                    android:background="@drawable/rounderg"
-                    android:layout_margin="5dp"
-                    android:layout_gravity="center"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:textSize="25dp"
-                    android:layout_margin="5dp"
-                    android:layout_gravity="center|bottom"
-                    android:textColor="@color/makat"
-                    android:textStyle="bold"
-                    android:text="This Week"
-
-
-                    />
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/card_view3"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_alignParentLeft="true"
-                android:layout_toLeftOf="@+id/centerShim"
-                card_view:cardCornerRadius="14dp"
-                android:layout_below="@+id/card_view"
-                android:layout_margin="5dp"
-                >
-
-                <ImageButton
-                    android:id="@+id/btLeft2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/centerShim"
-                    android:src="@drawable/ic_insert_invitation_white_24dp"
-                    android:background="@drawable/roundery"
-                    android:layout_margin="5dp"
-                    android:layout_gravity="center"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:textColor="@color/maka"
-                    android:layout_gravity="center|bottom"
-                    android:textStyle="bold"
-                    android:textSize="25dp"
-                    android:layout_margin="5dp"
-                    android:text="This Month"
-                    />
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/card_view4"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_alignParentRight="true"
-                android:layout_toRightOf="@+id/centerShim"
-                android:layout_below="@+id/card_view2"
-                card_view:cardCornerRadius="14dp"
-                android:layout_margin="5dp"
-                >
-                <ImageButton
-                    android:id="@+id/btRight2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/centerShim"
-                    android:src="@drawable/ic_next_week_white_24dp"
-                    android:background="@drawable/rounderb"
-                    android:layout_margin="5dp"
-                    android:layout_gravity="center"
-                    android:text="Left Button" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="27dp"
-                    android:textColor="#5AB2EC"
-                    android:textSize="25dp"
-                    android:layout_margin="5dp"
-                    android:layout_gravity="center|bottom"
-                    android:textStyle="bold"
-                    android:text="This Year"
-
-                    />
-            </android.support.v7.widget.CardView>
-        </RelativeLayout>
-    </FrameLayout>
-</ScrollView>
-
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="4dp"
+        app:srcCompat="@drawable/ic_home_white_24dp" />
+</android.support.design.widget.CoordinatorLayout>

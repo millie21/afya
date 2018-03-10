@@ -19,5 +19,15 @@
         android:dividerHeight="10.0sp"
         android:id="@+id/listview11"
         />
-
+    <TextView
+        android:id="@+id/list_empty"
+        android:text="No Items available"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/rounder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
 </android.support.constraint.ConstraintLayout>

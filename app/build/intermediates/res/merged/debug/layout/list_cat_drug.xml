@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardBackgroundColor="#ffffff">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="25dp"
+            android:src="@drawable/ic_assessment_black_18dp"
+            android:layout_margin="5dp"
+            />
+        <View
+            android:id="@+id/centerShim"
+            android:layout_height="match_parent"
+            android:layout_width="2dp"
+            android:visibility="visible"
+            android:layout_margin="10dp"/>
+        <TableRow
+            android:layout_height="28dp"
+            android:layout_margin="0dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/tb1"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/centerShim"
+            android:textAllCaps="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="id :"
+                android:layout_gravity="top"
+                android:id="@+id/tvname2"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginLeft="35dp"
+                android:textColor="#000"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:text="amstadam"
+                android:id="@+id/tvposition0"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:textColor="@color/makate"
+                android:textStyle="bold"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="55dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pharmacy :"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/mat"
+                android:id="@+id/tvid1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="norway"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#16ae90"
+                android:id="@+id/tvid5"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:id="@+id/tb2"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tb1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="Drugname :"
+                android:id="@+id/tvname21"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="35dp"
+                android:textColor="@color/mat"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="Pharmacy3 :"
+                android:id="@+id/tvid"
+                android:textColor="@color/makate"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="true"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="28dp"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:id="@+id/tb3"
+            android:visibility="gone"
+            android:layout_below="@+id/tb2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="Total(Ksh) :"
+                android:id="@+id/tvname218"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="35dp"
+                android:textColor="@color/mat"
+                android:layout_marginRight="0dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="Pharmacy3 :"
+                android:id="@+id/tvposition"
+                android:textColor="@color/makate"
+                android:layout_marginRight="5dp"/>
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:text="amstada2"
+            android:id="@+id/tvname3"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="55dp"/>
+
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="@android:style/TextAppearance.Small"-->
+        <!--android:text="amstadam"-->
+        <!--android:id="@+id/tvposition"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="55dp"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:text="small_text"
+            android:id="@+id/tvname"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:text="small_text"
+            android:id="@+id/tvpos"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp"/>
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

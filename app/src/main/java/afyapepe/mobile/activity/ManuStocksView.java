@@ -4,6 +4,8 @@ import android.app.ProgressDialog;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
@@ -56,11 +58,11 @@ import static afyapepe.mobile.R.id.fab;
 import static afyapepe.mobile.app.AppController.TAG;
 
 import afyapepe.mobile.adapter.SimpleStockAdapter;
+import afyapepe.mobile.adapter.StockTotalAdapter;
 import  afyapepe.mobile.app.AppController;
+import afyapepe.mobile.fragment.ManuByDoctor;
 import afyapepe.mobile.helper.SQLiteHandler;
 import afyapepe.mobile.helper.SessionManager;
-
-
 //import static afyapepe.mobile.he;
 /**
  * Created by Agallo on 18-Sep-17.
@@ -69,24 +71,26 @@ import afyapepe.mobile.helper.SessionManager;
 public class ManuStocksView extends AppCompatActivity {
 
     ListView TaskListView;
+    ListView listViewstockt;
     FloatingActionButton fab;
     ProgressBar progressBar;
-   // private ProgressDialog pDialog;
     AlertDialog.Builder builder;
     private SQLiteHandler db;
     private SessionManager session;
     List<Stock> stocklist = new ArrayList<>();
+    List<Stock> stockListtotal = new ArrayList<>();
     SimpleStockAdapter adapter;
+    StockTotalAdapter stockTotalAdapter;
     TextView displayTextViewTitle;
     //TextView testing12;
     RetryPolicy setRetryPolicy;
+
+    private ProgressDialog pDialog;
 
    // MaterialSearchView searchView;
     SearchView searchView;
 
     MenuItem searchMenuItem;
-
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanustock?email=manu1@afyapepe.com&id=9";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,7 +102,6 @@ public class ManuStocksView extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        // getSupportActionBar().setIcon(R.drawable.ic_search_white_24dp);
 
         db = new SQLiteHandler(ManuStocksView.this);
 
@@ -108,18 +111,34 @@ public class ManuStocksView extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
+        TaskListView.setEmptyView(empty);
+
+        listViewstockt = (ListView) findViewById(R.id.listview);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
         adapter = new SimpleStockAdapter(ManuStocksView.this, stocklist);
+        stockTotalAdapter = new StockTotalAdapter(ManuStocksView.this,stockListtotal);
 
         TaskListView.setAdapter(adapter);
+        listViewstockt.setAdapter(stockTotalAdapter);
         // Showing progress dialog
-        progressBar = new ProgressBar(ManuStocksView.this);
+        //progressBar = new ProgressBar(ManuStocksView.this);
 
+        pDialog = new ProgressDialog(ManuStocksView.this);
 
-        final StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        pDialog.setMessage("Loading...");
+        pDialog.setCancelable(false);
+        pDialog.show();
+
+        //for error code 500
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("email", email);
+
+        final StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.stocks_url,
+
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -135,11 +154,6 @@ public class ManuStocksView extends AppCompatActivity {
                                 stock.setName(jsonObject.getString("name"));
                                 stock.setQuantity(jsonObject.getString("quantity"));
 
-                              //  stock.setRetryPolicy(new DefaultRetryPolicy(6000, 1, 1));
-//                                jsonObject.setRetryPolicy(new DefaultRetryPolicy(60000,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-//                                queue.add(jsonObjReq);
-
-
                                 stocklist.add(stock);
                             }
 
@@ -151,15 +165,17 @@ public class ManuStocksView extends AppCompatActivity {
                         adapter.notifyDataSetChanged();
                       // Toast.makeText(getApplicationContext(), "Total number of Items are:" + TaskListView.getAdapter().getCount() , Toast.LENGTH_LONG).show();
 
-                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
-                        getTotalCount.setText(""+TaskListView.getCount());
+//                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
+//                        getTotalCount.setText(""+TaskListView.getCount());
+
+                        pDialog.dismiss();
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                if (progressBar != null) {
-                  //  progressBar.dismiss();
-                    progressBar = null;
+                if (pDialog != null) {
+                    pDialog.dismiss();
+                    pDialog = null;
                 }
                 Toast.makeText(ManuStocksView.this, error.toString(), Toast.LENGTH_LONG).show();
                 error.printStackTrace();
@@ -185,13 +201,81 @@ public class ManuStocksView extends AppCompatActivity {
 //        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
 //        response.setRetryPolicy(policy);
 //        stringRequest.add(request);
-        int socketTimeout = 30000; // 30 seconds. You can change it
+        int socketTimeout = 90000; // 30 seconds. You can change it
         RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
 
         stringRequest.setRetryPolicy(policy);
         AppController.getInstance().addToRequestQueue(stringRequest);
+
+        //error 500
+        params = new HashMap<String, String>();
+        params.put("email", email);
+        //calc for total
+
+        StringRequest stringRequest2 = new StringRequest(Request.Method.POST, App_Config.stock_total_url,
+
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, response.toString());
+                        //progressBar.dismiss();
+                        try {
+                            JSONArray request = new JSONArray(response);
+                            for (int i = 0; i < request.length(); i++) {
+                                Stock stock = new Stock();
+                                JSONObject jsonObject = null;
+                                jsonObject = request.getJSONObject(i);
+                                stock.setTotalqb(jsonObject.getString("totalqb"));
+
+                                stockListtotal.add(stock);
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(ManuStocksView.this, e.toString(), Toast.LENGTH_LONG).show();
+                        }
+
+                        stockTotalAdapter.notifyDataSetChanged();
+
+                        pDialog.dismiss();
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                if (pDialog != null) {
+                    pDialog.dismiss();
+                    pDialog = null;
+                }
+                Toast.makeText(ManuStocksView.this, error.toString(), Toast.LENGTH_LONG).show();
+                error.printStackTrace();
+            }
+        })
+
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                db = new SQLiteHandler(ManuStocksView.this);
+
+                // Fetching user details from SQLite
+                HashMap<String, String> user = db.getUserDetails();
+
+                String email = user.get("email");
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("email", email);
+
+                return params;
+            }
+        };
+
+        int socketTimeout2 = 90000; // 30 seconds. You can change it
+        RetryPolicy policy2 = new DefaultRetryPolicy(socketTimeout2,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+
+        stringRequest2.setRetryPolicy(policy2);
+        AppController.getInstance().addToRequestQueue(stringRequest2);
     }
 
     @Override
@@ -249,5 +333,9 @@ public class ManuStocksView extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }

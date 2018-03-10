@@ -1,6 +1,7 @@
 package afyapepe.mobile.activity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -59,8 +60,6 @@ public class ManuTrendWeek extends AppCompatActivity {
     SimpleTrendsAdapter adapter;
     TextView displayTextViewTitle;
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanutrendscompanyweek?email=manu1@afyapepe.com";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -81,12 +80,10 @@ public class ManuTrendWeek extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
-//         count = ""+TaskListView.getAdapter().getCount();
-//
-//       TextView count = (TextView) findViewById(R.id.testing12);
-
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -101,7 +98,7 @@ public class ManuTrendWeek extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manutrendweek_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -221,5 +218,10 @@ public class ManuTrendWeek extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }

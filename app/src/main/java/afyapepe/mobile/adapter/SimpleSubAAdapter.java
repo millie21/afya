@@ -54,16 +54,18 @@ public class SimpleSubAAdapter  extends BaseAdapter {
 
         TextView Name = (TextView)view.findViewById(R.id.tvid);
         TextView Drugname = (TextView)view.findViewById(R.id.tvid8);
-        TextView Quantity = (TextView)view.findViewById(R.id.tvid5);
+       // TextView Quantity = (TextView)view.findViewById(R.id.tvid5);
         TextView Pharmacy = (TextView)view.findViewById(R.id.tvpos5);
+        TextView Subdrugname = (TextView)view.findViewById(R.id.tvid10);
 
 
         Stock stock = subList.get(position);
 
         Drugname.setText(stock.getDrugname());
         Name.setText(stock.getName());
-        Quantity.setText(stock.getQuantity());
+      //  Quantity.setText(stock.getQuantity());
         Pharmacy.setText(stock.getPharmacy());
+        Subdrugname.setText(stock.getSubdrugname());
 
         return view;
     }

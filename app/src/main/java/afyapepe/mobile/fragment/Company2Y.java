@@ -1,6 +1,7 @@
 package afyapepe.mobile.fragment;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -33,6 +35,8 @@ import java.util.List;
 import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.App_Config;
+import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.Stock;
 import afyapepe.mobile.adapter.SimpleCompeSalesAdapter;
 import afyapepe.mobile.app.AppController;
@@ -47,9 +51,6 @@ import static afyapepe.mobile.app.AppController.TAG;
 
 public class Company2Y extends Fragment {
 
-
-    private static String url = "http://192.168.2.196/afyapepe3/public/showcomapny2anddrugcompeyear";
-   ///ArrayList<HashMap<String, String>> allemployeeslist;
 
     private List<Stock> sectorList = new ArrayList<Stock>();
     private ListView listView;
@@ -66,7 +67,7 @@ public class Company2Y extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.activity_sector_activity_d, container, false);
+        final View view = inflater.inflate(R.layout.activity_comptoday_r, container, false);
         db = new SQLiteHandler(getActivity());
 
         session = new SessionManager(getActivity());
@@ -76,36 +77,39 @@ public class Company2Y extends Fragment {
 
         String email = user.get("email");
 
+        View empty = view.findViewById(R.id.list_empty);
         listView = (ListView) view.findViewById(R.id.listview11);
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        listView.setEmptyView(empty);
         adapter = new SimpleCompeSalesAdapter(getActivity(), sectorList);
         listView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(getActivity());
 
         pDialog.setMessage("Loading...");
+        pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.company2y_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         Log.d(TAG, response.toString());
                         pDialog.dismiss();
                         try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            /*for (int i = 0; i < request.length(); i++) {*/
 
-                            JSONArray request = new JSONArray(response);
-                            for (int i = 0; i < request.length(); i++) {
+                            Stock stock = new Stock();
+                            //JSONObject jsonObject = null;
+                            // jsonObject = request.getJSONObject(i);
+                            stock.setManufacturer(jsonObject.getString("Manufacturer"));
+                            stock.setQuantity(jsonObject.getString("quantity"));
+                            stock.setQprice(jsonObject.getString("qprice"));
+                            //  inventory.setEntry_date(jsonObject.getString("entry_date"));
 
-                                Stock stock = new Stock();
-                                JSONObject jsonObject = null;
-                                jsonObject = request.getJSONObject(i);
-                                stock.setManufacturer(jsonObject.getString("Manufacturer"));
-                                stock.setQuantity(jsonObject.getString("quantity"));
-                                stock.setQprice(jsonObject.getString("qprice"));
-                                //  inventory.setEntry_date(jsonObject.getString("entry_date"));
-
-                                sectorList.add(stock);
-                            }
+                            sectorList.add(stock);
+                            //}
                         } catch (JSONException e) {
                             e.printStackTrace();
                             Toast.makeText(getActivity(), e.toString(), Toast.LENGTH_SHORT).show();
@@ -115,6 +119,9 @@ public class Company2Y extends Fragment {
 //                        Notifies the attached observers that the underlying data has been changed
 //                                * and any View reflecting the data set should refresh itself.
                         adapter.notifyDataSetChanged();
+
+                        TextView getTotalCount = (TextView) view.findViewById(R.id.testing12);
+                        getTotalCount.setText(""+listView.getCount());
                     }
                 },
 
@@ -153,6 +160,16 @@ public class Company2Y extends Fragment {
         stringRequest.setRetryPolicy(policy);
 
         AppController.getInstance().addToRequestQueue(stringRequest);
+
+        FloatingActionButton fab = (FloatingActionButton)view.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), Manufacturers.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
 

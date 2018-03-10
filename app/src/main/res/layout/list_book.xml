@@ -4,47 +4,39 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="75dp"
+    android:layout_height="115dp"
     android:layout_margin="15dp"
     card_view:cardCornerRadius="20dp"
     card_view:cardBackgroundColor="#ffffff">
-    <LinearLayout android:id="@+id/thumbnail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="3dip"
-        android:layout_alignParentLeft="true"
-        android:layout_marginRight="5dip">
 
-        <ImageView
-            android:id="@+id/list_image"
-            android:layout_width="50dip"
-            android:layout_height="50dip"
-            android:src="@drawable/earth"/>
-
-    </LinearLayout>
     <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="100dp"
         android:layout_margin="0dp"
         android:layout_gravity="center">
 
-
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="25dp"
+            android:src="@drawable/ic_assessment_black_18dp"
+            android:layout_margin="5dp"
+            />
+        <View
+            android:id="@+id/centerShim"
+            android:layout_height="match_parent"
+            android:layout_width="2dp"
+            android:visibility="visible"
+            android:layout_margin="10dp"/>
         <TableRow
             android:layout_height="28dp"
             android:layout_margin="0dp"
             android:layout_width="wrap_content"
             android:id="@+id/tb1"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/centerShim"
 
             >
-            <ImageView
-                android:layout_height="20dp"
-                android:layout_width="20dp"
-                android:layout_margin="5dp"
-                android:layout_gravity="top|left"
-                android:src="@drawable/ic_label_black_24dp"
-
-                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,29 +61,30 @@
                 android:visibility="gone"
                 android:textColor="@color/makate"
                 android:textStyle="bold"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="35dp"
                 android:layout_marginRight="55dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Pharmacy :"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
-                android:textStyle="bold"
                 android:textColor="@color/mat"
                 android:id="@+id/tvid1"
+                android:textAllCaps="true"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="norway"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
-                android:textColor="@color/makate"
+                android:textColor="#16ae90"
                 android:id="@+id/tvid5"
+                android:textAllCaps="true"
                 />
 
         </TableRow>
@@ -100,52 +93,57 @@
             android:layout_height="28dp"
             android:layout_margin="0dp"
             android:layout_width="match_parent"
+            android:id="@+id/tb2"
             android:layout_below="@+id/tb1">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textAppearance="@android:style/TextAppearance.Medium"
                 android:text="Drugname :"
                 android:id="@+id/tvname21"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="35dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="37dp"
                 android:textColor="@color/mat"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp"
+                android:textAllCaps="true"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textAppearance="@android:style/TextAppearance.Medium"
                 android:text="Pharmacy3 :"
                 android:id="@+id/tvid"
                 android:textColor="@color/makate"
-                android:textStyle="bold"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp"
+                android:textAllCaps="true"/>
+            </TableRow>
+        <TableRow
+            android:layout_height="28dp"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:id="@+id/tb3"
+            android:layout_below="@+id/tb2">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textAppearance="@android:style/TextAppearance.Medium"
                 android:text="Total(Ksh) :"
                 android:id="@+id/tvname218"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:gravity="end"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="35dp"
                 android:textColor="@color/mat"
-
-                android:layout_marginRight="0dp"/>
+                android:layout_marginRight="0dp"
+                android:textAllCaps="true"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textAppearance="@android:style/TextAppearance.Medium"
                 android:text="Pharmacy3 :"
                 android:id="@+id/tvposition"
                 android:textColor="@color/makate"
-                android:textStyle="bold"
-                android:gravity="end"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp"
+                android:textAllCaps="true"/>
 
         </TableRow>
 

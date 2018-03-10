@@ -62,7 +62,7 @@ public class SubYearFT extends AppCompatActivity {
     TextView displayTextViewTitle;
     // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanudrugsubstitutionsinyear?email=manu1@afyapepe.com&id=9";
+
     List<String> IdList = new ArrayList<>();
 
     @Override
@@ -70,7 +70,7 @@ public class SubYearFT extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_sub_year_away);
+        setContentView(R.layout.activity_sub_today_ft);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -85,13 +85,10 @@ public class SubYearFT extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
-//         count = ""+TaskListView.getAdapter().getCount();
-//
-//       TextView count = (TextView) findViewById(R.id.testing12);
-
-
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
         adapter = new SimpleSubAAdapter(SubYearFT.this, subList);
@@ -104,26 +101,37 @@ public class SubYearFT extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.subyearft_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         Log.d(TAG, response.toString());
                         pDialog.dismiss();
                         try {
-                            JSONArray request = new JSONArray(response);
-                            for (int i = 0; i < request.length(); i++) {
-                                Stock stock = new Stock();
-                                JSONObject jsonObject = null;
-                                jsonObject = request.getJSONObject(i);
-                                stock.setDrugname(jsonObject.getString("drugname"));
-                                stock.setName(jsonObject.getString("name"));
-                                stock.setQuantity(jsonObject.getString("quantity"));
-                                stock.setPharmacy(jsonObject.getString("pharmacy"));
+//                            JSONArray request = new JSONArray(response);
+//                            for (int i = 0; i < request.length(); i++) {
+//                                Stock stock = new Stock();
+//                                JSONObject jsonObject = null;
+//                                jsonObject = request.getJSONObject(i);
+//                                stock.setDrugname(jsonObject.getString("drugname"));
+//                                stock.setName(jsonObject.getString("name"));
+//                               // stock.setQuantity(jsonObject.getString("quantity"));
+//                                stock.setPharmacy(jsonObject.getString("pharmacy"));
+//                                stock.setSubdrugname(jsonObject.getString("subdrugname"));
+//                                subList.add(stock);
+//                            }
 
-                                subList.add(stock);
-                            }
+                            JSONObject jsonObject = new JSONObject(response);
+                            Stock stock = new Stock();
+//                                JSONObject jsonObject = null;
+//                                jsonObject = request.getJSONObject(i);
+                            stock.setDrugname(jsonObject.getString("drugname"));
+                            stock.setName(jsonObject.getString("name"));
+                            stock.setSubdrugname(jsonObject.getString("subdrugname"));
+                            stock.setPharmacy(jsonObject.getString("pharmacy"));
 
+                            subList.add(stock);
+                            // }
                         } catch (JSONException e) {
                             e.printStackTrace();
                             Toast.makeText(SubYearFT.this, e.toString(), Toast.LENGTH_LONG).show();
@@ -226,6 +234,11 @@ public class SubYearFT extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }
 

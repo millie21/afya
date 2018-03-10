@@ -3,111 +3,228 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\f5f7d818ade79e30a84cae933b5ac92f057f4a54\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="918e3e9514d90e54421b674cf0c95044f4e155ad">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_753d6c121416f065bd1579243778e0dac65eed89.jar" />
+        revision="26.0.2"
+        sha1="c2deeac83ffa1304264bc755c2ddb84e7a7fa239">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.4.0_00e6703124c31dde0d1ec2527ca3be5e46dd8756.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\566dd28b216de9afcb1e197d1c40ce0d559cc60e\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="773c02062d28c3212ad99e7e7ce46b40401bcf98">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_3126103af596245011c13105cdbe35a48bb460ef.jar" />
+        revision="26.0.2"
+        sha1="05e3d15c623cd98f0eb43c8249fb6151fae0786c">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.4.0_f12ca4f580e0a7c3eeba14f1d693b215d6070224.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\b6acf97f312feced79d8306432ac4475fc0100b5\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_ccbabfcf671951af72b1afdca4497c155897cc51.jar" />
+        revision="26.0.2"
+        sha1="a7a0aa678c3bbadb67fb41df9e107f7ee9087902">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.4.0_a3ea23a332fdafae27feaf569cab15acd9a14e38.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\a634591191a1370f0482f3f3d0abf10acc453ea6\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_a25555a6486468509c3c97e8488e54717f4a77bb.jar" />
+        revision="26.0.2"
+        sha1="b77e50b3c31d0fc64148530f7077f79ec114b5b9">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.4.0_994da90be949cfeb50ade4aeda1524a1ac4b133f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\9e71eca53052f0d88a098c3313b456f383c3af5d\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_3eb3e65ef7de68ca169c2eae9ac4c11da8e1d35a.jar" />
+        revision="26.0.2"
+        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\picasso-2.5.0_e48f0402e26e1f35d1e6c9a8d9984cc898bd765a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\dfeeae7380485aeb7164c3bfaeca72ed5c825dea\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\annotations\4.0.0\f80192e6fd828d41c7da6f3552b0bef5d89cb26e\annotations-4.0.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_1d3d1d96e3aadc3b7d21b25ca99629e31db05687.jar" />
+        revision="26.0.2"
+        sha1="f80192e6fd828d41c7da6f3552b0bef5d89cb26e">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\annotations-4.0.0_941ee8da201d29fc860563a1cacaa515927f649e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\5087a92234fbd8fdddbf11d81adc251b063abfde\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.0-beta3\1a822bfce8ec55cadddedfe602f8c523250d7bc6\constraint-layout-solver-1.1.0-beta3.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
+        revision="26.0.2"
+        sha1="1a822bfce8ec55cadddedfe602f8c523250d7bc6">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.1.0-beta3_e48a2dbaa31ed9f8fc1104907f6cf6b8a4b12e52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e04f28ac2dd9bbe48ced6fc87fedf46c2586f5d6">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.4.0_bea4ec3ac0c975281a559d844d22ea6f10db1763.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_4001ef3715ea0798ae58a8ae701d0b9e2313db37.jar" />
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.4.0_d9aa600c2eaaa6ae67ceadc2662904c0f3d5c29f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\402a23341bc598e25c79d14492eafc91b981ec57\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.miguelcatalan\materialsearchview\1.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_cac040078445eab3b2fd9cc29943161e51308972.jar" />
+        revision="26.0.2"
+        sha1="918e3e9514d90e54421b674cf0c95044f4e155ad">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.miguelcatalan-materialsearchview-1.4.0_8cb59dfa3866f897ed60a3d70c222b8cf6170796.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\ba320e0c310135eeb2798bcf8eb168760e045167\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_41dcd1bc1537109f95a1d512cf6b8133ee6b4884.jar" />
+        revision="26.0.2"
+        sha1="d29e451fd5bcc265989bf80afd4f149d95d72e7d">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.4.0_1578ece5d3b3f038fe329f4e0f9b9bc08d9365a8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\3ea1756521b45c76656f81c26b2017f23a141382\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\disklrucache\4.0.0\d88059003509074dd59fa226c822724bcf5ec0ca\disklrucache-4.0.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_78b9c44245af300cfae76d541c3ecef40c3aef54.jar" />
+        revision="26.0.2"
+        sha1="d88059003509074dd59fa226c822724bcf5ec0ca">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\disklrucache-4.0.0_3b6672939375d2105a28b211d1c58dffecb3cfbd.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\b6249b989097d216a96befdea2e0d225cc6e4b94\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-android\4.3.5\82edcaec6c7b4599eaeaaf11167ceea41db42f33\httpclient-android-4.3.5.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_9624b2b901801f25ceb91bb0e645e34545d726ba.jar" />
+        revision="26.0.2"
+        sha1="82edcaec6c7b4599eaeaaf11167ceea41db42f33">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\httpclient-android-4.3.5_90e14baaf73e5a10a7bfac410c4703f6e8209bd8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Millie Agallo\.android\build-cache\cd14a59c280e67dd02a5e205595f7b53d8e48c89\output\jars\classes.jar"
+        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\4.0.0\dff931af436f0a2815d0109ab2258bbce2d6275d\glide-4.0.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\classes_58a5a17b3b69d3719f863f9c1fbf3cbd28f1c69d.jar" />
+        revision="26.0.2"
+        sha1="dff931af436f0a2815d0109ab2258bbce2d6275d">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\glide-4.0.0_6c298ce81ecdbc2d7031a4556ec023254528fb97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4961be1437163ab598620a3c907c0f3432936f51">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.4.0_5cc93d241aee2eafe0bf22b130299fad98b2ce96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\design\25.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cad1364721fc716a39bdc351d3637edb634c9aa5">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.4.0_bc1ef3ec62f23961d7cee80079bb5e80baa7399a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c879101226d1b2aaf6edae3d7491de6fd56d2659">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.4.0_a46e464eb460156958df1fa94f57dd9162ce905d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\25.4.0\f6a2fc748ae3769633dea050563e1613e93c135e\support-annotations-25.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f6a2fc748ae3769633dea050563e1613e93c135e">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\support-annotations-25.4.0_a286a6cafa69f34cc25a9d564f2f63a8df1508fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.1.0-beta3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="55a56e57f9c69ec1e3099ceb677c7be501e9f79c">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.1.0-beta3_1cc1a2a1d4e50c2e02c7445bbc8e8fa7aa5f72e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.github.MdFarhanRaja\SearchableSpinner\1.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="773c02062d28c3212ad99e7e7ce46b40401bcf98">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.github.MdFarhanRaja-SearchableSpinner-1.2_b51018abcd5b14055147cd344d2c1e6d2d0c636d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.volley-volley-1.0.0_004c855af6e65da340b6d85a0267f30032ae74ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b1e0cd070d7cf659ece90e919bff76e7ddc32532">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.4.0_760d42aaadf1f10f8422ac45b16216efb1f8ebee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\gifdecoder\4.0.0\47c487cc4e64e6ab127a517669ca9a7b49f8c61d\gifdecoder-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47c487cc4e64e6ab127a517669ca9a7b49f8c61d">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\gifdecoder-4.0.0_75d81d2682cde5244c12d3542fa76d8af5e53264.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a64026daf4819a589aea776f5deb19b257a104d1">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.4.0_ba73e5ea62c6ba5d8101373d80ca1d36a5ca484c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\exploded-aar\com.android.support\transition\25.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="40a6b8f05124eb9e6012e18b80a6dbd13440e283">
+        <dex dex="C:\Users\Millie Agallo\Desktop\workthings\afya\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.4.0_09ae9538ef2c39e617836fe305583331d091c662.jar" />
     </item>
 
 </items>

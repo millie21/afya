@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="23" />
+        android:targetSdkVersion="25" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -95,7 +95,7 @@
         <activity android:name="afyapepe.mobile.activity.histyhisto" />
         <activity
             android:name="afyapepe.mobile.activity.Manufacturers"
-            android:label="@string/title_activity_manufacturers"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuAddEmployee"
@@ -229,22 +229,22 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuCompeSalesToday"
-            android:label="Competiton Analysis By Sales"
+            android:label="Competition Analysis By Sales"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuCompeRegion"
-            android:label="Competiton Analysis By Region"
+            android:label="Competition Analysis By Region"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuCompeDoctor"
-            android:label="Competiton Analysis By Doctor"
+            android:label="Competition Analysis By Doctor"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuCompeDrugs"
-            android:label="Competiton Analysis By Drugs"
+            android:label="Competition Analysis By Drugs"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -399,7 +399,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.SubYearFT"
-            android:label="Competiton Analysis"
+            android:label="Competition Analysis"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -414,17 +414,17 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuCompeSalesWeekly"
-            android:label="Competiton Analysis"
+            android:label="Competition Analysis"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuCompeSalesMonthly"
-            android:label="Competiton Analysis"
+            android:label="Competition Analysis"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuCompeSalesYearly"
-            android:label="Competiton Analysis"
+            android:label="Competition Analysis"
             android:parentActivityName="afyapepe.mobile.activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -447,9 +447,321 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="afyapepe.mobile.activity.ManuCountyInfo"
-            android:label="@string/title_activity_manu_county_info"
+            android:label="Region Summary"
             android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SalesPharmacies"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ManuPharm1"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.fragment.ManuByPharmacy50"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ManuPharm1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.NewDocSales"
+            android:label="Sales By Doctor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.Doc1"
+            android:label="Sales By Doctor"
+            android:parentActivityName="afyapepe.mobile.activity.NewDocSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.Doc2"
+            android:label="Sales By Doctor"
+            android:parentActivityName="afyapepe.mobile.activity.NewDocSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.NewDrugSales"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.Drug1"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.NewDrugSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.Drug2"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.NewDrugSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.Drug3"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.NewDrugSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.Drug4"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.NewDrugSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SalesDoctors"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.SalesDrugs"
+            android:label="Sales"
+            android:parentActivityName="afyapepe.mobile.activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.TMT"
+            android:label="Test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.ManuByCounty"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyOne"
+            android:label="Mombasa County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwo"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThree"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFour"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFive"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountySix"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountySeven"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyEight"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyNine"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTen"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyEleven"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwelve"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirteen"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyForteen"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFifteen"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountySixteen"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountySeventeen"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyEighteen"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyNineteen"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwenty"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentyOne"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentyTwo"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentyThree"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentyFour"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentyFive"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentySix"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentySeven"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentyEight"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyTwentyNine"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirty"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtyOne"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtyTwo"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtyThree"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtyFour"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtyFive"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtySix"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtySeven"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtyEight"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyThirtyNine"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyForty"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFortyOne"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFortyTwo"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFortyThree"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFortyFour"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFortyFive"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFortySix"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="afyapepe.mobile.activity.CountyFortySeven"
+            android:label="Sales By County"
+            android:parentActivityName="afyapepe.mobile.activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="25.4.0" />
     </application>
 
 </manifest>

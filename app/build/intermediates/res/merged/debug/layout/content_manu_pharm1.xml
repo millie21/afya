@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="afyapepe.mobile.activity.ManuPharm1"
+    tools:showIn="@layout/activity_manu_pharm1">
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_viewa"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="15dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="#ffffff"
+        tools:layout_editor_absoluteY="0dp"
+        card_view:cardElevation="4dp"
+        android:onClick="pharm1"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:onClick="pharm1"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="25dp"
+                android:src="@drawable/ic_assessment_black_18dp"
+                android:onClick="pharm1"
+                android:layout_margin="5dp"
+                />
+            <View
+                android:id="@+id/centerShim"
+                android:layout_height="match_parent"
+                android:layout_width="2dp"
+                android:visibility="visible"
+                android:layout_margin="10dp"/>
+            <TableRow
+                android:layout_height="match_parent"
+                android:onClick="pharm1"
+                android:layout_margin="0dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/tb1a"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/centerShim"
+
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Pharmacy :"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/mat"
+                    android:onClick="pharm1"
+                    android:id="@+id/tvid1a"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Kaylet Chemist Baraton"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#16ae90"
+                    android:onClick="pharm1"
+                    android:id="@+id/tvid5a"
+                    />
+
+            </TableRow>
+      </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_viewb"
+        android:layout_below="@+id/card_viewa"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="15dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="#ffffff"
+        tools:layout_editor_absoluteY="0dp"
+        android:onClick="pharm50"
+        card_view:cardElevation="4dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:onClick="pharm50"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="25dp"
+                android:src="@drawable/ic_assessment_black_18dp"
+                android:onClick="pharm50"
+                android:layout_margin="5dp"
+                />
+            <View
+                android:id="@+id/centerShimb"
+                android:onClick="pharm50"
+                android:layout_height="match_parent"
+                android:layout_width="2dp"
+                android:visibility="visible"
+                android:layout_margin="10dp"/>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/tb1"
+                android:onClick="pharm50"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/centerShimb"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="pharm50"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:text="id :"
+                    android:layout_gravity="top"
+                    android:id="@+id/tvname2"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_marginLeft="35dp"
+                    android:textColor="#000"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="pharm50"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:text="amstadam"
+                    android:id="@+id/tvposition0"
+                    android:paddingTop="10dp"
+                    android:visibility="gone"
+                    android:textColor="@color/makate"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="55dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="pharm50"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Pharmacy :"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/mat"
+                    android:id="@+id/tvid1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="pharm50"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Sion Chemist"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#16ae90"
+                    android:id="@+id/tvid5"
+                    />
+
+            </TableRow>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

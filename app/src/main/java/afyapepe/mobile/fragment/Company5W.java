@@ -1,6 +1,7 @@
 package afyapepe.mobile.fragment;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -33,6 +34,8 @@ import java.util.List;
 import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.App_Config;
+import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.Stock;
 import afyapepe.mobile.adapter.SimpleCompeSalesAdapter;
 import afyapepe.mobile.app.AppController;
@@ -47,8 +50,6 @@ import static afyapepe.mobile.app.AppController.TAG;
 
 public class Company5W  extends Fragment {
 
-
-    private static String url = "http://192.168.2.196/afyapepe3/public/showcomapny5anddrugcompe";
 
     private List<Stock> sectorList = new ArrayList<Stock>();
     private ListView listView;
@@ -66,7 +67,7 @@ public class Company5W  extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.activity_sector_activity_d, container, false);
+        View view = inflater.inflate(R.layout.activity_comptoday_r, container, false);
         db = new SQLiteHandler(getActivity());
 
         session = new SessionManager(getActivity());
@@ -76,16 +77,20 @@ public class Company5W  extends Fragment {
 
         String email = user.get("email");
 
+        View empty = view.findViewById(R.id.list_empty);
         listView = (ListView) view.findViewById(R.id.listview11);
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        listView.setEmptyView(empty);
         adapter = new SimpleCompeSalesAdapter(getActivity(), sectorList);
         listView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(getActivity());
 
         pDialog.setMessage("Loading...");
+        pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.company5w_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -153,6 +158,16 @@ public class Company5W  extends Fragment {
 
         stringRequest.setRetryPolicy(policy);
         AppController.getInstance().addToRequestQueue(stringRequest);
+
+        FloatingActionButton fab = (FloatingActionButton)view.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), Manufacturers.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
 

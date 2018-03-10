@@ -1,5 +1,6 @@
 package afyapepe.mobile.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -38,13 +39,6 @@ public class ManuCompeDoctor extends AppCompatActivity {
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_search,menu);
-        MenuItem item = menu.findItem(R.id.action_search);
-        // searchView.setMenuItem(item);
-        return true;
     }
 
 }

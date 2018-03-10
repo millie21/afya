@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.SubMaxTo;
 import afyapepe.mobile.activity.SubMonthTo;
 import afyapepe.mobile.activity.SubTodayTo;
@@ -45,7 +46,7 @@ public class ManuDSubTo extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_manu_dsubaway, container, false);
+        View rootView = inflater.inflate(R.layout.activity_manu_dsub_to, container, false);
 
         //first cardview today ddrug sub away
         CardView b = (CardView) rootView.findViewById(R.id.card_view);
@@ -112,7 +113,7 @@ public class ManuDSubTo extends Fragment {
 
         });
 
-        //second cv. custom ddrug sub away
+//        //second cv. custom ddrug sub away
         CardView z = (CardView) rootView.findViewById(R.id.card_view6);
         z.setOnClickListener(new View.OnClickListener()
         {
@@ -124,6 +125,16 @@ public class ManuDSubTo extends Fragment {
 
             }
 
+        });
+
+        FloatingActionButton fab = (FloatingActionButton)rootView.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), Manufacturers.class);
+                startActivity(intent);
+            }
         });
 
         return rootView;

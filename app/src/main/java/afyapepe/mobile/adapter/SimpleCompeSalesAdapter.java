@@ -66,7 +66,4 @@ public class SimpleCompeSalesAdapter extends BaseAdapter {
         return view;
 
     }
-
-
-
 }

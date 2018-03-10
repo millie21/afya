@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -25,6 +26,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -51,6 +53,7 @@ public class Manufacturers extends AppCompatActivity{
     public ImageView ImageView;
     private SQLiteHandler db;
     private SessionManager session;
+    private Boolean exit = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +63,7 @@ public class Manufacturers extends AppCompatActivity{
         setSupportActionBar(toolbar);
        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        getSupportActionBar().setIcon(R.drawable.ic_home_white_24dp);
+       // getSupportActionBar().setIcon(R.drawable.ic_home_white_24dp);
 
         txtName = (TextView) findViewById(R.id.name);
         txtEmail = (TextView) findViewById(R.id.email);
@@ -103,6 +106,24 @@ public class Manufacturers extends AppCompatActivity{
 //            super.onBackPressed();
 //        }
 //    }
+    }
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Press Back again to Exit.", Toast.LENGTH_SHORT).show();
+            exit = true;
+
+            new Handler().postDelayed(new Runnable() {
+                                          @Override
+                                          public void run() {
+                                              exit = false;
+                                          }
+                                      }
+                    , 3 * 1000);
+
+        }
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -218,7 +239,7 @@ public class Manufacturers extends AppCompatActivity{
 
     public void cardview(View v)
     {
-        Intent intent = new Intent(getApplicationContext(), ViewManuSales.class);
+       Intent intent = new Intent(getApplicationContext(), ViewManuSales.class);
         startActivity(intent);
     }
 
@@ -244,15 +265,23 @@ public class Manufacturers extends AppCompatActivity{
         Intent intent = new Intent(getApplicationContext(), ManuSectorSumView.class);
         startActivity(intent);
     }
+    public void cardview7(View v)
+    {
+        Intent intent = new Intent(getApplicationContext(),ManuEmail.class);
+        startActivity(intent);
+    }
+    public void cardview8(View v){
+        Toast.makeText(this,"Coming soon",Toast.LENGTH_SHORT).show();
+    }
     public void btnLogout(View v)
     {
         session.setLogin(false);
-//
-            db.deleteUsers();
 
-            // Launching the login activity
-            Intent intent = new Intent(Manufacturers.this, LoginActivity.class);
-            startActivity(intent);
-            finish();
+        db.deleteUsers();
+
+        // Launching the login activity
+        Intent intent = new Intent(Manufacturers.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

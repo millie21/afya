@@ -47,7 +47,9 @@ import java.util.List;
 import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.App_Config;
 import afyapepe.mobile.activity.ManuShowSingleSale;
+import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.Stock;
 import afyapepe.mobile.adapter.SimpleSalesAdapterD;
 import afyapepe.mobile.app.AppController;
@@ -58,18 +60,12 @@ import static afyapepe.mobile.app.AppController.TAG;
 
 public class ManuByDoctor extends AppCompatActivity {
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanusales?email=manu1@afyapepe.com&id=9";
-
     private List<Stock> salesListd = new ArrayList<Stock>();
     private ListView listView;
     private SimpleSalesAdapterD adapter;
     private SQLiteHandler db;
     private SessionManager session;
     private ProgressDialog pDialog;
-
-//    public ManuByDoctor() {
-//        // Required empty public constructor
-//    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,16 +88,20 @@ public class ManuByDoctor extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         listView = (ListView) findViewById(R.id.listview11);
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        listView.setEmptyView(empty);
         adapter = new SimpleSalesAdapterD(ManuByDoctor.this, salesListd);
         listView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(ManuByDoctor.this);
 
         pDialog.setMessage("Loading...");
+        pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manubydoctor_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -169,7 +169,7 @@ public class ManuByDoctor extends AppCompatActivity {
             }
         };
 
-        int socketTimeout = 30000; // 30 seconds. You can change it
+        int socketTimeout = 90000; // 30 seconds. You can change it
         RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
@@ -233,5 +233,9 @@ public class ManuByDoctor extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }

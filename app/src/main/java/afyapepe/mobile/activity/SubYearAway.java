@@ -62,9 +62,8 @@ public class SubYearAway extends AppCompatActivity {
     private List<Stock> subList = new ArrayList<>();
     SimpleSubAAdapter adapter;
     TextView displayTextViewTitle;
-    // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanudrugsubstitutionsawayyear?email=manu1@afyapepe.com&id=9";
+
     List<String> IdList = new ArrayList<>();
 
     @Override
@@ -87,12 +86,10 @@ public class SubYearAway extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
-//         count = ""+TaskListView.getAdapter().getCount();
-//
-//       TextView count = (TextView) findViewById(R.id.testing12);
-
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -106,25 +103,26 @@ public class SubYearAway extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.subyearaway_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         Log.d(TAG, response.toString());
                         pDialog.dismiss();
                         try {
-                            JSONArray request = new JSONArray(response);
-                            for (int i = 0; i < request.length(); i++) {
+                            JSONObject jsonObject = new JSONObject(response);
+                            /*for (int i = 0; i < request.length(); i++) {*/
                                 Stock stock = new Stock();
-                                JSONObject jsonObject = null;
-                                jsonObject = request.getJSONObject(i);
+
+
                                 stock.setDrugname(jsonObject.getString("drugname"));
                                 stock.setName(jsonObject.getString("name"));
-                                stock.setQuantity(jsonObject.getString("quantity"));
+                              //  stock.setQuantity(jsonObject.getString("quantity"));
                                 stock.setPharmacy(jsonObject.getString("pharmacy"));
+                                stock.setSubdrugname(jsonObject.getString("subdrugname"));
 
                                 subList.add(stock);
-                            }
+                           // }
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -162,7 +160,7 @@ public class SubYearAway extends AppCompatActivity {
                 return params;
             }
         };
-        int socketTimeout = 30000; // 30 seconds. You can change it
+        int socketTimeout = 90000; // 30 seconds. You can change it
         RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
@@ -170,6 +168,69 @@ public class SubYearAway extends AppCompatActivity {
         stringRequest.setRetryPolicy(policy);
 
         AppController.getInstance().addToRequestQueue(stringRequest);
+
+//        StringRequest stringRequest2 = new StringRequest(Request.Method.POST, App_Config.sub_test_year,
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        Log.d(TAG, response.toString());
+//                        pDialog.dismiss();
+//                        try {
+//                            JSONArray request = new JSONArray(response);
+//                            for (int i = 0; i < request.length(); i++) {
+//                                Stock stock = new Stock();
+//                                JSONObject jsonObject = null;
+//                                jsonObject = request.getJSONObject(i);
+//                                stock.setSubdrugname(jsonObject.getString("subdrugname"));
+//
+//                                subList.add(stock);
+//                            }
+//
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                            Toast.makeText(SubYearAway.this, e.toString(), Toast.LENGTH_LONG).show();
+//                        }
+//
+//                        adapter.notifyDataSetChanged();
+//                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
+//                        getTotalCount.setText(""+TaskListView.getCount());
+//                    }
+//                }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                if (pDialog != null) {
+//                    pDialog.dismiss();
+//                    pDialog = null;
+//                }
+//                Toast.makeText(SubYearAway.this, error.toString(), Toast.LENGTH_LONG).show();
+//                error.printStackTrace();
+//            }
+//        })
+//
+//        {
+//            @Override
+//            protected Map<String, String> getParams() throws AuthFailureError {
+//                db = new SQLiteHandler(SubYearAway.this);
+//
+//                // Fetching user details from SQLite
+//                HashMap<String, String> user = db.getUserDetails();
+//
+//                String email = user.get("email");
+//                Map<String, String> params = new HashMap<String, String>();
+//                params.put("email", email);
+//
+//                return params;
+//            }
+//        };
+//        int socketTimeout2 = 90000; // 30 seconds. You can change it
+//        RetryPolicy policy2 = new DefaultRetryPolicy(socketTimeout2,
+//                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+//                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+//
+//        stringRequest2.setRetryPolicy(policy2);
+//
+//        AppController.getInstance().addToRequestQueue(stringRequest2);
+
 
     }
     @Override
@@ -227,6 +288,11 @@ public class SubYearAway extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }
 

@@ -53,7 +53,7 @@ public class SimpleDrugTrendsAdapter extends BaseAdapter {
         if( view == null)
             view = inflater.inflate(R.layout.list_trend_sub,null);
 
-        TextView Drugname = (TextView)view.findViewById(R.id.tvposition);//
+        TextView Drugname = (TextView)view.findViewById(R.id.tvposition5);//
         TextView Totalq = (TextView)view.findViewById(R.id.tvid);
 
 

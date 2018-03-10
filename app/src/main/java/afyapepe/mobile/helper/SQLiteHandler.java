@@ -98,7 +98,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 			user.put("created_at", cursor.getString(4));
 		}
 		cursor.close();
-		db.close();
+	//	db.close(); keeps throwing error of connection pools being closed
 		// return user
 		Log.d(TAG, "Fetching user from Sqlite: " + user.toString());
 

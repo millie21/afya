@@ -37,6 +37,7 @@ import java.util.List;
 import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.App_Config;
 import afyapepe.mobile.activity.Stock;
 import afyapepe.mobile.adapter.SimpleSectorAdapter;
 import afyapepe.mobile.app.AppController;
@@ -51,8 +52,6 @@ import static afyapepe.mobile.app.AppController.TAG;
 
 public class Sector_Drug extends Fragment {
 
-
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanusectorsummary?email=manu1@afyapepe.com&id=9";
 
     private List<Stock> sectorList = new ArrayList<Stock>();
     private ListView listView;
@@ -80,16 +79,20 @@ public class Sector_Drug extends Fragment {
 
         String email = user.get("email");
 
+        View empty = view.findViewById(R.id.list_empty);
         listView = (ListView) view.findViewById(R.id.listview11);
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        listView.setEmptyView(empty);
         adapter = new SimpleSectorAdapter(getActivity(), sectorList);
         listView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(getActivity());
 
         pDialog.setMessage("Loading...");
+        pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.sectordrug_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

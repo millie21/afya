@@ -29,8 +29,6 @@ public class ManuOtherAdapter extends FragmentPagerAdapter {
 
     }
 
-
-
     // This determines the fragment for each tab
     @Override
     public Fragment getItem(int position) {

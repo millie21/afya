@@ -5,8 +5,8 @@ package afyapepe.mobile.activity;
  */
 
 public class Stock {
-    public String Drugname,Quantity,Name, Id, Total,FacilityName,Pharmacy,County,Manufacturer,Totalq, Qprice ,Count;
-
+    public String Drugname,Quantity,Name, Id, Total,FacilityName,Pharmacy,County,Manufacturer,Totalq, Qprice ,Count,Pharmid,Docid,TotalIncome,Drugnames, Totalqb;
+    public String Totcounty, Totdoctors, Totpharmacies, Totprescriptions, Totdrugs,Subdrugname,Ttb;
 
     public String getName(){
         return Name;
@@ -75,5 +75,82 @@ public class Stock {
     public void setQprice(String qprice){
         Qprice = qprice;
     }
+    public String getPharmid(){
+        return Pharmid;
+    }
+    public void setPharmid(String pharmid){
+        Pharmid = pharmid;
+    }
+    public String getDocid(){
+        return Docid;
+    }
+    public void setDocid(String docid){
+        Docid = docid;
+    }
+    public String getTotalIncome(){
+        return TotalIncome;
+    }
+    public void setTotalIncome(String totalIncome){
+        TotalIncome = totalIncome;
+    }
+    public String getDrugnames(){
+        return Drugnames;
+    }
+    public void setDrugnames(String drugnames)
+    {
+        Drugnames = drugnames;
+    }
+    public String getTotalqb(){
+        return Totalqb;
+    }
+    public void setTotalqb(String totalqb){
+        Totalqb = totalqb;
+    }
+    public String getTotcounty(){
+        return Totcounty;
+    }
+    public void setTotcounty(String totcounty){
+        Totcounty = totcounty;
+    }
+    public String getTotdoctors(){
+        return Totdoctors;
 
+    }
+    public void setTotdoctors(String totdoctors)
+    {
+        Totdoctors =totdoctors;
+    }
+    public String getTotpharmacies(){
+      return  Totpharmacies;
+    }
+    public void setTotpharmacies(String totpharmacies){
+        Totpharmacies = totpharmacies;
+    }
+    public String getTotprescriptions(){
+        return  Totprescriptions;
+    }
+    public void setTotprescriptions(String totprescriptions){
+        Totprescriptions = totprescriptions;
+    }
+    public String getTotdrugs(){
+        return  Totdrugs;
+    }
+    public void setTotdrugs(String totdrugs){
+        Totdrugs = totdrugs;
+    }
+    public String getSubdrugname(){
+        return Subdrugname;
+    }
+
+    public void setSubdrugname(String subdrugname){
+        Subdrugname = subdrugname;
+    }
+
+    public String getTtb(){
+        return Ttb;
+    }
+
+    public void setTtb(String ttb){
+        Ttb = ttb;
+    }
 }

@@ -61,9 +61,8 @@ public class SubTodayAway extends AppCompatActivity {
     private List<Stock> subList = new ArrayList<>();
     SimpleSubAAdapter adapter;
     TextView displayTextViewTitle;
-    // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanudrugsubstitutionsawaytoday?email=manu1@afyapepe.com&id=9";
+
     List<String> IdList = new ArrayList<>();
 
     @Override
@@ -86,12 +85,11 @@ public class SubTodayAway extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
-//         count = ""+TaskListView.getAdapter().getCount();
-//
-//       TextView count = (TextView) findViewById(R.id.testing12);
-
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
+        //TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -105,26 +103,36 @@ public class SubTodayAway extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.subtodayaway_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         Log.d(TAG, response.toString());
                         pDialog.dismiss();
                         try {
-                            JSONArray request = new JSONArray(response);
-                            for (int i = 0; i < request.length(); i++) {
-                                Stock stock = new Stock();
-                                JSONObject jsonObject = null;
-                                jsonObject = request.getJSONObject(i);
-                                stock.setDrugname(jsonObject.getString("drugname"));
-                                stock.setName(jsonObject.getString("name"));
-                                stock.setQuantity(jsonObject.getString("quantity"));
-                                stock.setPharmacy(jsonObject.getString("pharmacy"));
+//                            JSONArray request = new JSONArray(response);
+//                            for (int i = 0; i < request.length(); i++) {
+//                                Stock stock = new Stock();
+//                                JSONObject jsonObject = null;
+//                                jsonObject = request.getJSONObject(i);
+//                                stock.setDrugname(jsonObject.getString("drugname"));
+//                                stock.setName(jsonObject.getString("name"));
+//                               // stock.setQuantity(jsonObject.getString("quantity"));
+//                                stock.setPharmacy(jsonObject.getString("pharmacy"));
+//                                stock.setSubdrugname(jsonObject.getString("subdrugname"));
+//                                subList.add(stock);
+//                            }
+                            JSONObject jsonObject = new JSONObject(response);
+                            Stock stock = new Stock();
+//                                JSONObject jsonObject = null;
+//                                jsonObject = request.getJSONObject(i);
+                            stock.setDrugname(jsonObject.getString("drugname"));
+                            stock.setName(jsonObject.getString("name"));
+                            stock.setSubdrugname(jsonObject.getString("subdrugname"));
+                            stock.setPharmacy(jsonObject.getString("pharmacy"));
 
-                                subList.add(stock);
-                            }
-
+                            subList.add(stock);
+                            // }
                         } catch (JSONException e) {
                             e.printStackTrace();
                             Toast.makeText(SubTodayAway.this, e.toString(), Toast.LENGTH_LONG).show();
@@ -170,6 +178,67 @@ public class SubTodayAway extends AppCompatActivity {
         stringRequest.setRetryPolicy(policy);
         AppController.getInstance().addToRequestQueue(stringRequest);
 
+        StringRequest stringRequests = new StringRequest(Request.Method.POST, App_Config.subtodayaway_sub_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, response.toString());
+                        pDialog.dismiss();
+                        try {
+                            JSONArray request = new JSONArray(response);
+                            for (int i = 0; i < request.length(); i++) {
+                                Stock stock = new Stock();
+                                JSONObject jsonObject = null;
+                                jsonObject = request.getJSONObject(i);
+                                stock.setDrugnames(jsonObject.getString("drugnames"));
+
+
+                                subList.add(stock);
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(SubTodayAway.this, e.toString(), Toast.LENGTH_LONG).show();
+                        }
+
+                        adapter.notifyDataSetChanged();
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                if (pDialog != null) {
+                    pDialog.dismiss();
+                    pDialog = null;
+                }
+                Toast.makeText(SubTodayAway.this, error.toString(), Toast.LENGTH_LONG).show();
+                error.printStackTrace();
+            }
+        })
+
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                db = new SQLiteHandler(SubTodayAway.this);
+
+                // Fetching user details from SQLite
+                HashMap<String, String> user = db.getUserDetails();
+
+                String email = user.get("email");
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("email", email);
+
+                return params;
+            }
+        };
+
+        int socketTimeouts= 30000; // 30 seconds. You can change it
+        RetryPolicy policys = new DefaultRetryPolicy(socketTimeouts,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+
+        stringRequests.setRetryPolicy(policys);
+        AppController.getInstance().addToRequestQueue(stringRequests);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -226,6 +295,11 @@ public class SubTodayAway extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }
 

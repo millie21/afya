@@ -33,7 +33,6 @@ public class ManuDrugSubadapter extends FragmentPagerAdapter {
         } else {
             return new ManuDSubTo();
         }
-
     }
 
     // This determines the number of tabs

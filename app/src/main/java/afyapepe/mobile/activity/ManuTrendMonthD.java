@@ -50,14 +50,6 @@ import static afyapepe.mobile.app.AppController.TAG;
 public class ManuTrendMonthD extends AppCompatActivity {
 
 
-//    AlertDialog.Builder builder;
-//    private ProgressDialog pDialog;
-//    private ListView lv;
-//    FloatingActionButton FAB;
-//
-//    private static String url = "http://192.168.2.199/afyapepe3/public/showmanutrendsdrugmonth?email=manu1@afyapepe.com";
-
-
     ListView TaskListView;
     FloatingActionButton fab;
     ProgressBar progressBar;
@@ -68,9 +60,8 @@ public class ManuTrendMonthD extends AppCompatActivity {
     private List<Stock> trendsListd = new ArrayList<>();
     SimpleDrugTrendsAdapter adapter;
     TextView displayTextViewTitle;
-    // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanutrendsdrugmonth?email=manu1@afyapepe.com&id=9";
+
     List<String> IdList = new ArrayList<>();
 
     @Override
@@ -93,12 +84,10 @@ public class ManuTrendMonthD extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
-//         count = ""+TaskListView.getAdapter().getCount();
-//
-//       TextView count = (TextView) findViewById(R.id.testing12);
-
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -112,7 +101,7 @@ public class ManuTrendMonthD extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manutrendmonthd_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -137,8 +126,8 @@ public class ManuTrendMonthD extends AppCompatActivity {
                         }
 
                         adapter.notifyDataSetChanged();
-                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
-                        getTotalCount.setText(""+TaskListView.getCount());
+//                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
+//                        getTotalCount.setText(""+TaskListView.getCount());
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -232,6 +221,11 @@ public class ManuTrendMonthD extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }
 

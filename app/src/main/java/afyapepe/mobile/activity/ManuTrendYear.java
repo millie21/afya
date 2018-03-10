@@ -1,6 +1,7 @@
 package afyapepe.mobile.activity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -60,7 +61,6 @@ public class ManuTrendYear extends AppCompatActivity {
     SimpleTrendsAdapter adapter;
     TextView displayTextViewTitle;
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanutrendssubstitutionyear?email=manu1@afyapepe.com";
 
     ArrayList<HashMap<String, String>> allemployeeslist;
     @Override
@@ -83,8 +83,10 @@ public class ManuTrendYear extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
         adapter = new SimpleTrendsAdapter(ManuTrendYear.this, trendsList);
@@ -97,7 +99,7 @@ public class ManuTrendYear extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manutrendyear_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -217,6 +219,11 @@ public class ManuTrendYear extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }
 

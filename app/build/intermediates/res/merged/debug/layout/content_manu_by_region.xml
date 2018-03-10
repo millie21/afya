@@ -13,6 +13,8 @@
     tools:context="afyapepe.mobile.fragment.ManuByRegion"
     tools:showIn="@layout/activity_manu_by_region">
 
+    <!--<include layout="@layout/list_region_sales_totals" />-->
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,29 +23,54 @@
         android:layout_alignParentRight="true"
         android:background="@drawable/rounderb"
         >
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#fff"
             android:layout_gravity="top|end"
-            android:layout_margin="10dp"
+            android:layout_margin="4dp"
             android:gravity="center_vertical"
             android:id="@+id/testing1222"
-            android:textSize="20dp"
-            android:text="Total items:"/>
+            android:text="Total sales:"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_toRightOf="@+id/testing1222"
-            android:layout_margin="10dp"
+            android:layout_margin="4dp"
             android:gravity="center_vertical"
             android:textColor="#fff"
             android:id="@+id/testing12"
-            android:textSize="20dp"
             android:text="0"/>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_toRightOf="@+id/testing12"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:id="@+id/testing123456"-->
+            <!--android:text="Total(Ksh):"/>-->
+
+
+
+        <!--<ListView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/testing123456"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:visibility="visible"-->
+            <!--android:divider="@null"-->
+            <!--android:textColor="#fff"-->
+            <!--android:id="@+id/listviewyatottals"-->
+            <!--/>-->
+
     </RelativeLayout>
+
+
+
 
     <ListView
         android:layout_width="wrap_content"
@@ -54,6 +81,17 @@
         android:divider="@null"
         android:dividerHeight="10.0sp"
         android:id="@+id/listview11"
+        />
+    <TextView
+        android:id="@+id/list_empty"
+        android:text="No Items available"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/rounder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         />
 
 </RelativeLayout>

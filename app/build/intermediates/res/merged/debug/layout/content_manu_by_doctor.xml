@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="afyapepe.mobile.frafgment.ManuByDoctor"
+    tools:context="afyapepe.mobile.fragment.ManuByDoctor"
     tools:showIn="@layout/activity_manu_by_doctor">
 
     <RelativeLayout
@@ -21,27 +21,43 @@
         android:id="@+id/ct"
         android:background="@drawable/rounderb"
         >
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:id="@+id/testing123456"-->
+            <!--android:text="Total(Ksh):"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/testing123456"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:textColor="#fff"-->
+            <!--android:id="@+id/totalcash"-->
+            <!--android:text="0.00"/>-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#fff"
             android:layout_gravity="top|end"
-            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/totalcash"
+            android:layout_margin="4dp"
             android:gravity="center_vertical"
             android:id="@+id/testing1222"
-            android:textSize="20dp"
-            android:textColor="#fff"
-            android:text="Total items:"/>
+            android:text="Total sales:"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_toRightOf="@+id/testing1222"
-            android:layout_margin="10dp"
+            android:layout_margin="4dp"
             android:gravity="center_vertical"
-            android:id="@+id/testing12"
             android:textColor="#fff"
-            android:textSize="20dp"
+            android:id="@+id/testing12"
             android:text="0"/>
     </RelativeLayout>
 
@@ -55,5 +71,15 @@
         android:dividerHeight="10.0sp"
         android:id="@+id/listview11"
         />
-
+    <TextView
+        android:id="@+id/list_empty"
+        android:text="No Items available"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/rounder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
 </RelativeLayout>

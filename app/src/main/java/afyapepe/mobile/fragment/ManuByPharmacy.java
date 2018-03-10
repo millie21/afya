@@ -34,6 +34,7 @@ import java.util.List;
 import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.App_Config;
 import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.Stock;
 import afyapepe.mobile.adapter.SimpleSalesAdapter;
@@ -49,7 +50,7 @@ import static afyapepe.mobile.app.AppController.TAG;
 
 public class ManuByPharmacy extends AppCompatActivity {
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanusales?email=manu1@afyapepe.com&id=9";
+
 
     private List<Stock> salesList = new ArrayList<Stock>();
     private ListView listView;
@@ -73,33 +74,25 @@ public class ManuByPharmacy extends AppCompatActivity {
 
         session = new SessionManager(ManuByPharmacy.this);
 
-//        FloatingActionButton m = (FloatingActionButton) findViewById(R.id.fab);
-//        m.setOnClickListener(new View.OnClickListener()
-//        {
-//            public void onClick(View v)
-//            {
-//                Intent intent = new Intent(ManuByPharmacy.this, Manufacturers.class);
-//                startActivity(intent);
-//
-//            }
-//
-//        });
-
         //Fetching user details from SQLite
         HashMap<String, String> user = db.getUserDetails();
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         listView = (ListView) findViewById(R.id.listview11);
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        listView.setEmptyView(empty);
         adapter = new SimpleSalesAdapter(ManuByPharmacy.this, salesList);
         listView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(ManuByPharmacy.this);
 
         pDialog.setMessage("Loading...");
+        pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manubypharmacy_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -166,7 +159,7 @@ public class ManuByPharmacy extends AppCompatActivity {
             }
         };
 
-        int socketTimeout = 30000; // 30 seconds. You can change it
+        int socketTimeout = 90000; // 30 seconds. You can change it
         RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);

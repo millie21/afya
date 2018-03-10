@@ -9,30 +9,37 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="4dp"
         card_view:cardBackgroundColor="#ffffff">
         <RelativeLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_gravity="center">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="25dp"
+                android:src="@drawable/ic_assessment_black_18dp"
+                />
+            <View
+                android:id="@+id/centerShim"
+                android:layout_height="match_parent"
+                android:layout_width="2dp"
+                android:visibility="visible"
+                android:layout_margin="15dp"/>
             <TableRow
-                android:layout_height="25dp"
-                android:layout_margin="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
                 android:layout_width="match_parent"
                 android:id="@+id/tb1"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/centerShim"
 
                 >
-                <ImageView
-                    android:layout_height="match_parent"
-                    android:layout_width="15dp"
-                    android:layout_gravity="top|left"
-                    android:src="@drawable/ic_bookmark_black_24dp"
-                    />
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -44,6 +51,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/mat"
                     android:id="@+id/tvposition1"
+                    android:textAllCaps="true"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -52,39 +60,45 @@
                     android:text="norway Pharmacy3"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp"
+                    android:textAllCaps="true"
                     android:textColor="@color/makate"
                     android:id="@+id/tvposition"
+
                     />
 
             </TableRow>
 
             <TableRow
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="0dp"
                 android:layout_width="match_parent"
                 android:id="@+id/tb2"
-
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/centerShim"
                 android:layout_below="@+id/tb1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="@android:style/TextAppearance.Small"
-                    android:text="Company:"
+                    android:text="Company  :"
                     android:id="@+id/tvname21"
                     android:paddingTop="5dp"
                     android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="5dp"
                     android:textColor="@color/mat"
-                    android:layout_marginRight="5dp"/>
+                    android:layout_marginRight="5dp"
+                    android:textAllCaps="true"/>
                 <TextView
 
                     android:id="@+id/tvid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="norway Pharmacy3"
-                    android:layout_marginTop="0dp"
+                    android:text="Ripple Pharmaceuticals"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:textAllCaps="true"
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/makate"/>
 
@@ -126,6 +140,8 @@
                 android:layout_margin="0dp"
                 android:layout_width="match_parent"
                 android:id="@+id/tb4"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/centerShim"
                 android:layout_below="@+id/tb3">
 
                 <TextView
@@ -136,8 +152,9 @@
                     android:id="@+id/tvname214"
                     android:paddingTop="0dp"
                     android:textStyle="bold"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="5dp"
                     android:textColor="@color/mat"
+                    android:textAllCaps="true"
                     android:layout_marginRight="5dp"/>
                 <TextView
                     android:layout_width="match_parent"
@@ -147,6 +164,7 @@
                     android:id="@+id/tvid5"
                     android:textColor="@color/makate"
                     android:textStyle="bold"
+                    android:textAllCaps="true"
 
                    />
 

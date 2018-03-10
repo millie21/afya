@@ -60,9 +60,8 @@ public class ManuTrendMonthR extends AppCompatActivity {
     private List<Stock> trendsListr = new ArrayList<>();
     SimpleRegionTrendsAdapter adapter;
     TextView displayTextViewTitle;
-    // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanutrendsregionmonth?email=manu1@afyapepe.com&id=9";
+
     List<String> IdList = new ArrayList<>();
 
     @Override
@@ -85,8 +84,10 @@ public class ManuTrendMonthR extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
         adapter = new SimpleRegionTrendsAdapter(ManuTrendMonthR.this, trendsListr);
@@ -98,7 +99,7 @@ public class ManuTrendMonthR extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manutrendmonthr_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -122,8 +123,8 @@ public class ManuTrendMonthR extends AppCompatActivity {
                         }
 
                         adapter.notifyDataSetChanged();
-                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
-                        getTotalCount.setText(""+TaskListView.getCount());
+//                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
+                      //  getTotalCount.setText(""+TaskListView.getCount());
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -218,5 +219,9 @@ public class ManuTrendMonthR extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }

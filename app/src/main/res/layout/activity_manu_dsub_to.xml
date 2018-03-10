@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:background="@color/white2"
     tools:context="afyapepe.mobile.activity.Secto">
 
     <include layout="@layout/content_manu_dsub_to"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_width="match_parent" />
 
     <!--<android.support.design.widget.AppBarLayout-->
@@ -25,5 +24,14 @@
     <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
 
     <!--</android.support.design.widget.AppBarLayout>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="4dp"
+        app:srcCompat="@drawable/ic_home_white_24dp" />
 
 </android.support.design.widget.CoordinatorLayout>

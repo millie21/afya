@@ -51,12 +51,12 @@ public class ManuCompeRegion extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_search,menu);
-        MenuItem item = menu.findItem(R.id.action_search);
-        // searchView.setMenuItem(item);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_search,menu);
+//        MenuItem item = menu.findItem(R.id.action_search);
+//        // searchView.setMenuItem(item);
+//        return true;
+//    }
 }
 

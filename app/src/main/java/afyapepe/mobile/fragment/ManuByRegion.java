@@ -29,10 +29,13 @@ import android.widget.Toast;
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -44,32 +47,39 @@ import java.util.List;
 import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.App_Config;
 import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.Stock;
+import afyapepe.mobile.adapter.SalesAdapterRTotal;
 import afyapepe.mobile.adapter.SimpleSalesAdapterR;
 import afyapepe.mobile.app.AppController;
 import afyapepe.mobile.helper.SQLiteHandler;
 import afyapepe.mobile.helper.SessionManager;
 
+import static afyapepe.mobile.activity.App_Config.testtotal;
 import static afyapepe.mobile.app.AppController.TAG;
 
 public class ManuByRegion extends AppCompatActivity {
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanusales?email=manu1@afyapepe.com&id=9";
-
     private List<Stock> salesListr = new ArrayList<Stock>();
+    private List<Stock> totalsaleslist = new ArrayList<Stock>();
     private ListView listView;
+    private ListView listViewcash;
     private SimpleSalesAdapterR adapter;
+    private SalesAdapterRTotal adapterRTotal;
     private SQLiteHandler db;
     private SessionManager session;
     private ProgressDialog pDialog;
+
+
+    //String testtotal ="https://seedorf.000webhostapp.com/tcash2.php";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_manu_by_doctor);
+        setContentView(R.layout.activity_manu_by_region);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -78,23 +88,30 @@ public class ManuByRegion extends AppCompatActivity {
 
         session = new SessionManager(ManuByRegion.this);
 
-
-
         //Fetching user details from SQLite
         HashMap<String, String> user = db.getUserDetails();
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         listView = (ListView) findViewById(R.id.listview11);
+
+       // listViewcash = (ListView) findViewById(R.id.listviewyatottals);
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        listView.setEmptyView(empty);
         adapter = new SimpleSalesAdapterR(ManuByRegion.this, salesListr);
         listView.setAdapter(adapter);
+
+  //      adapterRTotal = new SalesAdapterRTotal(ManuByRegion.this, totalsaleslist);
+//        listViewcash.setAdapter(adapterRTotal);
 
         pDialog = new ProgressDialog(ManuByRegion.this);
 
         pDialog.setMessage("Loading...");
+        pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manubyregion_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -124,10 +141,15 @@ public class ManuByRegion extends AppCompatActivity {
 //                        Notifies the attached observers that the underlying data has been changed
 //                                * and any View reflecting the data set should refresh itself.
                         adapter.notifyDataSetChanged();
-                       // Toast.makeText(ManuByRegion.this, "Total number of Items are:" + listView.getAdapter().getCount() , Toast.LENGTH_LONG).show();
+                        // Toast.makeText(ManuByRegion.this, "Total number of Items are:" + listView.getAdapter().getCount() , Toast.LENGTH_LONG).show();
 
                         TextView getTotalCount = (TextView) findViewById(R.id.testing12);
-                        getTotalCount.setText(""+listView.getCount());
+                        getTotalCount.setText("" + listView.getCount());
+
+//                        TextView getTotalCash = (TextView) findViewById(R.id.totalcash);
+//
+//                       getTotalCash.setText(""+testtotal);
+
                     }
                 },
 
@@ -141,8 +163,7 @@ public class ManuByRegion extends AppCompatActivity {
                         Toast.makeText(ManuByRegion.this, error.toString(), Toast.LENGTH_LONG).show();
                         error.printStackTrace();
                     }
-                })
-        {
+                }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 db = new SQLiteHandler(ManuByRegion.this);
@@ -158,7 +179,8 @@ public class ManuByRegion extends AppCompatActivity {
             }
         };
 
-        int socketTimeout = 30000; // 30 seconds. You can change it
+
+        int socketTimeout = 90000; // 30 seconds. You can change it
         RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
@@ -166,7 +188,64 @@ public class ManuByRegion extends AppCompatActivity {
         stringRequest.setRetryPolicy(policy);
         AppController.getInstance().addToRequestQueue(stringRequest);
 
+
+//        StringRequest srequest = new StringRequest(Request.Method.POST, App_Config.testtotal,
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        Log.d(TAG, response.toString());
+//
+//                        try {
+//                            JSONArray request = new JSONArray(response);
+//                            for (int i = 0; i < request.length(); i++) {
+//
+//                                Stock stock = new Stock();
+//                                JSONObject jsonObject = null;
+//                                jsonObject = request.getJSONObject(i);
+//                                stock.setTotalIncome(jsonObject.getString("TotalIncome"));
+//
+//                                // String totalIncome = test.getString("TotalIncome");
+//                                totalsaleslist.add(stock);
+//                            }
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                            Toast.makeText(ManuByRegion.this, e.toString(), Toast.LENGTH_SHORT).show();
+//                        }
+//                        adapterRTotal.notifyDataSetChanged();
+//                    }
+//
+//                },
+//                new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        if (pDialog != null) {
+//                            pDialog.dismiss();
+//                            pDialog = null;
+//                        }
+//                        Toast.makeText(ManuByRegion.this, error.toString(), Toast.LENGTH_LONG).show();
+//                        error.printStackTrace();
+//                    }
+//                }) {
+//            @Override
+//            protected Map<String, String> getParams() throws AuthFailureError {
+//                db = new SQLiteHandler(ManuByRegion.this);
+//
+//                // Fetching user details from SQLite
+//                HashMap<String, String> user = db.getUserDetails();
+//
+//                String email = user.get("email");
+//                Map<String, String> params = new HashMap<String, String>();
+//                params.put("email", email);
+//
+//                return params;
+//            }
+     //   };
+//
+//        AppController.getInstance().addToRequestQueue(srequest);
+
     }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_search,menu);
@@ -178,7 +257,7 @@ public class ManuByRegion extends AppCompatActivity {
         return true;
     }
 
-    private void search(SearchView searchView){
+    private void search(SearchView searchView) {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -195,7 +274,10 @@ public class ManuByRegion extends AppCompatActivity {
                 return false;
             }
         });
+
     }
+
+
     public List<Stock> filteredDrugs(CharSequence charSequence){
         List<Stock> filteredstocklist;
         String charString = charSequence.toString();
@@ -222,5 +304,9 @@ public class ManuByRegion extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }

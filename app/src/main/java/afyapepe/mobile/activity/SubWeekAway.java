@@ -60,9 +60,7 @@ public class SubWeekAway extends AppCompatActivity {
     private List<Stock> subList = new ArrayList<>();
     SimpleSubAAdapter adapter;
     TextView displayTextViewTitle;
-    // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanudrugsubstitutionsawayweek?email=manu1@afyapepe.com&id=9";
     List<String> IdList = new ArrayList<>();
 
     @Override
@@ -85,11 +83,10 @@ public class SubWeekAway extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
-//         count = ""+TaskListView.getAdapter().getCount();
-//
-//       TextView count = (TextView) findViewById(R.id.testing12);
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
 
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -104,25 +101,24 @@ public class SubWeekAway extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.subweekaway_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         Log.d(TAG, response.toString());
                         pDialog.dismiss();
                         try {
-                            JSONArray request = new JSONArray(response);
-                            for (int i = 0; i < request.length(); i++) {
-                                Stock stock = new Stock();
-                                JSONObject jsonObject = null;
-                                jsonObject = request.getJSONObject(i);
-                                stock.setDrugname(jsonObject.getString("drugname"));
-                                stock.setName(jsonObject.getString("name"));
-                                stock.setQuantity(jsonObject.getString("quantity"));
-                                stock.setPharmacy(jsonObject.getString("pharmacy"));
+                            JSONObject jsonObject = new JSONObject(response);
+                            Stock stock = new Stock();
+//                                JSONObject jsonObject = null;
+//                                jsonObject = request.getJSONObject(i);
+                            stock.setDrugname(jsonObject.getString("drugname"));
+                            stock.setName(jsonObject.getString("name"));
+                            stock.setSubdrugname(jsonObject.getString("subdrugname"));
+                            stock.setPharmacy(jsonObject.getString("pharmacy"));
 
-                                subList.add(stock);
-                            }
+                            subList.add(stock);
+                            // }
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -225,6 +221,11 @@ public class SubWeekAway extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }
 

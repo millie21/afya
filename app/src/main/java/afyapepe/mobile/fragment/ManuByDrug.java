@@ -46,6 +46,12 @@ import java.util.List;
 import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.App_Config;
+import afyapepe.mobile.activity.CountyOne;
+import afyapepe.mobile.activity.Drug1;
+import afyapepe.mobile.activity.Drug2;
+import afyapepe.mobile.activity.Drug3;
+import afyapepe.mobile.activity.Drug4;
 import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.Stock;
 import afyapepe.mobile.adapter.SimpleSalesAdapter;
@@ -58,7 +64,7 @@ import static afyapepe.mobile.app.AppController.TAG;
 
 public class ManuByDrug extends AppCompatActivity {
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanusales?email=manu1@afyapepe.com&id=9";
+
 
     private List<Stock> salesList = new ArrayList<Stock>();
     private ListView listView;
@@ -67,130 +73,139 @@ public class ManuByDrug extends AppCompatActivity {
     private SessionManager session;
     private ProgressDialog pDialog;
 
-//    SpinnerDialog spinnerDialog;
-//    Button btnShow;
- //   public ManuByDrug() {
-//        // Required empty public constructor
-//    }
-
     @Override
     public  void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_manu_by_drug);
+        setContentView(R.layout.activity_manubydrug);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        db = new SQLiteHandler(ManuByDrug.this);
-
-        session = new SessionManager(ManuByDrug.this);
-
-//        FloatingActionButton m = (FloatingActionButton) findViewById(R.id.fab);
-//        m.setOnClickListener(new View.OnClickListener()
+//        db = new SQLiteHandler(ManuByDrug.this);
+//
+//        session = new SessionManager(ManuByDrug.this);
+//
+//        //Fetching user details from SQLite
+//        HashMap<String, String> user = db.getUserDetails();
+//
+//        String email = user.get("email");
+//
+//        View empty = findViewById(R.id.list_empty);
+//        listView = (ListView) findViewById(R.id.listview11);
+//        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+//        listView.setEmptyView(empty);
+//        adapter = new SimpleSalesAdapter(ManuByDrug.this, salesList);
+//        listView.setAdapter(adapter);
+//
+//        pDialog = new ProgressDialog(ManuByDrug.this);
+//
+//        pDialog.setMessage("Loading...");
+//        pDialog.setCancelable(false);
+//        pDialog.show();
+//
+//        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manubydrug_url,
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        Log.d(TAG, response.toString());
+//                        pDialog.dismiss();
+//                        try {
+//
+//                            JSONArray request = new JSONArray(response);
+//                            for (int i = 0; i < request.length(); i++) {
+//
+//                                Stock stock = new Stock();
+//                                JSONObject jsonObject = null;
+//                                jsonObject = request.getJSONObject(i);
+//                                stock.setDrugname(jsonObject.getString("drugname"));
+//                               // stock.setName(jsonObject.getString("name"));
+//                                stock.setFacilityName(jsonObject.getString("FacilityName"));
+//                                stock.setCounty(jsonObject.getString("county"));
+//                                stock.setPharmacy(jsonObject.getString("pharmacy"));
+//                                stock.setTotal(jsonObject.getString("total"));
+//
+//                                salesList.add(stock);
+//                            }
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                            Toast.makeText(ManuByDrug.this, e.toString(), Toast.LENGTH_SHORT).show();
+//                        }
+//
+//
+////                        Notifies the attached observers that the underlying data has been changed
+////                                * and any View reflecting the data set should refresh itself.
+//                        adapter.notifyDataSetChanged();
+//                       // Toast.makeText(ManuByDrug.this, "Total number of Items are:" + listView.getAdapter().getCount() , Toast.LENGTH_LONG).show();
+//
+//                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
+//                        getTotalCount.setText(""+listView.getCount());
+//                    }
+//                },
+//
+//                new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        if (pDialog != null) {
+//                            pDialog.dismiss();
+//                            pDialog = null;
+//                        }
+//                        Toast.makeText(ManuByDrug.this, error.toString(), Toast.LENGTH_LONG).show();
+//                        error.printStackTrace();
+//                    }
+//                })
+//
+//
 //        {
-//            public void onClick(View v)
-//            {
-//                Intent intent = new Intent(ManuByDrug.this, Manufacturers.class);
-//                startActivity(intent);
+//            @Override
+//            protected Map<String, String> getParams() throws AuthFailureError {
+//                db = new SQLiteHandler(ManuByDrug.this);
 //
+//                // Fetching user details from SQLite
+//                HashMap<String, String> user = db.getUserDetails();
+//
+//                String email = user.get("email");
+//                Map<String, String> params = new HashMap<String, String>();
+//                params.put("email", email);
+//
+//                return params;
 //            }
+//        };
 //
-//        });
-
-        //Fetching user details from SQLite
-        HashMap<String, String> user = db.getUserDetails();
-
-        String email = user.get("email");
-
-        listView = (ListView) findViewById(R.id.listview11);
-        adapter = new SimpleSalesAdapter(ManuByDrug.this, salesList);
-        listView.setAdapter(adapter);
-
-        pDialog = new ProgressDialog(ManuByDrug.this);
-
-        pDialog.setMessage("Loading...");
-        pDialog.show();
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Log.d(TAG, response.toString());
-                        pDialog.dismiss();
-                        try {
-
-                            JSONArray request = new JSONArray(response);
-                            for (int i = 0; i < request.length(); i++) {
-
-                                Stock stock = new Stock();
-                                JSONObject jsonObject = null;
-                                jsonObject = request.getJSONObject(i);
-                                stock.setDrugname(jsonObject.getString("drugname"));
-                               // stock.setName(jsonObject.getString("name"));
-                                stock.setFacilityName(jsonObject.getString("FacilityName"));
-                                stock.setCounty(jsonObject.getString("county"));
-                                stock.setPharmacy(jsonObject.getString("pharmacy"));
-                                stock.setTotal(jsonObject.getString("total"));
-
-                                salesList.add(stock);
-                            }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(ManuByDrug.this, e.toString(), Toast.LENGTH_SHORT).show();
-                        }
-
-
-//                        Notifies the attached observers that the underlying data has been changed
-//                                * and any View reflecting the data set should refresh itself.
-                        adapter.notifyDataSetChanged();
-                       // Toast.makeText(ManuByDrug.this, "Total number of Items are:" + listView.getAdapter().getCount() , Toast.LENGTH_LONG).show();
-
-                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
-                        getTotalCount.setText(""+listView.getCount());
-                    }
-                },
-
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        if (pDialog != null) {
-                            pDialog.dismiss();
-                            pDialog = null;
-                        }
-                        Toast.makeText(ManuByDrug.this, error.toString(), Toast.LENGTH_LONG).show();
-                        error.printStackTrace();
-                    }
-                })
-
-
-        {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                db = new SQLiteHandler(ManuByDrug.this);
-
-                // Fetching user details from SQLite
-                HashMap<String, String> user = db.getUserDetails();
-
-                String email = user.get("email");
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("email", email);
-
-                return params;
-            }
-        };
-
-        int socketTimeout = 30000; // 30 seconds. You can change it
-        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
-                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
-
-        stringRequest.setRetryPolicy(policy);
-        AppController.getInstance().addToRequestQueue(stringRequest);
+//        int socketTimeout = 90000; // 30 seconds. You can change it
+//        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
+//                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+//                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+//
+//        stringRequest.setRetryPolicy(policy);
+//        AppController.getInstance().addToRequestQueue(stringRequest);
 
     }
+    //manudrugs
+    public void card_view1(View v) {
+        Intent intent1 = new Intent(getApplicationContext(), Drug1.class);
+        startActivity(intent1);
+    }
+    public void card_view2(View v) {
+        Intent intent1 = new Intent(getApplicationContext(), Drug2.class);
+        startActivity(intent1);
+    }
+    public void card_view3(View v) {
+        Intent intent1 = new Intent(getApplicationContext(), Drug3.class);
+        startActivity(intent1);
+    }
+    public void card_view4(View v) {
+        Intent intent1 = new Intent(getApplicationContext(), Drug4.class);
+        startActivity(intent1);
+    }
+
+
+
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_search,menu);
@@ -246,5 +261,9 @@ public class ManuByDrug extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }

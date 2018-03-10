@@ -1,18 +1,29 @@
 package afyapepe.mobile.fragment;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,9 +31,21 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.App_Config;
 import afyapepe.mobile.activity.HttpHandler;
+import afyapepe.mobile.activity.Manufacturers;
+import afyapepe.mobile.activity.Stock;
+import afyapepe.mobile.adapter.CompDoctorsTotal;
+import afyapepe.mobile.adapter.SimpleCompeDoctorsAdapter;
+import afyapepe.mobile.app.AppController;
+import afyapepe.mobile.helper.SQLiteHandler;
+import afyapepe.mobile.helper.SessionManager;
+
+import static afyapepe.mobile.app.AppController.TAG;
 
 /**
  * Created by Millie Agallo on 10/23/2017.
@@ -30,125 +53,197 @@ import afyapepe.mobile.activity.HttpHandler;
 
 public class CompToday_D extends Fragment {
 
-    AlertDialog.Builder builder;
+    private List<Stock> sectorList = new ArrayList<Stock>();
+    private List<Stock> sectorListt = new ArrayList<Stock>();
+    private ListView listView;
+    private ListView listViewb;
+    private SimpleCompeDoctorsAdapter adapter;
+    private CompDoctorsTotal adapterb;
+    private SQLiteHandler db;
+    private SessionManager session;
     private ProgressDialog pDialog;
-    private ListView lv;
-    FloatingActionButton FAB;
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_sector_activity_d, container, false);
-
-        return rootView;
+    public CompToday_D() {
+        // Required empty public constructor
     }
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanucompetitiondoctortoday";
-
-    ArrayList<HashMap<String, String>> allemployeeslist;
-
-
     @Override
-    public void onStart() {
-        super.onStart();
-        // initControls();
-        // setContentView(R.layout.activity_sector_activity);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.activity_manu_comp_doc_, container, false);
+        db = new SQLiteHandler(getActivity());
 
-        builder = new AlertDialog.Builder(getActivity());
-        allemployeeslist = new ArrayList<>();
-        lv = (ListView) getView().findViewById(R.id.listview11);
+        session = new SessionManager(getActivity());
 
-        new GetAllJobs().execute();
-    }
+        //Fetching user details from SQLite
+        HashMap<String, String> user = db.getUserDetails();
 
-    private class GetAllJobs extends AsyncTask<Void, Void, Void> {
+        String email = user.get("email");
 
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            // Showing progress dialog
-            pDialog = new ProgressDialog(getActivity());
-            pDialog.setMessage("Please wait...");
-            pDialog.setCancelable(true);
-            pDialog.show();
-        }
+        View empty = view.findViewById(R.id.list_empty);
+        listView = (ListView) view.findViewById(R.id.listview11);
+        listViewb = (ListView) view.findViewById(R.id.listview112);
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        listView.setEmptyView(empty);
+        adapter = new SimpleCompeDoctorsAdapter(getActivity(), sectorList);
+        adapterb = new CompDoctorsTotal(getActivity(),sectorListt);
+        listView.setAdapter(adapter);
+       listViewb.setAdapter(adapterb);
 
-        @Override
-        protected Void doInBackground(Void... arg0) {
-            HttpHandler sh = new HttpHandler();
+        pDialog = new ProgressDialog(getActivity());
 
-            // Making a request to url and getting response
-            String jsonStr = sh.makeServiceCall(url);
+        pDialog.setMessage("Loading...");
+        pDialog.setCancelable(false);
+        pDialog.show();
 
-            //Log.e(TAG, "Response from url: " + jsonStr);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.comptoday_d_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, response.toString());
+                        pDialog.dismiss();
+                        try {
 
-            if (jsonStr != null) {
-                try {
-                    JSONArray joblists = new JSONArray(jsonStr);
+                            JSONArray request = new JSONArray(response);
+                            for (int i = 0; i < request.length(); i++) {
+
+                                Stock stock = new Stock();
+                                JSONObject jsonObject = null;
+                                jsonObject = request.getJSONObject(i);
+                                stock.setName(jsonObject.getString("name"));
+                                stock.setTotalq(jsonObject.getString("totalq"));
+                                //.setQprice(jsonObject.getString("qprice"));
+                                //  inventory.setEntry_date(jsonObject.getString("entry_date"));
+
+                                sectorList.add(stock);
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(getActivity(), e.toString(), Toast.LENGTH_SHORT).show();
+                        }
 
 
-                    // Getting JSON Array node
-                    //JSONArray joblists = jsonObj.getJSONArray("alljobsdetails");
-
-                    // looping through All Contacts
-                    for (int i = 0; i < joblists.length(); i++) {
-                        JSONObject obj = joblists.getJSONObject(i);
-
-                        String name = obj.getString("name");
-                        String totalq = obj.getString("totalq");
-                        String total = obj.getString("total");
-
-
-
-                        HashMap<String, String> live = new HashMap<>();
-
-
-                        // live.put("dgno", String.valueOf(dgno));
-                        // live.put("collection_id", String.valueOf(collection_id));
-                        live.put("name", String.valueOf(name));
-                        live.put("totalq", totalq);
-                        live.put("total", total);
-
-                        // adding contact to adverts list
-                        allemployeeslist.add(live);
+//                        Notifies the attached observers that the underlying data has been changed
+//                                * and any View reflecting the data set should refresh itself.
+                        adapter.notifyDataSetChanged();
+//                        TextView getTotalCount = (TextView) getView().findViewById(R.id.testing12);
+//                        getTotalCount.setText(""+listView.getCount());
                     }
-                } catch (final JSONException e) {
+                },
 
-                    Toast.makeText(getActivity().getApplicationContext(),
-                            "Json parsing error: " + e.getMessage(),
-                            Toast.LENGTH_LONG)
-                            .show();
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        if (pDialog != null) {
+                            pDialog.dismiss();
+                            pDialog = null;
+                        }
+                        Toast.makeText(getActivity(), error.toString(), Toast.LENGTH_LONG).show();
+                        error.printStackTrace();
+                    }
+                })
 
-                }
-            } else {
-                Toast.makeText(getActivity().getApplicationContext(),
-                        "Couldn't get json from server. Check Internet connection!",
-                        Toast.LENGTH_LONG)
-                        .show();
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                db = new SQLiteHandler(getActivity());
+
+                // Fetching user details from SQLite
+                HashMap<String, String> user = db.getUserDetails();
+
+                String email = user.get("email");
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("email", email);
+
+                return params;
             }
+        };
 
-            return null;
-        }
+        int socketTimeout = 90000; // 30 seconds. You can change it
+        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
 
-        @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
+        stringRequest.setRetryPolicy(policy);
 
-            if (pDialog.isShowing())
-                pDialog.dismiss();
-            //0739077968
+        AppController.getInstance().addToRequestQueue(stringRequest);
 
-            ListAdapter adapter = new SimpleAdapter(getActivity().getApplicationContext(),
+        StringRequest stringRequestb = new StringRequest(Request.Method.POST, App_Config.comptoday_doc_tot_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, response.toString());
+                        try {
 
-                    allemployeeslist,
+                            JSONArray request = new JSONArray(response);
+                            for (int i = 0; i < request.length(); i++) {
 
-                    R.layout.list_compe_doctor, new String[]{"name","totalq","total"},
-                    new int[]{R.id.tvposition, R.id.tvid, R.id.tvname2});
+                                Stock stock = new Stock();
+                                JSONObject jsonObject = null;
+                                jsonObject = request.getJSONObject(i);
+
+                                stock.setTotalqb(jsonObject.getString("totalqb"));
 
 
-            lv.setAdapter(adapter);
+                                sectorListt.add(stock);
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(getActivity(), e.toString(), Toast.LENGTH_SHORT).show();
+                        }
 
-        }
+
+//                        Notifies the attached observers that the underlying data has been changed
+//                                * and any View reflecting the data set should refresh itself.
+                        adapterb.notifyDataSetChanged();
+                        // TextView getTotalCount = (TextView) getView().findViewById(R.id.testing12);
+                        //  getTotalCount.setText(""+listView.getCount());
+                    }
+                },
+
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        if (pDialog != null) {
+                            pDialog.dismiss();
+                            pDialog = null;
+                        }
+                        Toast.makeText(getActivity(), error.toString(), Toast.LENGTH_LONG).show();
+                        error.printStackTrace();
+                    }
+                })
+
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                db = new SQLiteHandler(getActivity());
+
+                // Fetching user details from SQLite
+                HashMap<String, String> user = db.getUserDetails();
+
+                String email = user.get("email");
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("email", email);
+
+                return params;
+            }
+        };
+
+        AppController.getInstance().addToRequestQueue(stringRequestb);
+
+        FloatingActionButton fab = (FloatingActionButton)view.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), Manufacturers.class);
+                startActivity(intent);
+            }
+        });
+
+        return view;
 
     }
-
 }
+

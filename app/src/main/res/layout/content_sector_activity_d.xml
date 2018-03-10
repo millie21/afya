@@ -1,34 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="afyapepe.mobile.activity.Drug">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="afyapepe.mobile.activity.ManuStocksView"
+    tools:showIn="@layout/activity_sector_activity_d">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/content_manu_by_drug"
-        android:layout_width="match_parent"
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:id="@+id/ct"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/rounderb"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="top|end"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="#fff"-->
+            <!--android:id="@+id/testing1222"-->
+            <!--android:text="Total sales:"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_toRightOf="@+id/testing1222"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:id="@+id/testing12"-->
+            <!--android:textColor="#fff"-->
+            <!--android:text="0"/>-->
+    <!--</RelativeLayout>-->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="2dp"
+        android:divider="@null"
+        android:dividerHeight="10.0sp"
+        android:id="@+id/listview112"
+
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="afyapepe.mobile.activity.Secto"
-        tools:showIn="@layout/activity_sector_activity_d">
+        android:layout_below="@+id/listview112"
+        android:layout_centerHorizontal="true"
 
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_marginTop="5dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:divider="@null"
-            android:dividerHeight="10.0sp"
-            android:id="@+id/listview11"/>
-
-
-    </RelativeLayout>
-</FrameLayout>
+        android:layout_margin="2dp"
+        android:divider="@null"
+        android:dividerHeight="10.0sp"
+        android:id="@+id/listview11"
+        />
+    <TextView
+        android:id="@+id/list_empty"
+        android:text="No Items available"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/rounder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

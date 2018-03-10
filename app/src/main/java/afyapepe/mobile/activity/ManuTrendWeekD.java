@@ -59,9 +59,8 @@ public class ManuTrendWeekD extends AppCompatActivity {
     private List<Stock> trendsListd = new ArrayList<>();
     SimpleDrugTrendsAdapter adapter;
     TextView displayTextViewTitle;
-    // String HttpUrl = "https://seedorf.000webhostapp.com/mycollabo/amystocks.php";
 
-    private static String url = "http://192.168.2.196/afyapepe3/public/showmanutrendsdrugweek?email=manu1@afyapepe.com&id=9";
+
     List<String> IdList = new ArrayList<>();
 
     @Override
@@ -84,12 +83,10 @@ public class ManuTrendWeekD extends AppCompatActivity {
 
         String email = user.get("email");
 
+        View empty = findViewById(R.id.list_empty);
         TaskListView = (ListView) findViewById(R.id.listview11);
-
-//         count = ""+TaskListView.getAdapter().getCount();
-//
-//       TextView count = (TextView) findViewById(R.id.testing12);
-
+        // TaskListView.setVisibility((adapter.isEmpty())?View.GONE:View.VISIBLE);
+        TaskListView.setEmptyView(empty);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -103,7 +100,7 @@ public class ManuTrendWeekD extends AppCompatActivity {
         pDialog.setCancelable(false);
         pDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, App_Config.manutrendweekd_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -128,8 +125,8 @@ public class ManuTrendWeekD extends AppCompatActivity {
                         }
 
                         adapter.notifyDataSetChanged();
-                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
-                        getTotalCount.setText(""+TaskListView.getCount());
+//                        TextView getTotalCount = (TextView) findViewById(R.id.testing12);
+//                        getTotalCount.setText(""+TaskListView.getCount());
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -224,6 +221,11 @@ public class ManuTrendWeekD extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         return filteredstocklist;
+    }
+
+    public void fab(View view){
+        Intent intent5 = new Intent(getApplicationContext(), Manufacturers.class);
+        startActivity(intent5);
     }
 }
 

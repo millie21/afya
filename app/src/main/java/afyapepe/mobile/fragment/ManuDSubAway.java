@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import afyapepe.mobile.R;
+import afyapepe.mobile.activity.Manufacturers;
 import afyapepe.mobile.activity.SubMonthAway;
 import afyapepe.mobile.activity.SubTodayAway;
 import afyapepe.mobile.activity.SubWeekAway;
@@ -39,11 +40,6 @@ import afyapepe.mobile.activity.SubYearAway;
 
 public class ManuDSubAway extends Fragment {
 
-
-//    AlertDialog.Builder builder;
-//    private ProgressDialog pDialog;
-//    private ListView lv;
-//    FloatingActionButton FAB;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -126,6 +122,17 @@ public class ManuDSubAway extends Fragment {
             }
 
         });
+
+        FloatingActionButton f = (FloatingActionButton)rootView.findViewById(R.id.fab);
+        f.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), Manufacturers.class);
+                startActivity(intent);
+            }
+        });
+
 
         return rootView;
     }

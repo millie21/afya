@@ -24,7 +24,6 @@ import static afyapepe.mobile.R.drawable.ic_compare_arrows_black_24dp;
 
 public class ManudrugSubView extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,18 +50,12 @@ public class ManudrugSubView extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.getTabAt(0).setIcon(ic_arrow_forward_white_24dp);
-        tabLayout.getTabAt(1).setIcon(ic_arrow_back_white_24dp);
-        tabLayout.getTabAt(2).setIcon(ic_compare_arrows_black_24dp);
+//        tabLayout.getTabAt(0).setIcon(ic_arrow_forward_white_24dp);
+//        tabLayout.getTabAt(1).setIcon(ic_arrow_back_white_24dp);
+//        tabLayout.getTabAt(2).setIcon(ic_compare_arrows_black_24dp);
 
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_search,menu);
-        MenuItem item = menu.findItem(R.id.action_search);
-        // searchView.setMenuItem(item);
-        return true;
-    }
+
 
 }

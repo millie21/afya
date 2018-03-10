@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="afyapepe.mobile.activity.SubTodayTo"
+    tools:showIn="@layout/activity_sub_today_to">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ctt"
+        android:background="@drawable/rounder"
+
+        >
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="top|end"
+            android:textColor="#fff"
+
+        android:text="Substitutions From Merck to Merck " />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/ct"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounderb"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:gravity="center_vertical"
+            android:id="@+id/testing1222"
+            android:text="Total sales:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_toRightOf="@+id/testing1222"
+            android:layout_margin="4dp"
+            android:gravity="center_vertical"
+            android:id="@+id/testing12"
+            android:textColor="#fff"
+            android:text="0"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:divider="@null"
+        android:dividerHeight="10.0sp"
+        android:id="@+id/listview11"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/list_empty"
+        android:text="No Items available"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/rounder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

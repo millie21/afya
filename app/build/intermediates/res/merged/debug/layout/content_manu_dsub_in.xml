@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="afyapepe.mobile.fragment.Drug">
+    tools:context="afyapepe.mobile.fragment.ManuDSubIn">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingBottom="16dp"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingTop="16dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="afyapepe.mobile.activity.ManuCompeAnSales"
-        tools:showIn="@layout/activity_manu_dsubaway"
+        tools:context="afyapepe.mobile.fragment.ManuDSubIn"
+        tools:showIn="@layout/activity_manu_dsub_in"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         >
@@ -28,7 +28,7 @@
                 android:id="@+id/centerShim"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
-                android:visibility="invisible"
+                android:visibility="gone"
                 android:layout_centerHorizontal="true"/>
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -38,9 +38,9 @@
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
                 android:layout_toLeftOf="@+id/centerShim"
-                card_view:cardCornerRadius="14dp"
+                card_view:cardCornerRadius="21dp"
                 android:layout_margin="5dp"
-                android:onClick="cardview"
+                card_view:cardElevation="4dp"
                 >
 
                 <ImageButton
@@ -48,23 +48,21 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
+                    android:elevation="4dp"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_wb_sunny_white_24dp"
                     android:background="@drawable/rounder"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:onClick="cardview"
                     android:text="Left Button" />
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="33dp"
-                    android:textSize="25dp"
                     android:layout_margin="5dp"
                     android:layout_gravity="center|bottom"
                     android:textColor="@color/ma"
-                    android:onClick="cardview"
                     android:text="Today" />
 
             </android.support.v7.widget.CardView>
@@ -76,10 +74,10 @@
                 android:layout_height="150dp"
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@+id/centerShim"
-                android:layout_below="@+id/card_view0"
-                card_view:cardCornerRadius="14dp"
+                android:layout_below="@+id/card_view"
+                card_view:cardCornerRadius="21dp"
                 android:layout_margin="5dp"
-                android:onClick="cardview2"
+              card_view:cardElevation="4dp"
                 >
                 <ImageButton
                     android:id="@+id/btRight"
@@ -88,20 +86,18 @@
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_web_white_24dp"
-                    android:background="@drawable/rounder"
+                    android:background="@drawable/rounderpi"
                     android:layout_margin="5dp"
-                    android:onClick="cardview2"
                     android:layout_gravity="center"
+                    android:elevation="4dp"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
-                    android:textSize="25dp"
                     android:layout_margin="5dp"
                     android:layout_gravity="center|bottom"
-                    android:textColor="@color/ma"
-                    android:onClick="cardview2"
+                    android:textColor="@color/manupink"
                     android:text="This Week"
 
 
@@ -115,10 +111,10 @@
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
                 android:layout_toLeftOf="@+id/centerShim"
-                card_view:cardCornerRadius="14dp"
-                android:layout_below="@+id/card_view"
+                card_view:cardCornerRadius="21dp"
+                android:layout_below="@+id/card_view2"
                 android:layout_margin="5dp"
-                android:onClick="cardview3"
+               card_view:cardElevation="4dp"
                 >
 
                 <ImageButton
@@ -128,21 +124,20 @@
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_insert_invitation_white_24dp"
-                    android:background="@drawable/rounder"
+                    android:background="@drawable/rounderg"
                     android:layout_margin="5dp"
                     android:layout_gravity="center"
-                    android:onClick="cardview3"
+                    android:elevation="4dp"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:textColor="@color/ma"
+                    android:textColor="@color/manugreen"
                     android:layout_gravity="center|bottom"
-                    android:textSize="25dp"
                     android:layout_margin="5dp"
                     android:text="This Month"
-                    android:onClick="cardview3"
+
                     />
 
             </android.support.v7.widget.CardView>
@@ -153,9 +148,10 @@
                 android:layout_height="150dp"
                 android:layout_alignParentLeft="true"
                 android:layout_toLeftOf="@+id/centerShim"
-                card_view:cardCornerRadius="14dp"
-                android:layout_below="@+id/card_view3"
+                card_view:cardCornerRadius="21dp"
+                android:layout_below="@+id/card_view4"
                 android:layout_margin="5dp"
+                card_view:cardElevation="4dp"
                 >
 
                 <ImageButton
@@ -165,21 +161,19 @@
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_local_hospital_white_24dp"
-                    android:background="@drawable/rounder"
+                    android:background="@drawable/rounderb"
                     android:layout_margin="5dp"
                     android:layout_gravity="center"
-                    android:onClick="cardview5"
+                    android:elevation="4dp"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:textColor="@color/ma"
+                    android:textColor="@color/manublue"
                     android:layout_gravity="center|bottom"
-                    android:textSize="25dp"
                     android:layout_margin="5dp"
-                    android:text="Max"
-                    android:onClick="cardview5"
+                    android:text="Maximum Substitutions"
                     />
 
             </android.support.v7.widget.CardView>
@@ -191,10 +185,10 @@
                 android:layout_height="150dp"
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@+id/centerShim"
-                android:layout_below="@+id/card_view2"
-                card_view:cardCornerRadius="14dp"
+                android:layout_below="@+id/card_view3"
+                card_view:cardCornerRadius="21dp"
                 android:layout_margin="5dp"
-                android:onClick="cardview4"
+               card_view:cardElevation="4dp"
                 >
                 <ImageButton
                     android:id="@+id/btRight2"
@@ -203,20 +197,18 @@
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_next_week_white_24dp"
-                    android:background="@drawable/rounder"
+                    android:background="@drawable/rounderath"
                     android:layout_margin="5dp"
                     android:layout_gravity="center"
-                    android:onClick="cardview4"
+                    android:elevation="4dp"
                     android:text="Left Button" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
-                    android:textColor="@color/ma"
-                    android:textSize="25dp"
+                    android:textColor="@color/enviro"
                     android:layout_margin="5dp"
                     android:layout_gravity="center|bottom"
-                    android:onClick="cardview4"
                     android:text="This Year"
 
                     />
@@ -228,10 +220,10 @@
                 android:layout_height="150dp"
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@+id/centerShim"
-                android:layout_below="@+id/card_view4"
-                card_view:cardCornerRadius="14dp"
+                android:layout_below="@+id/card_view5"
+                card_view:cardCornerRadius="21dp"
                 android:layout_margin="5dp"
-                android:onClick="cardview6"
+                card_view:cardElevation="4dp"
                 >
                 <ImageButton
                     android:id="@+id/btRight21"
@@ -240,20 +232,18 @@
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/centerShim"
                     android:src="@drawable/ic_view_week_white_24dp"
-                    android:background="@drawable/rounder"
+                    android:background="@drawable/roundery"
                     android:layout_margin="5dp"
-                    android:onClick="cardview6"
                     android:layout_gravity="center"
+                    android:elevation="4dp"
                     android:text="Left Button" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
-                    android:textColor="@color/ma"
-                    android:textSize="25dp"
+                    android:textColor="@color/vandu"
                     android:layout_margin="5dp"
                     android:layout_gravity="center|bottom"
-                    android:onClick="cardview6"
                     android:text="Custom"
 
                     />

@@ -94,7 +94,7 @@
         <activity android:name=".activity.histyhisto" />
         <activity
             android:name=".activity.Manufacturers"
-            android:label="@string/title_activity_manufacturers"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuAddEmployee"
@@ -228,22 +228,22 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuCompeSalesToday"
-            android:label="Competiton Analysis By Sales"
+            android:label="Competition Analysis By Sales"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuCompeRegion"
-            android:label="Competiton Analysis By Region"
+            android:label="Competition Analysis By Region"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuCompeDoctor"
-            android:label="Competiton Analysis By Doctor"
+            android:label="Competition Analysis By Doctor"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuCompeDrugs"
-            android:label="Competiton Analysis By Drugs"
+            android:label="Competition Analysis By Drugs"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -398,7 +398,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.SubYearFT"
-            android:label="Competiton Analysis"
+            android:label="Competition Analysis"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -413,17 +413,17 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuCompeSalesWeekly"
-            android:label="Competiton Analysis"
+            android:label="Competition Analysis"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuCompeSalesMonthly"
-            android:label="Competiton Analysis"
+            android:label="Competition Analysis"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuCompeSalesYearly"
-            android:label="Competiton Analysis"
+            android:label="Competition Analysis"
             android:parentActivityName=".activity.ManuCompetitionView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -446,8 +446,320 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ManuCountyInfo"
-            android:label="@string/title_activity_manu_county_info"
+            android:label="Region Summary"
             android:parentActivityName=".activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SalesPharmacies"
+            android:label="Sales"
+            android:parentActivityName=".activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuPharm1"
+            android:label="Sales"
+            android:parentActivityName=".activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragment.ManuByPharmacy50"
+            android:label="Sales"
+            android:parentActivityName=".activity.ManuPharm1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.NewDocSales"
+            android:label="Sales By Doctor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Doc1"
+            android:label="Sales By Doctor"
+            android:parentActivityName=".activity.NewDocSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Doc2"
+            android:label="Sales By Doctor"
+            android:parentActivityName=".activity.NewDocSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.NewDrugSales"
+            android:label="Sales"
+            android:parentActivityName=".activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Drug1"
+            android:label="Sales"
+            android:parentActivityName=".activity.NewDrugSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Drug2"
+            android:label="Sales"
+            android:parentActivityName=".activity.NewDrugSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Drug3"
+            android:label="Sales"
+            android:parentActivityName=".activity.NewDrugSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Drug4"
+            android:label="Sales"
+            android:parentActivityName=".activity.NewDrugSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SalesDoctors"
+            android:label="Sales"
+            android:parentActivityName=".activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SalesDrugs"
+            android:label="Sales"
+            android:parentActivityName=".activity.ViewManuSales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.TMT"
+            android:label="Test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManuByCounty"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.Manufacturers"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".activity.CountyOne"
+            android:label="Mombasa County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwo"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".activity.CountyThree"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFour"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFive"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountySix"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".activity.CountySeven"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyEight"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyNine"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTen"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyEleven"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwelve"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirteen"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyForteen"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFifteen"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountySixteen"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountySeventeen"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyEighteen"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyNineteen"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwenty"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentyOne"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentyTwo"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentyThree"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentyFour"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentyFive"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentySix"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentySeven"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentyEight"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyTwentyNine"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirty"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtyOne"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtyTwo"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtyThree"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtyFour"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtyFive"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtySix"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtySeven"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtyEight"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyThirtyNine"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyForty"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFortyOne"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFortyTwo"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFortyThree"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFortyFour"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFortyFive"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CountyFortySix"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".activity.CountyFortySeven"
+            android:label="Sales By County"
+            android:parentActivityName=".activity.ManuByCounty"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 

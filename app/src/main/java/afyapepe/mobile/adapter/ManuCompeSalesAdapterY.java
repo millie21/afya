@@ -37,8 +37,8 @@ public class ManuCompeSalesAdapterY extends FragmentPagerAdapter {
             return new Company3Y();
         } else if (position == 3){
             return  new Company4Y();
-        } else if (position == 4){
-            return new Company5Y();
+//        } else if (position == 4){
+//            return new Company5Y();
         } else{
             return new Company6Y();
         }
@@ -48,7 +48,7 @@ public class ManuCompeSalesAdapterY extends FragmentPagerAdapter {
     // This determines the number of tabs
     @Override
     public int getCount() {
-        return 6;
+        return 5;
     }
 
     // This determines the title for each tab
@@ -66,8 +66,8 @@ public class ManuCompeSalesAdapterY extends FragmentPagerAdapter {
                 return mContext.getString(R.string.fragment_manu_competiton_analysis_sales_4);
             case 4:
                 return mContext.getString(R.string.fragment_manu_competiton_analysis_sales_5);
-            case 5:
-                return mContext.getString(R.string.fragment_manu_competiton_analysis_sales_6);
+//            case 5:
+//                return mContext.getString(R.string.fragment_manu_competiton_analysis_sales_6);
             default:
                 return null;
         }

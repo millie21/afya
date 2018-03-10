@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_margin="5dp"
+    android:layout_alignParentRight="true"
+    android:id="@+id/ct"
+    android:background="@drawable/rounderb"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_gravity="top|end"
+        android:layout_margin="4dp"
+        android:gravity="center_vertical"
+        android:id="@+id/testing1222"
+        android:text="Total stock:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_gravity="bottom|end"
+        android:layout_toRightOf="@+id/testing1222"
+        android:layout_margin="4dp"
+        android:gravity="center_vertical"
+        android:id="@+id/testing12"
+        android:text="0"/>
+</RelativeLayout>

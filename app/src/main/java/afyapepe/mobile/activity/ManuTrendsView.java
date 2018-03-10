@@ -52,13 +52,14 @@ public class ManuTrendsView extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.getTabAt(0).setIcon(earth);
-        tabLayout.getTabAt(1).setIcon(ic_local_hospital_white_24dp);
-        tabLayout.getTabAt(2).setIcon(ic_place_white_18dp);
-        tabLayout.getTabAt(3).setIcon(ic_compare_arrows_black_24dp);
+//        tabLayout.getTabAt(0).setIcon(earth);
+//        tabLayout.getTabAt(1).setIcon(ic_local_hospital_white_24dp);
+//        tabLayout.getTabAt(2).setIcon(ic_place_white_18dp);
+       // tabLayout.getTabAt(3).setIcon(ic_compare_arrows_black_24dp);
 
 
 
     }
+
 
 }
